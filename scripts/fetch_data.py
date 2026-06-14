@@ -244,19 +244,25 @@ MBB_URL = ("https://www.ishares.com/us/products/239465/ishares-mbs-etf/"
 
 def fetch_mbb():
     text = http_get(MBB_URL)
+    text = text.lstrip("\ufeff")  # strip BOM if present
+    if "<html" in text[:500].lower() or "<!doctype" in text[:500].lower():
+        raise RuntimeError("iShares returned an HTML page, not CSV (rate-limited or URL changed)")
     lines = text.splitlines()
     # The file has metadata lines first; find the real header row.
+    # Match on Name + (Weight | Market Value); scan generously in case the
+    # preamble grows.
     header_idx = None
-    for i, line in enumerate(lines[:40]):
+    for i, line in enumerate(lines[:80]):
         u = line.upper()
         if "NAME" in u and ("WEIGHT" in u or "MARKET VALUE" in u):
             header_idx = i
             break
     if header_idx is None:
-        raise RuntimeError("could not locate header row in holdings CSV")
+        preview = " | ".join(l[:60] for l in lines[:8])
+        raise RuntimeError(f"could not locate header row; first lines: {preview}")
     as_of = ""
     for line in lines[:header_idx]:
-        m = re.search(r"as of (.+?)[\",]*$", line, re.I)
+        m = re.search(r"as of[,\s]+\"?([A-Za-z]+ \d{1,2},? \d{4})", line, re.I)
         if m:
             as_of = m.group(1).strip().strip('"')
             break
@@ -275,6 +281,7 @@ def fetch_mbb():
     c_price = col("price")
     c_coupon = col("coupon")
     c_class = col("asset class")
+    c_sector = col("sector")
     if c_name is None or c_weight is None:
         raise RuntimeError(f"unexpected holdings columns: {header}")
 
@@ -290,28 +297,36 @@ def fetch_mbb():
     for row in rows[1:]:
         if len(row) <= c_weight or not row[c_name].strip():
             continue
-        if c_class is not None and len(row) > c_class:
-            if "cash" in row[c_class].lower():
-                continue
         name = row[c_name].strip()
+        un = name.upper()
+        # Skip cash / collateral rows two ways: asset-class column and name.
+        if c_class is not None and len(row) > c_class and "cash" in row[c_class].lower():
+            continue
+        if "CASH" in un or "BLACKROCK" in un:
+            continue
         w = fnum(row[c_weight])
         if w is None or w <= 0:
             continue
+        # Coupon: prefer a real coupon column; otherwise pull it out of the
+        # security name, e.g. "FNMA 30YR UMBS - 6.0 2054-12-01" -> 6.0,
+        # or a trailing "5.5%".
         coupon = fnum(row[c_coupon]) if c_coupon is not None and len(row) > c_coupon else None
         if coupon is None:
-            m = re.search(r"(\d+(?:\.\d+)?)\s*%?", name[::-1])  # unlikely path
-            coupon = None
+            m = re.search(r"[-\s](\d+(?:\.\d+)?)\s+\d{4}-\d{2}-\d{2}", name)
+            if not m:
+                m = re.search(r"(\d+(?:\.\d+)?)\s*%", name)
+            if m:
+                coupon = float(m.group(1))
         if coupon is None:
             continue
-        un = name.upper()
-        if "GNMA" in un or un.startswith("G2") or un.startswith("GN"):
+        if "GNMA" in un or "GINNIE" in un or un.startswith("G2"):
             agency = "GNMA"
-        elif "FHLMC" in un or "FGLMC" in un or un.startswith("FR") or un.startswith("FG"):
+        elif "FHLMC" in un or "FGLMC" in un or "FREDDIE" in un:
             agency = "FHLMC"
-        elif "UMBS" in un:
-            agency = "UMBS"
-        else:
+        elif "FNMA" in un or "FANNIE" in un or "UMBS" in un:
             agency = "FNMA"
+        else:
+            agency = "OTHER"
         cpn = round(coupon * 2) / 2  # bucket to nearest 0.5
         key = (agency, cpn)
         b = buckets.setdefault(key, {"weight": 0.0, "pxw": 0.0, "pw": 0.0, "n": 0})
