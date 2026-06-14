@@ -1,0 +1,50 @@
+{
+ "updated": "2026-06-10T23:00:57Z",
+ "fund": {
+  "fund": "MBB \u2014 iShares MBS ETF",
+  "asOf": "seed",
+  "holdingsCount": 0,
+  "stack": [
+   {
+    "agency": "FNMA",
+    "coupon": 6.0,
+    "weight": 18.0,
+    "avgPrice": 100.9,
+    "holdings": 0
+   },
+   {
+    "agency": "FNMA",
+    "coupon": 5.5,
+    "weight": 16.0,
+    "avgPrice": 99.0,
+    "holdings": 0
+   },
+   {
+    "agency": "FNMA",
+    "coupon": 2.5,
+    "weight": 6.0,
+    "avgPrice": 82.0,
+    "holdings": 0
+   }
+  ],
+  "status": "stale",
+  "source": "seed values \u2014 run the Action"
+ },
+ "mortgage30": {
+  "label": "US 30Y Mortgage Rate",
+  "units": "%",
+  "value": 6.4,
+  "asOf": "seed",
+  "history": [
+   [
+    "2026-01-02",
+    6.6
+   ],
+   [
+    "2026-06-01",
+    6.4
+   ]
+  ],
+  "status": "stale"
+ }
+}

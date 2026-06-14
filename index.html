@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Monitor</title>
+<style>
+  :root{
+    --bg:#0A0E12; --panel:#10151B; --edge:#1E2630; --amber:#F2A93B;
+    --amber-dim:#9C7327; --text:#D7DCE2; --mute:#7D8895; --up:#46D483;
+    --down:#F0625D; --flag:#5EA8FF;
+    --mono:'SF Mono',ui-monospace,'Cascadia Mono',Menlo,Consolas,monospace;
+    --sans:-apple-system,'Segoe UI',Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh}
+  a{color:var(--flag)}
+  /* ticker */
+  .tape{overflow:hidden;border-bottom:1px solid var(--edge);background:#070A0D}
+  .tape-inner{display:inline-flex;white-space:nowrap;padding:6px 0;animation:tape 40s linear infinite}
+  .tape span{font-family:var(--mono);font-size:11px;margin-right:32px}
+  @keyframes tape{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.tape-inner{animation:none}}
+  /* header / nav */
+  header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:14px 16px 10px}
+  .brand{font-family:var(--mono);font-size:16px;letter-spacing:.18em;color:var(--amber)}
+  .sub{font-family:var(--mono);font-size:10px;color:var(--mute);margin-top:2px}
+  .clock{font-family:var(--mono);font-size:12px;color:var(--mute)}
+  nav{display:flex;gap:8px;padding:0 16px 12px;flex-wrap:wrap}
+  nav button{font-family:var(--mono);font-size:11px;letter-spacing:.1em;cursor:pointer;
+    padding:8px 14px;border-radius:3px;background:transparent;color:var(--mute);
+    border:1px solid var(--edge)}
+  nav button.on{background:var(--amber);color:#14100A;border-color:var(--amber);font-weight:700}
+  nav button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+  main{padding:0 16px 24px;max-width:980px;margin:0 auto;display:grid;gap:12px}
+  /* panels */
+  .panel{background:var(--panel);border:1px solid var(--edge);border-radius:4px;overflow:hidden}
+  .ptitle{display:flex;justify-content:space-between;align-items:baseline;
+    border-bottom:1px solid var(--edge);padding:10px 14px}
+  .ptitle b{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--amber);font-weight:400}
+  .ptitle small{font-family:var(--mono);font-size:10px;color:var(--mute)}
+  .scroll{overflow-x:auto}
+  table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px}
+  th{padding:6px 14px;font-weight:400;letter-spacing:.08em;font-size:10px;color:var(--mute);text-align:left}
+  td{padding:8px 14px;border-top:1px solid var(--edge);white-space:nowrap}
+  .big{color:var(--amber);font-size:14px}
+  .up{color:var(--up)} .down{color:var(--down)} .mute{color:var(--mute)}
+  .grid{display:grid;gap:1px;background:var(--edge)}
+  .cell{background:var(--panel);padding:12px 14px}
+  .cell .k{font-family:var(--mono);font-size:10px;color:var(--mute)}
+  .cell .v{font-family:var(--mono);font-size:20px;color:var(--amber);margin:2px 0}
+  .note{padding:10px 14px;font-size:12px;color:var(--mute);border-top:1px solid var(--edge);line-height:1.55;white-space:normal}
+  .stale{display:inline-block;font-family:var(--mono);font-size:9px;color:#C9904A;
+    border:1px solid #5b4520;border-radius:2px;padding:0 4px;margin-left:6px;vertical-align:middle}
+  .bar{display:inline-block;height:8px;background:var(--edge);border-radius:2px;width:110px;vertical-align:middle}
+  .bar i{display:block;height:8px;border-radius:2px;background:var(--amber);opacity:.85}
+  .bar i.red{background:var(--down)}
+  footer{padding:0 16px 28px;font-family:var(--mono);font-size:10px;color:#4A535E;max-width:980px;margin:0 auto;line-height:1.6}
+  .err{padding:14px;font-family:var(--mono);font-size:12px;color:var(--down)}
+</style>
+</head>
+<body>
+<div class="tape"><div class="tape-inner" id="tape" aria-hidden="true"></div></div>
+<header>
+  <div>
+    <div class="brand">MARKET MONITOR</div>
+    <div class="sub" id="updated">LOADING…</div>
+  </div>
+  <div class="clock" id="clock"></div>
+</header>
+<nav id="nav">
+  <button data-v="rates" class="on">F1 RATES</button>
+  <button data-v="credit">F2 CREDIT</button>
+  <button data-v="mbs">F3 MBS</button>
+</nav>
+<main id="main"><div class="panel"><div class="err">Loading data…</div></div></main>
+<footer>
+  SOURCES: FRED (FED, ECB, US TREASURIES, ICE BOFA SPREAD INDICES, FREDDIE MAC MORTGAGE SURVEY) ·
+  BANK OF ENGLAND IADB (BANK RATE, SONIA) · BIS (GLOBAL POLICY RATES) · ISHARES (MBB DAILY HOLDINGS).
+  PERSONAL, NON-COMMERCIAL DASHBOARD. DATA REFRESHES ON THE GITHUB ACTIONS SCHEDULE — NOT TICK-BY-TICK.
+  NOTHING HERE IS INVESTMENT ADVICE.
+</footer>
+
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const FLAG = {US:"US",GB:"GB",EU:"EU",JP:"JP",CH:"CH",CA:"CA",AU:"AU",SE:"SE",
+  NO:"NO",BR:"BR",IN:"IN",KR:"KR",MX:"MX",NZ:"NZ",ZA:"ZA"};
+let DATA = {rates:null, credit:null, mbs:null};
+let VIEW = "rates";
+
+/* ---------- helpers ---------- */
+const fmt = (v,d=2) => v==null ? "—" : Number(v).toFixed(d);
+function chg(hist, lookback=1){
+  if(!hist || hist.length < lookback+1) return null;
+  return hist[hist.length-1][1] - hist[hist.length-1-lookback][1];
+}
+function delta(v, {bp=false, flip=false}={}){
+  if(v==null || Math.abs(v) < 1e-9) return `<span class="mute">—</span>`;
+  const good = flip ? v<0 : v>0;
+  const arrow = v>0 ? "▲" : "▼";
+  const num = bp ? Math.abs(v).toFixed(0)+"bp" : Math.abs(v).toFixed(2);
+  return `<span class="${good?'up':'down'}">${arrow} ${num}</span>`;
+}
+function spark(hist, {w=84,h=24,flip=false}={}){
+  if(!hist || hist.length<2) return "";
+  const vals = hist.map(p=>p[1]);
+  const min=Math.min(...vals), max=Math.max(...vals), r=(max-min)||1;
+  const pts = vals.map((v,i)=>`${(i/(vals.length-1))*w},${(h-2-((v-min)/r)*(h-4)).toFixed(1)}`).join(" ");
+  const rising = vals[vals.length-1]>=vals[0];
+  const good = flip ? !rising : rising;
+  return `<svg width="${w}" height="${h}" aria-hidden="true"><polyline points="${pts}"
+    fill="none" stroke="${good?'#46D483':'#F0625D'}" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
+}
+const staleBadge = s => s && s.status==="stale" ? `<span class="stale">STALE</span>` : "";
+function panel(title, right, body){
+  return `<section class="panel"><div class="ptitle"><b>${title}</b><small>${right||""}</small></div>${body}</section>`;
+}
+
+/* ---------- views ---------- */
+function ratesView(){
+  const R = DATA.rates;
+  if(!R) return panel("GLOBAL POLICY RATES","",`<div class="err">rates.json missing — run the workflow once.</div>`);
+  const order = Object.entries(R.banks||{}).filter(([,b])=>b).sort((a,b)=>b[1].value-a[1].value);
+  const rows = order.map(([cc,b])=>`
+    <tr>
+      <td><span style="color:var(--flag);margin-right:8px">${FLAG[cc]||cc}</span>${b.label}${staleBadge(b)}</td>
+      <td class="big">${fmt(b.value)}%</td>
+      <td>${delta(chg(b.history,1),{flip:true})} <span class="mute">${b.asOf||""}</span></td>
+      <td>${spark(b.history,{flip:true})}</td>
+    </tr>`).join("");
+  const t = R.uk||{}, u = R.us||{};
+  const cells = [
+    ["BOE BANK RATE", R.banks?.GB], ["SONIA O/N", t.sonia], ["UK 10Y GILT", t.gilt10y],
+    ["SOFR", u.sofr], ["US 2Y", u.t2y], ["US 10Y", u.t10y], ["US 30Y", u.t30y],
+  ].map(([k,s])=> s ? `<div class="cell"><div class="k">${k}${staleBadge(s)}</div>
+      <div class="v">${fmt(s.value)}%</div>
+      <div style="font-size:11px;font-family:var(--mono)">${delta(chg(s.history,1),{flip:true})}</div>
+    </div>` : "").join("");
+  return panel("GLOBAL POLICY RATES","sorted high→low · sparkline ≈ last year",
+      `<div class="scroll"><table>
+        <thead><tr><th>CENTRAL BANK</th><th>RATE</th><th>LAST CHANGE OBS.</th><th>PATH</th></tr></thead>
+        <tbody>${rows||""}</tbody></table></div>`)
+    + panel("UK + US MONEY & CURVE","BoE IADB · FRED",
+      `<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(130px,1fr))">${cells}</div>
+       <div class="note">UK 10Y gilt series is monthly (OECD via FRED), so it lags the daily series.
+       Everything else updates each run.</div>`);
+}
+
+function creditView(){
+  const C = DATA.credit;
+  if(!C) return panel("CREDIT","",`<div class="err">credit.json missing — run the workflow once.</div>`);
+  const S = C.spreads||{};
+  const defs = [["hy","US HIGH YIELD OAS"],["ig","US INVESTMENT GRADE OAS"],
+                ["ccc","CCC & LOWER OAS"],["eurhy","EURO HIGH YIELD OAS"]];
+  const cells = defs.map(([k,label])=>{
+    const s=S[k]; if(!s) return "";
+    return `<div class="cell"><div class="k">${label}${staleBadge(s)}</div>
+      <div style="display:flex;align-items:flex-end;gap:10px">
+        <span class="v">${fmt(s.value,0)}</span>${spark(s.history,{flip:true,w:70,h:22})}</div>
+      <div style="font-size:11px;font-family:var(--mono)">${delta(chg(s.history,1),{bp:true,flip:true})}
+        <span class="mute">1d</span> · ${delta(chg(s.history,20),{bp:true,flip:true})} <span class="mute">~1m</span></div>
+    </div>`;}).join("");
+  const hy=S.hy, ccc=S.ccc;
+  let decomp="";
+  if(hy?.history && ccc?.history){
+    const d = ccc.value - hy.value;
+    decomp = `<div class="note">CCC minus broad HY: <span style="color:var(--amber);font-family:var(--mono)">${d.toFixed(0)}bp</span>.
+      Widening here while IG sleeps is the classic early-stress tell — the weakest credits get cut off first.
+      Spreads are option-adjusted, in basis points, from ICE BofA indices (daily, via FRED).</div>`;
+  }
+  return panel("CREDIT SPREAD COMPLEX","OAS, bp · ICE BofA via FRED",
+      `<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(160px,1fr))">${cells}</div>${decomp}`)
+    + panel("PER-BOND DISTRESSED WATCHLIST","extension",
+      `<div class="note">Bond-level distressed prints need FINRA TRACE, which requires a (free) registered
+      account and an OAuth flow — deliberately left out of v1 so the pipeline runs with zero credentials
+      beyond the FRED key. The spread complex above is the market-wide version of the same signal.</div>`);
+}
+
+function mbsView(){
+  const M = DATA.mbs;
+  if(!M) return panel("MBS","",`<div class="err">mbs.json missing — run the workflow once.</div>`);
+  const F = M.fund;
+  let body;
+  if(F && F.stack){
+    const maxW = Math.max(...F.stack.map(s=>s.weight));
+    const rows = F.stack.map(s=>`
+      <tr>
+        <td>${s.agency} ${fmt(s.coupon,1)}%</td>
+        <td class="big" ${s.avgPrice&&s.avgPrice<90?'style="color:var(--down)"':''}>${fmt(s.avgPrice)}</td>
+        <td>${fmt(s.weight,2)}%</td>
+        <td class="mute">${s.holdings}</td>
+        <td><span class="bar"><i class="${s.avgPrice&&s.avgPrice<90?'red':''}"
+            style="width:${(s.weight/maxW*100).toFixed(0)}%"></i></span></td>
+      </tr>`).join("");
+    body = `<div class="note" style="border-top:none">Every coupon bucket inside ${F.fund},
+        aggregated from the fund's full daily holdings file (${F.holdingsCount} positions, as of ${F.asOf||"latest file"}).
+        Price under 90 shows red — those are the pandemic-era low-coupon pools trading at deep discounts because
+        nobody refinances a 2.5% mortgage.${F.status==="stale"?" <b>Showing last successful pull.</b>":""}</div>
+      <div class="scroll"><table>
+        <thead><tr><th>POOL / COUPON</th><th>AVG PX</th><th>FUND WT</th><th># POS</th><th></th></tr></thead>
+        <tbody>${rows}</tbody></table></div>`;
+  } else {
+    body = `<div class="err">No holdings data yet — run the workflow once and check the Actions log.</div>`;
+  }
+  const mort = M.mortgage30;
+  const mortPanel = mort ? panel("PRIMARY MARKET","Freddie Mac weekly survey via FRED",
+    `<div class="grid" style="grid-template-columns:1fr 1fr">
+      <div class="cell"><div class="k">US 30Y FIXED MORTGAGE${staleBadge(mort)}</div>
+        <div class="v">${fmt(mort.value)}%</div>
+        <div style="font-size:11px;font-family:var(--mono)">${delta(chg(mort.history,1),{flip:true})} <span class="mute">w/w</span></div></div>
+      <div class="cell"><div class="k">TREND</div><div style="padding-top:6px">${spark(mort.history,{flip:true,w:150,h:34})}</div></div>
+    </div>`) : "";
+  return panel("COUPON STACK — MBB X-RAY","iShares daily holdings", body) + mortPanel;
+}
+
+/* ---------- shell ---------- */
+function tape(){
+  const items=[];
+  const push=(k,s,flip)=>{ if(s&&s.value!=null){
+    const d=chg(s.history,1);
+    items.push([k, fmt(s.value, s.units==="bp"?0:2)+(s.units==="bp"?"bp":"%"),
+      d==null?0:(flip? -Math.sign(d):Math.sign(d))]); }};
+  const R=DATA.rates||{}, C=DATA.credit||{}, M=DATA.mbs||{};
+  push("FED FUNDS", R.banks?.US, true); push("BOE BANK RATE", R.banks?.GB, true);
+  push("ECB DEPO", R.banks?.EU, true); push("SONIA", R.uk?.sonia, true);
+  push("SOFR", R.us?.sofr, true); push("US 10Y", R.us?.t10y, true);
+  push("US HY OAS", C.spreads?.hy, true); push("CCC OAS", C.spreads?.ccc, true);
+  push("30Y MORTGAGE", M.mortgage30, true);
+  if(!items.length) return;
+  const html = items.map(([k,v,dir])=>`<span><span class="mute">${k} </span>
+    <span style="color:var(--amber)">${v} </span>
+    <span class="${dir>0?'up':dir<0?'down':'mute'}">${dir>0?"▲":dir<0?"▼":"•"}</span></span>`).join("");
+  $("#tape").innerHTML = html + html; // doubled for seamless loop
+}
+function render(){
+  $("#main").innerHTML = VIEW==="rates"?ratesView():VIEW==="credit"?creditView():mbsView();
+}
+$("#nav").addEventListener("click", e=>{
+  const b = e.target.closest("button"); if(!b) return;
+  VIEW = b.dataset.v;
+  document.querySelectorAll("#nav button").forEach(x=>x.classList.toggle("on", x===b));
+  render();
+});
+setInterval(()=>{ $("#clock").textContent = new Date().toLocaleTimeString("en-GB"); }, 1000);
+
+async function load(){
+  const bust = "?t=" + Date.now();
+  const get = async f => { try{ const r = await fetch("data/"+f+bust); return r.ok ? r.json() : null; }catch(e){ return null; } };
+  [DATA.rates, DATA.credit, DATA.mbs] = await Promise.all([get("rates.json"), get("credit.json"), get("mbs.json")]);
+  const upd = DATA.rates?.updated || DATA.credit?.updated;
+  $("#updated").textContent = upd ? "DATA AS OF " + upd.replace("T"," ").replace("Z"," UTC")
+                                  : "NO DATA YET — RUN THE GITHUB ACTION";
+  tape(); render();
+}
+load();
+setInterval(load, 15*60*1000); // re-check files every 15 min while page is open
+</script>
+</body>
+</html>

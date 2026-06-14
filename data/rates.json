@@ -1,0 +1,238 @@
+{
+ "updated": "2026-06-10T23:00:57Z",
+ "banks": {
+  "US": {
+   "label": "Federal Reserve (upper target)",
+   "units": "%",
+   "value": 4.0,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     4.0
+    ],
+    [
+     "2026-06-01",
+     4.0
+    ]
+   ],
+   "status": "stale"
+  },
+  "GB": {
+   "label": "Bank of England",
+   "units": "%",
+   "value": 3.75,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     3.75
+    ],
+    [
+     "2026-06-01",
+     3.75
+    ]
+   ],
+   "status": "stale"
+  },
+  "EU": {
+   "label": "ECB (deposit facility)",
+   "units": "%",
+   "value": 2.0,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     2.0
+    ],
+    [
+     "2026-06-01",
+     2.0
+    ]
+   ],
+   "status": "stale"
+  },
+  "JP": {
+   "label": "Bank of Japan",
+   "units": "%",
+   "value": 0.75,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     0.75
+    ],
+    [
+     "2026-06-01",
+     0.75
+    ]
+   ],
+   "status": "stale"
+  },
+  "CH": {
+   "label": "Swiss National Bank",
+   "units": "%",
+   "value": 0.0,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     0.0
+    ],
+    [
+     "2026-06-01",
+     0.0
+    ]
+   ],
+   "status": "stale"
+  },
+  "CA": {
+   "label": "Bank of Canada",
+   "units": "%",
+   "value": 2.25,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     2.25
+    ],
+    [
+     "2026-06-01",
+     2.25
+    ]
+   ],
+   "status": "stale"
+  },
+  "AU": {
+   "label": "Reserve Bank of Australia",
+   "units": "%",
+   "value": 3.6,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     3.6
+    ],
+    [
+     "2026-06-01",
+     3.6
+    ]
+   ],
+   "status": "stale"
+  },
+  "SE": null,
+  "NO": null,
+  "BR": null,
+  "IN": null,
+  "KR": null,
+  "MX": null,
+  "NZ": null,
+  "ZA": null
+ },
+ "uk": {
+  "sonia": {
+   "label": "SONIA (overnight)",
+   "units": "%",
+   "value": 3.7,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     3.7
+    ],
+    [
+     "2026-06-01",
+     3.7
+    ]
+   ],
+   "status": "stale"
+  },
+  "gilt10y": {
+   "label": "UK 10Y Gilt (monthly)",
+   "units": "%",
+   "value": 4.4,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     4.4
+    ],
+    [
+     "2026-06-01",
+     4.4
+    ]
+   ],
+   "status": "stale"
+  }
+ },
+ "us": {
+  "sofr": {
+   "label": "SOFR",
+   "units": "%",
+   "value": 3.8,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     3.8
+    ],
+    [
+     "2026-06-01",
+     3.8
+    ]
+   ],
+   "status": "stale"
+  },
+  "t2y": {
+   "label": "US 2Y Treasury",
+   "units": "%",
+   "value": 3.6,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     3.6
+    ],
+    [
+     "2026-06-01",
+     3.6
+    ]
+   ],
+   "status": "stale"
+  },
+  "t10y": {
+   "label": "US 10Y Treasury",
+   "units": "%",
+   "value": 4.2,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     4.2
+    ],
+    [
+     "2026-06-01",
+     4.2
+    ]
+   ],
+   "status": "stale"
+  },
+  "t30y": {
+   "label": "US 30Y Treasury",
+   "units": "%",
+   "value": 4.8,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     4.8
+    ],
+    [
+     "2026-06-01",
+     4.8
+    ]
+   ],
+   "status": "stale"
+  }
+ }
+}

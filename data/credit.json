@@ -1,0 +1,73 @@
+{
+ "updated": "2026-06-10T23:00:57Z",
+ "spreads": {
+  "hy": {
+   "label": "US High Yield OAS",
+   "units": "bp",
+   "value": 320,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     304.0
+    ],
+    [
+     "2026-06-01",
+     320
+    ]
+   ],
+   "status": "stale"
+  },
+  "ig": {
+   "label": "US Investment Grade OAS",
+   "units": "bp",
+   "value": 92,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     87.39999999999999
+    ],
+    [
+     "2026-06-01",
+     92
+    ]
+   ],
+   "status": "stale"
+  },
+  "ccc": {
+   "label": "US CCC & Lower OAS",
+   "units": "bp",
+   "value": 880,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     836.0
+    ],
+    [
+     "2026-06-01",
+     880
+    ]
+   ],
+   "status": "stale"
+  },
+  "eurhy": {
+   "label": "Euro High Yield OAS",
+   "units": "bp",
+   "value": 340,
+   "asOf": "seed",
+   "history": [
+    [
+     "2026-01-02",
+     323.0
+    ],
+    [
+     "2026-06-01",
+     340
+    ]
+   ],
+   "status": "stale"
+  }
+ }
+}
