@@ -1,0 +1,41 @@
+name: Update market data
+
+on:
+  schedule:
+    - cron: "25 6 * * 1-5"
+    - cron: "25 13 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch data
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: python scripts/fetch_data.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "market-monitor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "data: refresh $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
