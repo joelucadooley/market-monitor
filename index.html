@@ -92,8 +92,10 @@ let VIEW = "rates";
 /* ---------- helpers ---------- */
 const fmt = (v,d=2) => v==null ? "—" : Number(v).toFixed(d);
 function chg(hist, lookback=1){
-  if(!hist || hist.length < lookback+1) return null;
-  return hist[hist.length-1][1] - hist[hist.length-1-lookback][1];
+  if(!hist) return null;
+  const v = hist.filter(p=>p[1]!=null);  // drop missing days
+  if(v.length < lookback+1) return null;
+  return v[v.length-1][1] - v[v.length-1-lookback][1];
 }
 function delta(v, {bp=false, flip=false}={}){
   if(v==null || Math.abs(v) < 1e-9) return `<span class="mute">—</span>`;
@@ -103,8 +105,9 @@ function delta(v, {bp=false, flip=false}={}){
   return `<span class="${good?'up':'down'}">${arrow} ${num}</span>`;
 }
 function spark(hist, {w=84,h=24,flip=false}={}){
-  if(!hist || hist.length<2) return "";
-  const vals = hist.map(p=>p[1]);
+  if(!hist) return "";
+  const vals = hist.map(p=>p[1]).filter(v=>v!=null);  // drop missing days
+  if(vals.length<2) return "";
   const min=Math.min(...vals), max=Math.max(...vals), r=(max-min)||1;
   const pts = vals.map((v,i)=>`${(i/(vals.length-1))*w},${(h-2-((v-min)/r)*(h-4)).toFixed(1)}`).join(" ");
   const rising = vals[vals.length-1]>=vals[0];
