@@ -17,6 +17,7 @@ Sources:
 import csv
 import io
 import json
+import math
 import os
 import re
 import sys
@@ -43,10 +44,21 @@ def load_previous(name):
     except Exception:
         return None
 
+def _clean(obj):
+    """Recursively replace NaN/Infinity (invalid JSON) with None."""
+    import math
+    if isinstance(obj, float):
+        return obj if math.isfinite(obj) else None
+    if isinstance(obj, dict):
+        return {k: _clean(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_clean(v) for v in obj]
+    return obj
+
 def save(name, obj):
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(os.path.join(DATA_DIR, name), "w") as f:
-        json.dump(obj, f, indent=1)
+        json.dump(_clean(obj), f, indent=1, allow_nan=False)
     log(f"wrote {name}")
 
 def now_iso():
@@ -194,9 +206,12 @@ def bis_parse_csv(text):
     for row in rows[1:]:
         if len(row) > max(ti, vi) and row[ti] and row[vi]:
             try:
-                out.append([row[ti][:10], float(row[vi])])
+                val = float(row[vi])
             except ValueError:
-                pass
+                continue
+            if not math.isfinite(val):  # skip NaN / inf
+                continue
+            out.append([row[ti][:10], val])
     return sorted(out)
 
 def fetch_bis():
