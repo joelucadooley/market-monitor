@@ -6,56 +6,78 @@
 <title>Market Monitor</title>
 <style>
   :root{
-    --bg:#0A0E12; --panel:#10151B; --edge:#1E2630; --amber:#F2A93B;
-    --amber-dim:#9C7327; --text:#D7DCE2; --mute:#7D8895; --up:#46D483;
+    --bg:#07090C; --panel:#0D1116; --edge:#1B222B; --amber:#F2A93B;
+    --amber-dim:#9C7327; --text:#D7DCE2; --mute:#7D8895; --up:#3FD17E;
     --down:#F0625D; --flag:#5EA8FF;
     --mono:'SF Mono',ui-monospace,'Cascadia Mono',Menlo,Consolas,monospace;
     --sans:-apple-system,'Segoe UI',Roboto,sans-serif;
   }
   *{box-sizing:border-box;margin:0}
-  body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh}
+  body{background:var(--bg);color:var(--text);font-family:var(--mono);min-height:100vh;
+    font-variant-numeric:tabular-nums}
   a{color:var(--flag)}
   /* ticker */
-  .tape{overflow:hidden;border-bottom:1px solid var(--edge);background:#070A0D}
-  .tape-inner{display:inline-flex;white-space:nowrap;padding:6px 0;animation:tape 40s linear infinite}
-  .tape span{font-family:var(--mono);font-size:11px;margin-right:32px}
+  .tape{overflow:hidden;border-bottom:1px solid var(--edge);background:#040506}
+  .tape-inner{display:inline-flex;white-space:nowrap;padding:5px 0;animation:tape 55s linear infinite}
+  .tape span{font-family:var(--mono);font-size:11px;margin-right:28px}
   @keyframes tape{from{transform:translateX(0)}to{transform:translateX(-50%)}}
   @media (prefers-reduced-motion:reduce){.tape-inner{animation:none}}
   /* header / nav */
-  header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:14px 16px 10px}
-  .brand{font-family:var(--mono);font-size:16px;letter-spacing:.18em;color:var(--amber)}
-  .sub{font-family:var(--mono);font-size:10px;color:var(--mute);margin-top:2px}
-  .clock{font-family:var(--mono);font-size:12px;color:var(--mute)}
-  nav{display:flex;gap:8px;padding:0 16px 12px;flex-wrap:wrap}
-  nav button{font-family:var(--mono);font-size:11px;letter-spacing:.1em;cursor:pointer;
-    padding:8px 14px;border-radius:3px;background:transparent;color:var(--mute);
+  header{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;
+    gap:8px;padding:12px 16px 8px;border-bottom:1px solid var(--edge)}
+  .brand-row{display:flex;align-items:center;gap:8px}
+  .brand{font-family:var(--mono);font-size:15px;letter-spacing:.16em;color:var(--amber);font-weight:700}
+  .live{display:inline-flex;align-items:center;gap:5px;font-size:9px;letter-spacing:.12em;color:var(--up)}
+  .live i{width:6px;height:6px;border-radius:50%;background:var(--up);animation:pulse 1.6s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+  .sub{font-family:var(--mono);font-size:10px;color:var(--mute);margin-top:3px;letter-spacing:.03em}
+  .clocks{display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end}
+  .clocks div{text-align:right}
+  .clocks .tz{font-size:9px;color:var(--mute);letter-spacing:.1em}
+  .clocks .tm{font-family:var(--mono);font-size:13px;color:var(--text)}
+  nav{display:flex;gap:6px;padding:8px 16px;flex-wrap:wrap;border-bottom:1px solid var(--edge)}
+  nav button{font-family:var(--mono);font-size:11px;letter-spacing:.08em;cursor:pointer;
+    padding:7px 13px;border-radius:2px;background:transparent;color:var(--mute);
     border:1px solid var(--edge)}
+  nav button:hover{border-color:var(--amber-dim);color:var(--text)}
   nav button.on{background:var(--amber);color:#14100A;border-color:var(--amber);font-weight:700}
   nav button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
-  main{padding:0 16px 24px;max-width:980px;margin:0 auto;display:grid;gap:12px}
+  main{padding:0 16px 24px;max-width:1180px;margin:0 auto;display:grid;gap:10px}
   /* panels */
-  .panel{background:var(--panel);border:1px solid var(--edge);border-radius:4px;overflow:hidden}
+  .panel{background:var(--panel);border:1px solid var(--edge);border-radius:2px;overflow:hidden}
   .ptitle{display:flex;justify-content:space-between;align-items:baseline;
-    border-bottom:1px solid var(--edge);padding:10px 14px}
-  .ptitle b{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--amber);font-weight:400}
-  .ptitle small{font-family:var(--mono);font-size:10px;color:var(--mute)}
+    border-bottom:1px solid var(--edge);padding:8px 12px;background:#0A0D11}
+  .ptitle b{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--amber);font-weight:700}
+  .ptitle small{font-family:var(--mono);font-size:9px;color:var(--mute);letter-spacing:.04em}
   .scroll{overflow-x:auto}
   table{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px}
-  th{padding:6px 14px;font-weight:400;letter-spacing:.08em;font-size:10px;color:var(--mute);text-align:left}
-  td{padding:8px 14px;border-top:1px solid var(--edge);white-space:nowrap}
-  .big{color:var(--amber);font-size:14px}
+  th{padding:5px 12px;font-weight:400;letter-spacing:.07em;font-size:9px;color:var(--mute);text-align:left}
+  td{padding:6px 12px;border-top:1px solid var(--edge);white-space:nowrap}
+  tr:hover td{background:#0F141B}
+  .big{color:var(--amber);font-size:13px}
   .up{color:var(--up)} .down{color:var(--down)} .mute{color:var(--mute)}
   .grid{display:grid;gap:1px;background:var(--edge)}
-  .cell{background:var(--panel);padding:12px 14px}
-  .cell .k{font-family:var(--mono);font-size:10px;color:var(--mute)}
-  .cell .v{font-family:var(--mono);font-size:20px;color:var(--amber);margin:2px 0}
-  .note{padding:10px 14px;font-size:12px;color:var(--mute);border-top:1px solid var(--edge);line-height:1.55;white-space:normal}
+  .cell{background:var(--panel);padding:9px 12px}
+  .cell .k{font-family:var(--mono);font-size:9px;color:var(--mute);letter-spacing:.05em}
+  .cell .v{font-family:var(--mono);font-size:18px;color:var(--amber);margin:2px 0}
+  .note{padding:9px 12px;font-size:11px;color:var(--mute);border-top:1px solid var(--edge);
+    line-height:1.5;white-space:normal;font-family:var(--sans)}
   .stale{display:inline-block;font-family:var(--mono);font-size:9px;color:#C9904A;
     border:1px solid #5b4520;border-radius:2px;padding:0 4px;margin-left:6px;vertical-align:middle}
-  .bar{display:inline-block;height:8px;background:var(--edge);border-radius:2px;width:110px;vertical-align:middle}
-  .bar i{display:block;height:8px;border-radius:2px;background:var(--amber);opacity:.85}
+  .bar{display:inline-block;height:7px;background:var(--edge);border-radius:1px;width:100px;vertical-align:middle}
+  .bar i{display:block;height:7px;border-radius:1px;background:var(--amber);opacity:.85}
   .bar i.red{background:var(--down)}
-  footer{padding:0 16px 28px;font-family:var(--mono);font-size:10px;color:#4A535E;max-width:980px;margin:0 auto;line-height:1.6}
+  .gauge{padding:12px;display:grid;gap:1px;background:var(--edge);
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+  .gcell{background:var(--panel);padding:10px 12px}
+  .gcell .k{font-size:9px;color:var(--mute);letter-spacing:.06em}
+  .gcell .v{font-size:19px;margin:3px 0;font-weight:700}
+  .gcell .r{font-size:10px;letter-spacing:.08em;padding:1px 6px;border-radius:2px;display:inline-block}
+  .r-calm,.r-tight,.r-normal-g{background:#123321;color:var(--up)}
+  .r-elevated,.r-mid{background:#3a2c10;color:var(--amber)}
+  .r-stressed,.r-wide,.r-inverted{background:#3a1414;color:var(--down)}
+  footer{padding:8px 16px 24px;font-family:var(--mono);font-size:9px;color:#49515C;
+    max-width:1180px;margin:0 auto;line-height:1.6}
   .err{padding:14px;font-family:var(--mono);font-size:12px;color:var(--down)}
 </style>
 </head>
@@ -63,23 +85,28 @@
 <div class="tape"><div class="tape-inner" id="tape" aria-hidden="true"></div></div>
 <header>
   <div>
-    <div class="brand">MARKET MONITOR</div>
+    <div class="brand-row">
+      <div class="brand">MARKET MONITOR</div>
+      <div class="live"><i></i>LIVE</div>
+    </div>
     <div class="sub" id="updated">LOADING…</div>
   </div>
-  <div class="clock" id="clock"></div>
+  <div class="clocks" id="clocks"></div>
 </header>
 <nav id="nav">
-  <button data-v="rates" class="on">1 RATES</button>
-  <button data-v="credit">2 CREDIT</button>
-  <button data-v="mbs">3 MBS</button>
+  <button data-v="markets" class="on">1 MARKETS</button>
+  <button data-v="rates">2 RATES</button>
+  <button data-v="credit">3 CREDIT</button>
+  <button data-v="mbs">4 MBS</button>
   <button id="autoBtn" data-v="auto" title="Auto-rotate tabs every 10s">9 AUTO</button>
 </nav>
 <main id="main"><div class="panel"><div class="err">Loading data…</div></div></main>
 <footer>
   SOURCES: FRED (FED, ECB, US TREASURIES, ICE BOFA SPREAD INDICES, FREDDIE MAC MORTGAGE SURVEY) ·
-  BANK OF ENGLAND IADB (BANK RATE, SONIA) · BIS (GLOBAL POLICY RATES) · ISHARES (MBB DAILY HOLDINGS).
-  PERSONAL, NON-COMMERCIAL DASHBOARD. DATA REFRESHES ON THE GITHUB ACTIONS SCHEDULE — NOT TICK-BY-TICK.
-  NOTHING HERE IS INVESTMENT ADVICE.
+  BANK OF ENGLAND IADB (BANK RATE, SONIA) · BIS (GLOBAL POLICY RATES) · YAHOO FINANCE (INDICES, FX,
+  COMMODITIES, CRYPTO) · ISHARES (MBB DAILY HOLDINGS).
+  PERSONAL, NON-COMMERCIAL DASHBOARD. DATA REFRESHES EVERY ~15 MIN ON MARKET DAYS VIA GITHUB ACTIONS —
+  NOT TICK-BY-TICK. NOTHING HERE IS INVESTMENT ADVICE.
 </footer>
 
 <script>
@@ -87,16 +114,26 @@
 const $ = s => document.querySelector(s);
 const FLAG = {US:"US",GB:"GB",EU:"EU",JP:"JP",CH:"CH",CA:"CA",AU:"AU",SE:"SE",
   NO:"NO",BR:"BR",IN:"IN",KR:"KR",MX:"MX",NZ:"NZ",ZA:"ZA"};
-let DATA = {rates:null, credit:null, mbs:null};
-let VIEW = "rates";
+let DATA = {rates:null, credit:null, mbs:null, markets:null};
+let VIEW = "markets";
 
 /* ---------- helpers ---------- */
 const fmt = (v,d=2) => v==null ? "—" : Number(v).toFixed(d);
+const fmtN = (v,d=2) => v==null ? "—" : Number(v).toLocaleString("en-US",
+  {minimumFractionDigits:d, maximumFractionDigits:d});
 function chg(hist, lookback=1){
   if(!hist) return null;
   const v = hist.filter(p=>p[1]!=null);  // drop missing days
   if(v.length < lookback+1) return null;
   return v[v.length-1][1] - v[v.length-1-lookback][1];
+}
+function chgPct(hist, lookback=1){
+  if(!hist) return null;
+  const v = hist.filter(p=>p[1]!=null);
+  if(v.length < lookback+1) return null;
+  const prev = v[v.length-1-lookback][1], last = v[v.length-1][1];
+  if(!prev) return null;
+  return (last-prev)/prev*100;
 }
 function delta(v, {bp=false, flip=false}={}){
   if(v==null || Math.abs(v) < 1e-9) return `<span class="mute">—</span>`;
@@ -104,6 +141,12 @@ function delta(v, {bp=false, flip=false}={}){
   const arrow = v>0 ? "▲" : "▼";
   const num = bp ? Math.abs(v).toFixed(0)+"bp" : Math.abs(v).toFixed(2);
   return `<span class="${good?'up':'down'}">${arrow} ${num}</span>`;
+}
+function deltaPct(pct){
+  if(pct==null || Math.abs(pct) < 1e-9) return `<span class="mute">—</span>`;
+  const good = pct>0;
+  const arrow = pct>0 ? "▲" : "▼";
+  return `<span class="${good?'up':'down'}">${arrow} ${Math.abs(pct).toFixed(2)}%</span>`;
 }
 function spark(hist, {w=84,h=24,flip=false}={}){
   if(!hist) return "";
@@ -122,6 +165,76 @@ function panel(title, right, body){
 }
 
 /* ---------- views ---------- */
+const IDX_ORDER = ["SPX","DJI","NDX","FTSE","DAX","N225","VIX"];
+const FX_ORDER = ["EURUSD","GBPUSD","USDJPY","DXY"];
+const CMD_ORDER = ["GOLD","SILVER","WTI","BRENT","COPPER"];
+const CRY_ORDER = ["BTC","ETH"];
+
+function marketCell(s){
+  if(!s) return "";
+  return `<div class="cell">
+    <div class="k">${s.label}${staleBadge(s)}</div>
+    <div class="v">${fmtN(s.value, s.decimals)}</div>
+    <div style="display:flex;justify-content:space-between;align-items:center;font-size:11px">
+      ${deltaPct(chgPct(s.history,1))}
+      ${spark(s.history,{w:56,h:20})}
+    </div>
+  </div>`;
+}
+function marketGroup(order, grp){
+  return order.map(k=>marketCell(grp?.[k])).filter(Boolean).join("");
+}
+function riskGauge(){
+  const R = DATA.rates, C = DATA.credit, M = DATA.markets;
+  const vix = M?.indices?.VIX;
+  const t2 = R?.us?.t2y, t10 = R?.us?.t10y;
+  const hy = C?.spreads?.hy;
+  const dxy = M?.fx?.DXY;
+  const cells = [];
+  if(vix?.value!=null){
+    const v = vix.value;
+    const [cls,label] = v<15?["r-calm","CALM"]:v<20?["r-normal-g","NORMAL"]:v<28?["r-elevated","ELEVATED"]:["r-stressed","STRESSED"];
+    cells.push(`<div class="gcell"><div class="k">VOLATILITY — VIX</div>
+      <div class="v">${fmtN(v,2)}</div>
+      <div><span class="r ${cls}">${label}</span> ${deltaPct(chgPct(vix.history,1))}</div></div>`);
+  }
+  if(t2?.value!=null && t10?.value!=null){
+    const spread = (t10.value - t2.value)*100;
+    const inv = spread < 0;
+    cells.push(`<div class="gcell"><div class="k">US 2s10s CURVE</div>
+      <div class="v">${spread>=0?"+":""}${spread.toFixed(0)}bp</div>
+      <div><span class="r ${inv?'r-inverted':'r-calm'}">${inv?"INVERTED":"NORMAL"}</span></div></div>`);
+  }
+  if(hy?.value!=null){
+    const v = hy.value;
+    const [cls,label] = v<400?["r-tight","TIGHT"]:v<600?["r-mid","NORMAL"]:["r-wide","WIDE"];
+    cells.push(`<div class="gcell"><div class="k">US HIGH YIELD OAS</div>
+      <div class="v">${fmtN(v,0)}bp</div>
+      <div><span class="r ${cls}">${label}</span> ${delta(chg(hy.history,1),{bp:true,flip:true})}</div></div>`);
+  }
+  if(dxy?.value!=null){
+    cells.push(`<div class="gcell"><div class="k">US DOLLAR INDEX</div>
+      <div class="v">${fmtN(dxy.value,2)}</div>
+      <div>${deltaPct(chgPct(dxy.history,1))} <span class="mute">1d</span></div></div>`);
+  }
+  if(!cells.length) return "";
+  return `<section class="panel"><div class="ptitle"><b>MARKET STATE</b><small>at a glance</small></div>
+    <div class="gauge">${cells.join("")}</div></section>`;
+}
+function marketsView(){
+  const M = DATA.markets;
+  if(!M) return panel("MARKETS","",`<div class="err">markets.json missing — run the workflow once.</div>`);
+  return riskGauge()
+    + panel("EQUITY INDICES & VOLATILITY","last close · % chg · path",
+        `<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr))">${marketGroup(IDX_ORDER,M.indices)}</div>`)
+    + panel("CURRENCIES","spot fx",
+        `<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr))">${marketGroup(FX_ORDER,M.fx)}</div>`)
+    + panel("COMMODITIES","front-month futures / spot",
+        `<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr))">${marketGroup(CMD_ORDER,M.commodities)}</div>`)
+    + panel("CRYPTO","spot",
+        `<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr))">${marketGroup(CRY_ORDER,M.crypto)}</div>`);
+}
+
 function ratesView(){
   const R = DATA.rates;
   if(!R) return panel("GLOBAL POLICY RATES","",`<div class="err">rates.json missing — run the workflow once.</div>`);
@@ -225,12 +338,19 @@ function tape(){
     const d=chg(s.history,1);
     items.push([k, fmt(s.value, s.units==="bp"?0:2)+(s.units==="bp"?"bp":"%"),
       d==null?0:(flip? -Math.sign(d):Math.sign(d))]); }};
-  const R=DATA.rates||{}, C=DATA.credit||{}, M=DATA.mbs||{};
+  const pushMk=(k,s)=>{ if(s&&s.value!=null){
+    const p=chgPct(s.history,1);
+    items.push([k, fmtN(s.value,s.decimals), p==null?0:Math.sign(p)]); }};
+  const R=DATA.rates||{}, C=DATA.credit||{}, Mb=DATA.mbs||{}, Mk=DATA.markets||{};
+  pushMk("S&P 500", Mk.indices?.SPX); pushMk("NASDAQ", Mk.indices?.NDX);
+  pushMk("VIX", Mk.indices?.VIX); pushMk("EUR/USD", Mk.fx?.EURUSD);
+  pushMk("GBP/USD", Mk.fx?.GBPUSD); pushMk("GOLD", Mk.commodities?.GOLD);
+  pushMk("WTI", Mk.commodities?.WTI); pushMk("BTC", Mk.crypto?.BTC);
   push("FED FUNDS", R.banks?.US, true); push("BOE BANK RATE", R.banks?.GB, true);
   push("ECB DEPO", R.banks?.EU, true); push("SONIA", R.uk?.sonia, true);
   push("SOFR", R.us?.sofr, true); push("US 10Y", R.us?.t10y, true);
   push("US HY OAS", C.spreads?.hy, true); push("CCC OAS", C.spreads?.ccc, true);
-  push("30Y MORTGAGE", M.mortgage30, true);
+  push("30Y MORTGAGE", Mb.mortgage30, true);
   if(!items.length) return;
   const html = items.map(([k,v,dir])=>`<span><span class="mute">${k} </span>
     <span style="color:var(--amber)">${v} </span>
@@ -238,9 +358,10 @@ function tape(){
   $("#tape").innerHTML = html + html; // doubled for seamless loop
 }
 function render(){
-  $("#main").innerHTML = VIEW==="rates"?ratesView():VIEW==="credit"?creditView():mbsView();
+  $("#main").innerHTML = VIEW==="markets"?marketsView():VIEW==="rates"?ratesView()
+    :VIEW==="credit"?creditView():mbsView();
 }
-const VIEWS = ["rates","credit","mbs"];
+const VIEWS = ["markets","rates","credit","mbs"];
 function setView(v){
   VIEW = v;
   document.querySelectorAll("#nav button[data-v]").forEach(x=>{
@@ -268,7 +389,7 @@ $("#nav").addEventListener("click", e=>{
 document.addEventListener("keydown", e=>{
   if(e.target.closest("input,textarea,select")) return;
   const i = VIEWS.indexOf(VIEW);
-  if(e.key==="1"||e.key==="2"||e.key==="3"){
+  if(e.key==="1"||e.key==="2"||e.key==="3"||e.key==="4"){
     setView(VIEWS[Number(e.key)-1]);
   } else if(e.key==="9"){
     setAuto(!AUTO);
@@ -278,19 +399,38 @@ document.addEventListener("keydown", e=>{
     setView(VIEWS[(i+1)%VIEWS.length]);
   }
 });
-setInterval(()=>{ $("#clock").textContent = new Date().toLocaleTimeString("en-GB"); }, 1000);
+const ZONES = [["UTC","UTC"],["NY","America/New_York"],["LON","Europe/London"],["TOK","Asia/Tokyo"]];
+function updateClocks(){
+  const now = new Date();
+  $("#clocks").innerHTML = ZONES.map(([label,tz])=>
+    `<div><div class="tz">${label}</div><div class="tm">${now.toLocaleTimeString("en-GB",
+      {timeZone:tz,hour:"2-digit",minute:"2-digit",second:"2-digit"})}</div></div>`).join("");
+}
+let updatedBase = "", lastUpdated = null;
+function updateFreshness(){
+  if(!lastUpdated){ $("#updated").textContent = updatedBase; return; }
+  const secs = Math.floor((Date.now()-lastUpdated.getTime())/1000);
+  const ago = secs<5 ? "just now" : secs<60 ? `${secs}s ago`
+    : secs<3600 ? `${Math.floor(secs/60)}m ago` : `${Math.floor(secs/3600)}h ago`;
+  $("#updated").textContent = `${updatedBase} · ${ago}`;
+}
+setInterval(()=>{ updateClocks(); updateFreshness(); }, 1000);
+updateClocks();
 
 async function load(){
   const bust = "?t=" + Date.now();
   const get = async f => { try{ const r = await fetch("data/"+f+bust); return r.ok ? r.json() : null; }catch(e){ return null; } };
-  [DATA.rates, DATA.credit, DATA.mbs] = await Promise.all([get("rates.json"), get("credit.json"), get("mbs.json")]);
-  const upd = DATA.rates?.updated || DATA.credit?.updated;
-  $("#updated").textContent = upd ? "DATA AS OF " + upd.replace("T"," ").replace("Z"," UTC")
-                                  : "NO DATA YET — RUN THE GITHUB ACTION";
+  [DATA.rates, DATA.credit, DATA.mbs, DATA.markets] = await Promise.all(
+    [get("rates.json"), get("credit.json"), get("mbs.json"), get("markets.json")]);
+  const upd = DATA.markets?.updated || DATA.rates?.updated || DATA.credit?.updated;
+  updatedBase = upd ? "DATA AS OF " + upd.replace("T"," ").replace("Z"," UTC")
+                    : "NO DATA YET — RUN THE GITHUB ACTION";
+  lastUpdated = upd ? new Date(upd) : null;
+  updateFreshness();
   tape(); render();
 }
 load();
-setInterval(load, 15*60*1000); // re-check files every 15 min while page is open
+setInterval(load, 60*1000); // re-check files every 60s — matches the ~15min Actions cadence with headroom
 </script>
 </body>
 </html>

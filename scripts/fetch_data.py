@@ -252,6 +252,71 @@ def fetch_bis():
     return out
 
 # ──────────────────────────────────────────────────────────────────────
+# Yahoo Finance chart API — equity indices, FX, commodities, crypto
+# ──────────────────────────────────────────────────────────────────────
+YF_UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+
+MARKET_SYMBOLS = {
+    # key: (yahoo symbol, label, group, decimals)
+    "SPX":    ("^GSPC",     "S&P 500",            "indices", 0),
+    "DJI":    ("^DJI",      "Dow Jones Ind. Avg.", "indices", 0),
+    "NDX":    ("^IXIC",     "Nasdaq Composite",    "indices", 0),
+    "FTSE":   ("^FTSE",     "FTSE 100",            "indices", 0),
+    "DAX":    ("^GDAXI",    "DAX",                 "indices", 0),
+    "N225":   ("^N225",     "Nikkei 225",          "indices", 0),
+    "VIX":    ("^VIX",      "CBOE Volatility (VIX)", "indices", 2),
+    "EURUSD": ("EURUSD=X",  "EUR/USD",             "fx", 4),
+    "GBPUSD": ("GBPUSD=X",  "GBP/USD",             "fx", 4),
+    "USDJPY": ("USDJPY=X",  "USD/JPY",             "fx", 2),
+    "DXY":    ("DX-Y.NYB",  "US Dollar Index",     "fx", 2),
+    "GOLD":   ("GC=F",      "Gold (front-month)",  "commodities", 2),
+    "SILVER": ("SI=F",      "Silver (front-month)", "commodities", 3),
+    "WTI":    ("CL=F",      "WTI Crude",           "commodities", 2),
+    "BRENT":  ("BZ=F",      "Brent Crude",         "commodities", 2),
+    "COPPER": ("HG=F",      "Copper (front-month)", "commodities", 3),
+    "BTC":    ("BTC-USD",   "Bitcoin",             "crypto", 0),
+    "ETH":    ("ETH-USD",   "Ethereum",            "crypto", 2),
+}
+
+def yahoo_series(symbol, rng="1y"):
+    """Return list of [date, close] (oldest→newest) from Yahoo's chart API."""
+    url = (f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(symbol)}"
+           f"?range={rng}&interval=1d")
+    data = json.loads(http_get(url, headers=YF_UA))
+    result = (data.get("chart") or {}).get("result") or []
+    if not result:
+        raise RuntimeError("empty chart result")
+    res = result[0]
+    ts = res.get("timestamp") or []
+    closes = (res.get("indicators") or {}).get("quote", [{}])[0].get("close") or []
+    out = []
+    for t, c in zip(ts, closes):
+        if c is None:
+            continue
+        d = datetime.fromtimestamp(t, tz=timezone.utc).strftime("%Y-%m-%d")
+        out.append([d, float(c)])
+    return out
+
+def fetch_markets_block():
+    out = {}
+    for key, (symbol, label, group, decimals) in MARKET_SYMBOLS.items():
+        try:
+            hist = yahoo_series(symbol)
+            if not hist:
+                raise RuntimeError("empty series")
+            hist = [[d, round(v, decimals)] for d, v in hist]
+            out[key] = {
+                "label": label, "group": group, "decimals": decimals,
+                "value": hist[-1][1], "asOf": hist[-1][0],
+                "history": hist[-130:], "status": "live",
+            }
+            log(f"YF {key}: {hist[-1][1]} as of {hist[-1][0]}")
+        except Exception as e:
+            log(f"YF {key} FAILED: {e}")
+            out[key] = None
+    return out
+
+# ──────────────────────────────────────────────────────────────────────
 # iShares MBB holdings → coupon stack
 # ──────────────────────────────────────────────────────────────────────
 MBB_URL = ("https://www.ishares.com/us/products/239465/ishares-mbs-etf/"
@@ -391,6 +456,7 @@ def main():
     prev_rates = load_previous("rates.json") or {}
     prev_credit = load_previous("credit.json") or {}
     prev_mbs = load_previous("mbs.json") or {}
+    prev_markets = load_previous("markets.json") or {}
 
     fred = fetch_fred_block() if FRED_KEY else {}
     if not FRED_KEY:
@@ -460,11 +526,22 @@ def main():
     }
     save("mbs.json", mbs)
 
+    yf = fetch_markets_block()
+    prev_flat = {}
+    for grp in ("indices", "fx", "commodities", "crypto"):
+        for k, v in (prev_markets.get(grp) or {}).items():
+            prev_flat[k] = v
+    markets = {"updated": updated, "indices": {}, "fx": {}, "commodities": {}, "crypto": {}}
+    for key, (_, _, group, _) in MARKET_SYMBOLS.items():
+        markets[group][key] = keep_or(yf.get(key), prev_flat.get(key))
+    save("markets.json", markets)
+
     save("meta.json", {"updated": updated, "generator": "fetch_data.py"})
 
     # Fail the workflow loudly only if literally everything failed.
     have_any = any(v for v in banks.values()) or any(
-        v for v in credit["spreads"].values()) or mbs["fund"]
+        v for v in credit["spreads"].values()) or mbs["fund"] or any(
+        v for grp in markets.values() if isinstance(grp, dict) for v in grp.values())
     if not have_any:
         log("FATAL: every source failed")
         sys.exit(1)
