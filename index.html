@@ -69,9 +69,9 @@
   <div class="clock" id="clock"></div>
 </header>
 <nav id="nav">
-  <button data-v="rates" class="on">F1 RATES</button>
-  <button data-v="credit">F2 CREDIT</button>
-  <button data-v="mbs">F3 MBS</button>
+  <button data-v="rates" class="on">1 RATES</button>
+  <button data-v="credit">2 CREDIT</button>
+  <button data-v="mbs">3 MBS</button>
 </nav>
 <main id="main"><div class="panel"><div class="err">Loading data…</div></div></main>
 <footer>
@@ -239,11 +239,26 @@ function tape(){
 function render(){
   $("#main").innerHTML = VIEW==="rates"?ratesView():VIEW==="credit"?creditView():mbsView();
 }
+const VIEWS = ["rates","credit","mbs"];
+function setView(v){
+  VIEW = v;
+  document.querySelectorAll("#nav button").forEach(x=>x.classList.toggle("on", x.dataset.v===v));
+  render();
+}
 $("#nav").addEventListener("click", e=>{
   const b = e.target.closest("button"); if(!b) return;
-  VIEW = b.dataset.v;
-  document.querySelectorAll("#nav button").forEach(x=>x.classList.toggle("on", x===b));
-  render();
+  setView(b.dataset.v);
+});
+document.addEventListener("keydown", e=>{
+  if(e.target.closest("input,textarea,select")) return;
+  const i = VIEWS.indexOf(VIEW);
+  if(e.key==="1"||e.key==="2"||e.key==="3"){
+    setView(VIEWS[Number(e.key)-1]);
+  } else if(e.key==="ArrowLeft"){
+    setView(VIEWS[(i-1+VIEWS.length)%VIEWS.length]);
+  } else if(e.key==="ArrowRight"){
+    setView(VIEWS[(i+1)%VIEWS.length]);
+  }
 });
 setInterval(()=>{ $("#clock").textContent = new Date().toLocaleTimeString("en-GB"); }, 1000);
 
