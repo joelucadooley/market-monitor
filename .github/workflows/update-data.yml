@@ -2,9 +2,11 @@ name: Update market data
 
 on:
   schedule:
+    # Weekdays at 06:25 and 13:25 UTC. GitHub cron is UTC and may run a few
+    # minutes late. Edit these two lines to change the refresh timing.
     - cron: "25 6 * * 1-5"
     - cron: "25 13 * * 1-5"
-  workflow_dispatch: {}
+  workflow_dispatch: {}   # lets you run it manually from the Actions tab
 
 permissions:
   contents: write
