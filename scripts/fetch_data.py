@@ -276,6 +276,35 @@ MARKET_SYMBOLS = {
     "COPPER": ("HG=F",      "Copper (front-month)", "commodities", 3),
     "BTC":    ("BTC-USD",   "Bitcoin",             "crypto", 0),
     "ETH":    ("ETH-USD",   "Ethereum",            "crypto", 2),
+    # cross-sector single-name watchlist
+    "AAPL":   ("AAPL",  "Apple",           "watchlist", 2),
+    "MSFT":   ("MSFT",  "Microsoft",       "watchlist", 2),
+    "NVDA":   ("NVDA",  "Nvidia",          "watchlist", 2),
+    "GOOGL":  ("GOOGL", "Alphabet",        "watchlist", 2),
+    "AMZN":   ("AMZN",  "Amazon",          "watchlist", 2),
+    "META":   ("META",  "Meta Platforms",  "watchlist", 2),
+    "TSLA":   ("TSLA",  "Tesla",           "watchlist", 2),
+    "JPM":    ("JPM",   "JPMorgan Chase",  "watchlist", 2),
+    "XOM":    ("XOM",   "Exxon Mobil",     "watchlist", 2),
+    "UNH":    ("UNH",   "UnitedHealth",    "watchlist", 2),
+    "JNJ":    ("JNJ",   "Johnson & Johnson", "watchlist", 2),
+    "PG":     ("PG",    "Procter & Gamble", "watchlist", 2),
+    "HD":     ("HD",    "Home Depot",      "watchlist", 2),
+    "V":      ("V",     "Visa",            "watchlist", 2),
+    "WMT":    ("WMT",   "Walmart",         "watchlist", 2),
+    "DIS":    ("DIS",   "Walt Disney",     "watchlist", 2),
+    # S&P sector SPDRs
+    "XLK": ("XLK", "Technology",             "sectors", 2),
+    "XLF": ("XLF", "Financials",             "sectors", 2),
+    "XLE": ("XLE", "Energy",                 "sectors", 2),
+    "XLV": ("XLV", "Health Care",            "sectors", 2),
+    "XLY": ("XLY", "Consumer Discretionary", "sectors", 2),
+    "XLP": ("XLP", "Consumer Staples",       "sectors", 2),
+    "XLI": ("XLI", "Industrials",            "sectors", 2),
+    "XLB": ("XLB", "Materials",              "sectors", 2),
+    "XLU": ("XLU", "Utilities",              "sectors", 2),
+    "XLRE": ("XLRE", "Real Estate",          "sectors", 2),
+    "XLC": ("XLC", "Communication Services", "sectors", 2),
 }
 
 def yahoo_series(symbol, rng="1y"):
@@ -315,6 +344,112 @@ def fetch_markets_block():
             log(f"YF {key} FAILED: {e}")
             out[key] = None
     return out
+
+def pct_chg(entry):
+    """1-day % change from an instrument's history, or None."""
+    if not entry or not entry.get("history"):
+        return None
+    hist = [p for p in entry["history"] if p[1] is not None]
+    if len(hist) < 2:
+        return None
+    prev, last = hist[-2][1], hist[-1][1]
+    if not prev:
+        return None
+    return (last - prev) / prev * 100
+
+def build_pulse(markets, rates):
+    """Deterministic, data-driven narrative — no LLM, just real numbers."""
+    movers = []
+    for grp in ("indices", "watchlist", "sectors", "commodities", "crypto", "fx"):
+        for key, entry in (markets.get(grp) or {}).items():
+            if not entry:
+                continue
+            p = pct_chg(entry)
+            if p is not None:
+                movers.append((abs(p), p, key, entry.get("label", key), grp))
+    bullets = []
+
+    spx = pct_chg((markets.get("indices") or {}).get("SPX"))
+    vix = (markets.get("indices") or {}).get("VIX")
+    vix_val = vix.get("value") if vix else None
+    if spx is not None:
+        tone = "advancing" if spx > 0.15 else "retreating" if spx < -0.15 else "roughly flat"
+        headline = f"US equities {tone}, S&P 500 {spx:+.2f}%"
+        if vix_val is not None:
+            regime = ("calm" if vix_val < 15 else "normal" if vix_val < 20
+                      else "elevated" if vix_val < 28 else "stressed")
+            headline += f" · VIX {vix_val:.1f} ({regime})"
+        bullets.append(headline + ".")
+    else:
+        headline = "Waiting on the first successful equities pull."
+
+    sectors = [(pct_chg(e), e.get("label", k)) for k, e in (markets.get("sectors") or {}).items() if e]
+    sectors = [(p, l) for p, l in sectors if p is not None]
+    if sectors:
+        sectors.sort()
+        worst, best = sectors[0], sectors[-1]
+        bullets.append(f"Sector leader: {best[1]} {best[0]:+.2f}% · Laggard: {worst[1]} {worst[0]:+.2f}%.")
+
+    non_vol_movers = [m for m in movers if m[2] != "VIX"]
+    if non_vol_movers:
+        non_vol_movers.sort(reverse=True)
+        _, p, key, label, grp = non_vol_movers[0]
+        name = label if f"({key})" in label else f"{label} ({key})"
+        bullets.append(f"Biggest mover: {name} {p:+.2f}% on the day.")
+
+    t2 = ((rates.get("us") or {}).get("t2y") or {}).get("value")
+    t10 = ((rates.get("us") or {}).get("t10y") or {}).get("value")
+    if t2 is not None and t10 is not None:
+        spread = (t10 - t2) * 100
+        state = "inverted — classic late-cycle recession signal" if spread < 0 else "positively sloped"
+        bullets.append(f"US 2s10s curve is {state} at {spread:+.0f}bp.")
+
+    return {"headline": headline, "bullets": bullets}
+
+# ──────────────────────────────────────────────────────────────────────
+# News headlines — CNBC markets RSS, Yahoo Finance RSS fallback
+# ──────────────────────────────────────────────────────────────────────
+import html as _html_mod
+
+def parse_rss(xml_text, source, limit=12):
+    items = re.findall(r"<item>(.*?)</item>", xml_text, re.S)
+    out = []
+    for it in items[:limit]:
+        t = re.search(r"<title>(?:<!\[CDATA\[(.*?)\]\]>|(.*?))</title>", it, re.S)
+        l = re.search(r"<link>(?:<!\[CDATA\[(.*?)\]\]>|(.*?))</link>", it, re.S)
+        p = re.search(r"<pubDate>(.*?)</pubDate>", it, re.S)
+        if not t:
+            continue
+        title = _html_mod.unescape((t.group(1) or t.group(2) or "").strip())
+        link = _html_mod.unescape((l.group(1) or l.group(2) or "").strip()) if l else ""
+        pub_date = (p.group(1).strip() if p else "")
+        iso = None
+        for fmt in ("%a, %d %b %Y %H:%M:%S %Z", "%a, %d %b %Y %H:%M:%S %z"):
+            try:
+                iso = datetime.strptime(pub_date, fmt).astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+                break
+            except ValueError:
+                continue
+        if title:
+            out.append({"title": title, "link": link, "published": iso, "source": source})
+    return out
+
+NEWS_FEEDS = [
+    ("https://www.cnbc.com/id/100003114/device/rss/rss.html", "CNBC Markets"),
+    ("https://finance.yahoo.com/news/rssindex", "Yahoo Finance"),
+]
+
+def fetch_headlines():
+    for url, source in NEWS_FEEDS:
+        try:
+            text = http_get(url, headers=YF_UA)
+            items = parse_rss(text, source)
+            if items:
+                log(f"headlines: {len(items)} from {source}")
+                return items
+        except Exception as e:
+            log(f"headlines {source} FAILED: {e}")
+    return []
 
 # ──────────────────────────────────────────────────────────────────────
 # iShares MBB holdings → coupon stack
@@ -527,14 +662,28 @@ def main():
     save("mbs.json", mbs)
 
     yf = fetch_markets_block()
+    MARKET_GROUPS = ("indices", "fx", "commodities", "crypto", "watchlist", "sectors")
     prev_flat = {}
-    for grp in ("indices", "fx", "commodities", "crypto"):
+    for grp in MARKET_GROUPS:
         for k, v in (prev_markets.get(grp) or {}).items():
             prev_flat[k] = v
-    markets = {"updated": updated, "indices": {}, "fx": {}, "commodities": {}, "crypto": {}}
+    markets = {"updated": updated, **{g: {} for g in MARKET_GROUPS}}
     for key, (_, _, group, _) in MARKET_SYMBOLS.items():
         markets[group][key] = keep_or(yf.get(key), prev_flat.get(key))
+    markets["pulse"] = build_pulse(markets, rates)
     save("markets.json", markets)
+
+    try:
+        headlines = fetch_headlines()
+    except Exception as e:
+        log(f"headlines FAILED: {e}")
+        headlines = []
+    prev_headlines = load_previous("headlines.json") or {}
+    save("headlines.json", {
+        "updated": updated,
+        "items": headlines or prev_headlines.get("items", []),
+        "status": "live" if headlines else ("stale" if prev_headlines.get("items") else "empty"),
+    })
 
     save("meta.json", {"updated": updated, "generator": "fetch_data.py"})
 
