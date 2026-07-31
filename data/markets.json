@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-31T10:19:07Z",
+ "updated": "2026-07-31T12:29:19Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -1595,7 +1595,7 @@
    "label": "FTSE 100",
    "group": "indices",
    "decimals": 0,
-   "value": 10943.0,
+   "value": 10918.0,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -2116,7 +2116,7 @@
     ],
     [
      "2026-07-31",
-     10943.0
+     10918.0
     ]
    ],
    "status": "live"
@@ -2125,7 +2125,7 @@
    "label": "DAX",
    "group": "indices",
    "decimals": 0,
-   "value": 25789.0,
+   "value": 25681.0,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -2646,7 +2646,7 @@
     ],
     [
      "2026-07-31",
-     25789.0
+     25681.0
     ]
    ],
    "status": "live"
@@ -3185,7 +3185,7 @@
    "label": "CBOE Volatility (VIX)",
    "group": "indices",
    "decimals": 2,
-   "value": 16.84,
+   "value": 17.09,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -3706,7 +3706,7 @@
     ],
     [
      "2026-07-31",
-     16.84
+     17.09
     ]
    ],
    "status": "live"
@@ -3717,7 +3717,7 @@
    "label": "EUR/USD",
    "group": "fx",
    "decimals": 4,
-   "value": 1.1507,
+   "value": 1.1488,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -4238,7 +4238,7 @@
     ],
     [
      "2026-07-31",
-     1.1507
+     1.1488
     ]
    ],
    "status": "live"
@@ -4247,7 +4247,7 @@
    "label": "GBP/USD",
    "group": "fx",
    "decimals": 4,
-   "value": 1.3444,
+   "value": 1.3419,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -4768,7 +4768,7 @@
     ],
     [
      "2026-07-31",
-     1.3444
+     1.3419
     ]
    ],
    "status": "live"
@@ -4777,7 +4777,7 @@
    "label": "USD/JPY",
    "group": "fx",
    "decimals": 2,
-   "value": 160.08,
+   "value": 160.35,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -5298,7 +5298,7 @@
     ],
     [
      "2026-07-31",
-     160.08
+     160.35
     ]
    ],
    "status": "live"
@@ -5307,7 +5307,7 @@
    "label": "US Dollar Index",
    "group": "fx",
    "decimals": 2,
-   "value": 100.16,
+   "value": 100.36,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -5828,7 +5828,7 @@
     ],
     [
      "2026-07-31",
-     100.16
+     100.36
     ]
    ],
    "status": "live"
@@ -5839,7 +5839,7 @@
    "label": "Gold (front-month)",
    "group": "commodities",
    "decimals": 2,
-   "value": 4113.9,
+   "value": 4114.0,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -6360,7 +6360,7 @@
     ],
     [
      "2026-07-31",
-     4113.9
+     4114.0
     ]
    ],
    "status": "live"
@@ -6369,7 +6369,7 @@
    "label": "Silver (front-month)",
    "group": "commodities",
    "decimals": 3,
-   "value": 58.24,
+   "value": 58.025,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -6890,7 +6890,7 @@
     ],
     [
      "2026-07-31",
-     58.24
+     58.025
     ]
    ],
    "status": "live"
@@ -6899,7 +6899,7 @@
    "label": "WTI Crude",
    "group": "commodities",
    "decimals": 2,
-   "value": 83.92,
+   "value": 85.22,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -7420,7 +7420,7 @@
     ],
     [
      "2026-07-31",
-     83.92
+     85.22
     ]
    ],
    "status": "live"
@@ -7429,7 +7429,7 @@
    "label": "Brent Crude",
    "group": "commodities",
    "decimals": 2,
-   "value": 89.5,
+   "value": 90.36,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -7950,7 +7950,7 @@
     ],
     [
      "2026-07-31",
-     89.5
+     90.36
     ]
    ],
    "status": "live"
@@ -7959,7 +7959,7 @@
    "label": "Copper (front-month)",
    "group": "commodities",
    "decimals": 3,
-   "value": 6.493,
+   "value": 6.487,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -8480,7 +8480,7 @@
     ],
     [
      "2026-07-31",
-     6.493
+     6.487
     ]
    ],
    "status": "live"
@@ -8491,7 +8491,7 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 63667.0,
+   "value": 63705.0,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -9012,7 +9012,7 @@
     ],
     [
      "2026-07-31",
-     63667.0
+     63705.0
     ]
    ],
    "status": "live"
@@ -9021,7 +9021,7 @@
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 1882.38,
+   "value": 1877.57,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -9542,7 +9542,7 @@
     ],
     [
      "2026-07-31",
-     1882.38
+     1877.57
     ]
    ],
    "status": "live"
@@ -23863,9 +23863,9 @@
   }
  },
  "pulse": {
-  "headline": "US equities advancing, S&P 500 +1.67% \u00b7 VIX 16.8 (normal)",
+  "headline": "US equities advancing, S&P 500 +1.67% \u00b7 VIX 17.1 (normal)",
   "bullets": [
-   "US equities advancing, S&P 500 +1.67% \u00b7 VIX 16.8 (normal).",
+   "US equities advancing, S&P 500 +1.67% \u00b7 VIX 17.1 (normal).",
    "Sector leader: Technology +5.50% \u00b7 Laggard: Communication Services -2.68%.",
    "Biggest mover: Microsoft (MSFT) +15.51% on the day.",
    "US 2s10s curve is positively sloped at +45bp."
