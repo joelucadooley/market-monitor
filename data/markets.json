@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-31T04:44:08Z",
+ "updated": "2026-07-31T07:39:28Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -1595,13 +1595,9 @@
    "label": "FTSE 100",
    "group": "indices",
    "decimals": 0,
-   "value": 10897.0,
-   "asOf": "2026-07-30",
+   "value": 10967.0,
+   "asOf": "2026-07-31",
    "history": [
-    [
-     "2026-01-26",
-     10149.0
-    ],
     [
      "2026-01-27",
      10208.0
@@ -2117,6 +2113,10 @@
     [
      "2026-07-30",
      10897.0
+    ],
+    [
+     "2026-07-31",
+     10967.0
     ]
    ],
    "status": "live"
@@ -2125,13 +2125,9 @@
    "label": "DAX",
    "group": "indices",
    "decimals": 0,
-   "value": 25612.0,
-   "asOf": "2026-07-30",
+   "value": 25837.0,
+   "asOf": "2026-07-31",
    "history": [
-    [
-     "2026-01-27",
-     24894.0
-    ],
     [
      "2026-01-28",
      24823.0
@@ -2647,6 +2643,10 @@
     [
      "2026-07-30",
      25612.0
+    ],
+    [
+     "2026-07-31",
+     25837.0
     ]
    ],
    "status": "live"
@@ -2655,7 +2655,7 @@
    "label": "Nikkei 225",
    "group": "indices",
    "decimals": 0,
-   "value": 64131.0,
+   "value": 64362.0,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -3176,7 +3176,7 @@
     ],
     [
      "2026-07-31",
-     64131.0
+     64362.0
     ]
    ],
    "status": "live"
@@ -3185,13 +3185,9 @@
    "label": "CBOE Volatility (VIX)",
    "group": "indices",
    "decimals": 2,
-   "value": 17.09,
-   "asOf": "2026-07-30",
+   "value": 16.88,
+   "asOf": "2026-07-31",
    "history": [
-    [
-     "2026-01-26",
-     16.15
-    ],
     [
      "2026-01-27",
      16.35
@@ -3707,6 +3703,10 @@
     [
      "2026-07-30",
      17.09
+    ],
+    [
+     "2026-07-31",
+     16.88
     ]
    ],
    "status": "live"
@@ -3717,7 +3717,7 @@
    "label": "EUR/USD",
    "group": "fx",
    "decimals": 4,
-   "value": 1.151,
+   "value": 1.1518,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -4238,7 +4238,7 @@
     ],
     [
      "2026-07-31",
-     1.151
+     1.1518
     ]
    ],
    "status": "live"
@@ -4247,7 +4247,7 @@
    "label": "GBP/USD",
    "group": "fx",
    "decimals": 4,
-   "value": 1.3445,
+   "value": 1.345,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -4768,7 +4768,7 @@
     ],
     [
      "2026-07-31",
-     1.3445
+     1.345
     ]
    ],
    "status": "live"
@@ -4777,7 +4777,7 @@
    "label": "USD/JPY",
    "group": "fx",
    "decimals": 2,
-   "value": 160.7,
+   "value": 160.56,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -5298,7 +5298,7 @@
     ],
     [
      "2026-07-31",
-     160.7
+     160.56
     ]
    ],
    "status": "live"
@@ -5307,7 +5307,7 @@
    "label": "US Dollar Index",
    "group": "fx",
    "decimals": 2,
-   "value": 100.21,
+   "value": 100.15,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -5828,7 +5828,7 @@
     ],
     [
      "2026-07-31",
-     100.21
+     100.15
     ]
    ],
    "status": "live"
@@ -5839,7 +5839,7 @@
    "label": "Gold (front-month)",
    "group": "commodities",
    "decimals": 2,
-   "value": 4138.1,
+   "value": 4129.8,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -6360,7 +6360,7 @@
     ],
     [
      "2026-07-31",
-     4138.1
+     4129.8
     ]
    ],
    "status": "live"
@@ -6369,7 +6369,7 @@
    "label": "Silver (front-month)",
    "group": "commodities",
    "decimals": 3,
-   "value": 58.785,
+   "value": 58.38,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -6890,7 +6890,7 @@
     ],
     [
      "2026-07-31",
-     58.785
+     58.38
     ]
    ],
    "status": "live"
@@ -6899,7 +6899,7 @@
    "label": "WTI Crude",
    "group": "commodities",
    "decimals": 2,
-   "value": 82.11,
+   "value": 82.55,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -7420,7 +7420,7 @@
     ],
     [
      "2026-07-31",
-     82.11
+     82.55
     ]
    ],
    "status": "live"
@@ -7429,7 +7429,7 @@
    "label": "Brent Crude",
    "group": "commodities",
    "decimals": 2,
-   "value": 87.8,
+   "value": 88.08,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -7950,7 +7950,7 @@
     ],
     [
      "2026-07-31",
-     87.8
+     88.08
     ]
    ],
    "status": "live"
@@ -7959,7 +7959,7 @@
    "label": "Copper (front-month)",
    "group": "commodities",
    "decimals": 3,
-   "value": 6.51,
+   "value": 6.507,
    "asOf": "2026-07-31",
    "history": [
     [
@@ -8480,7 +8480,7 @@
     ],
     [
      "2026-07-31",
-     6.51
+     6.507
     ]
    ],
    "status": "live"
@@ -8491,13 +8491,9 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 64240.0,
+   "value": 63924.0,
    "asOf": "2026-07-31",
    "history": [
-    [
-     "2026-03-23",
-     70915.0
-    ],
     [
      "2026-03-24",
      70518.0
@@ -9011,8 +9007,12 @@
      63908.0
     ],
     [
+     "2026-07-30",
+     64725.0
+    ],
+    [
      "2026-07-31",
-     64240.0
+     63924.0
     ]
    ],
    "status": "live"
@@ -9021,13 +9021,9 @@
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 1903.79,
+   "value": 1886.76,
    "asOf": "2026-07-31",
    "history": [
-    [
-     "2026-03-23",
-     2152.15
-    ],
     [
      "2026-03-24",
      2155.7
@@ -9541,8 +9537,12 @@
      1908.52
     ],
     [
+     "2026-07-30",
+     1917.37
+    ],
+    [
      "2026-07-31",
-     1903.79
+     1886.76
     ]
    ],
    "status": "live"
@@ -23863,9 +23863,9 @@
   }
  },
  "pulse": {
-  "headline": "US equities advancing, S&P 500 +1.67% \u00b7 VIX 17.1 (normal)",
+  "headline": "US equities advancing, S&P 500 +1.67% \u00b7 VIX 16.9 (normal)",
   "bullets": [
-   "US equities advancing, S&P 500 +1.67% \u00b7 VIX 17.1 (normal).",
+   "US equities advancing, S&P 500 +1.67% \u00b7 VIX 16.9 (normal).",
    "Sector leader: Technology +5.50% \u00b7 Laggard: Communication Services -2.68%.",
    "Biggest mover: Microsoft (MSFT) +15.51% on the day.",
    "US 2s10s curve is positively sloped at +45bp."
