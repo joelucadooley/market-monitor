@@ -326,6 +326,36 @@ def yahoo_series(symbol, rng="1y"):
         out.append([d, float(c)])
     return out
 
+def rsi14(closes, period=14):
+    """Standard RSI over the trailing `period` daily changes. None if too short."""
+    if len(closes) < period + 1:
+        return None
+    deltas = [closes[i] - closes[i - 1] for i in range(len(closes) - period, len(closes))]
+    gains = [d for d in deltas if d > 0]
+    losses = [-d for d in deltas if d < 0]
+    avg_gain, avg_loss = sum(gains) / period, sum(losses) / period
+    if avg_loss == 0:
+        return 100.0 if avg_gain > 0 else 50.0
+    rs = avg_gain / avg_loss
+    return round(100 - 100 / (1 + rs), 1)
+
+def compute_technicals(hist):
+    """52w hi/lo, 50/200-day SMAs, RSI(14) — from the FULL fetched series, before
+    it gets truncated down to the last ~130 points for the sparkline payload."""
+    closes = [c for _, c in hist if c is not None]
+    out = {}
+    if len(closes) >= 5:
+        out["wk52hi"] = max(closes)
+        out["wk52lo"] = min(closes)
+    if len(closes) >= 50:
+        out["ma50"] = sum(closes[-50:]) / 50
+    if len(closes) >= 200:
+        out["ma200"] = sum(closes[-200:]) / 200
+    r = rsi14(closes)
+    if r is not None:
+        out["rsi14"] = r
+    return out
+
 def fetch_markets_block():
     out = {}
     for key, (symbol, label, group, decimals) in MARKET_SYMBOLS.items():
@@ -334,10 +364,12 @@ def fetch_markets_block():
             if not hist:
                 raise RuntimeError("empty series")
             hist = [[d, round(v, decimals)] for d, v in hist]
+            tech = {k: round(v, decimals) for k, v in compute_technicals(hist).items()}
             out[key] = {
                 "label": label, "group": group, "decimals": decimals,
                 "value": hist[-1][1], "asOf": hist[-1][0],
                 "history": hist[-130:], "status": "live",
+                **tech,
             }
             log(f"YF {key}: {hist[-1][1]} as of {hist[-1][0]}")
         except Exception as e:
@@ -357,8 +389,33 @@ def pct_chg(entry):
         return None
     return (last - prev) / prev * 100
 
-def build_pulse(markets, rates):
-    """Deterministic, data-driven narrative — no LLM, just real numbers."""
+def abs_chg(entry):
+    """1-day absolute change (not %) — meaningful for spreads/rates in bp."""
+    if not entry or not entry.get("history"):
+        return None
+    hist = [p for p in entry["history"] if p[1] is not None]
+    if len(hist) < 2:
+        return None
+    return hist[-1][1] - hist[-2][1]
+
+def compute_breadth(markets):
+    wl = markets.get("watchlist") or {}
+    above50 = [1 for v in wl.values() if v and v.get("ma50") is not None and v.get("value") is not None
+               and v["value"] > v["ma50"]]
+    wl_with_ma = [v for v in wl.values() if v and v.get("ma50") is not None]
+    sectors = markets.get("sectors") or {}
+    sector_chgs = [(k, pct_chg(v)) for k, v in sectors.items() if v]
+    sector_chgs = [(k, p) for k, p in sector_chgs if p is not None]
+    positive = [k for k, p in sector_chgs if p > 0]
+    return {
+        "watchlistAbove50dma": len(above50), "watchlistTotal": len(wl_with_ma),
+        "sectorsPositive": len(positive), "sectorsTotal": len(sector_chgs),
+    }
+
+def build_pulse(markets, rates, credit):
+    """Deterministic, data-driven narrative — no LLM, just real numbers.
+    Descriptive only: regimes, breadth, and cross-asset agreement/divergence —
+    never a buy/sell call."""
     movers = []
     for grp in ("indices", "watchlist", "sectors", "commodities", "crypto", "fx"):
         for key, entry in (markets.get(grp) or {}).items():
@@ -369,9 +426,11 @@ def build_pulse(markets, rates):
                 movers.append((abs(p), p, key, entry.get("label", key), grp))
     bullets = []
 
-    spx = pct_chg((markets.get("indices") or {}).get("SPX"))
+    spx_entry = (markets.get("indices") or {}).get("SPX")
+    spx = pct_chg(spx_entry)
     vix = (markets.get("indices") or {}).get("VIX")
     vix_val = vix.get("value") if vix else None
+    vix_chg = pct_chg(vix) if vix else None
     if spx is not None:
         tone = "advancing" if spx > 0.15 else "retreating" if spx < -0.15 else "roughly flat"
         headline = f"US equities {tone}, S&P 500 {spx:+.2f}%"
@@ -404,7 +463,29 @@ def build_pulse(markets, rates):
         state = "inverted — classic late-cycle recession signal" if spread < 0 else "positively sloped"
         bullets.append(f"US 2s10s curve is {state} at {spread:+.0f}bp.")
 
-    return {"headline": headline, "bullets": bullets}
+    # Cross-asset confirmation: do equities, credit, and vol agree on direction?
+    hy = (credit.get("spreads") or {}).get("hy")
+    hy_chg = abs_chg(hy)
+    if spx is not None and hy_chg is not None and vix_chg is not None:
+        signals = []
+        signals.append(1 if spx > 0.1 else -1 if spx < -0.1 else 0)
+        signals.append(1 if hy_chg < -1 else -1 if hy_chg > 1 else 0)   # tightening = risk-on
+        signals.append(1 if vix_chg < -2 else -1 if vix_chg > 2 else 0)  # falling vol = risk-on
+        pos, neg = signals.count(1), signals.count(-1)
+        if pos >= 2 and neg == 0:
+            bullets.append("Cross-asset check: equities, credit, and volatility are aligned risk-on.")
+        elif neg >= 2 and pos == 0:
+            bullets.append("Cross-asset check: equities, credit, and volatility are aligned risk-off.")
+        elif pos >= 1 and neg >= 1:
+            bullets.append("Cross-asset check: equities and credit/vol disagree — a divergence worth treating skeptically rather than at face value.")
+
+    breadth = compute_breadth(markets)
+    if breadth["sectorsTotal"]:
+        bullets.append(f"Breadth: {breadth['sectorsPositive']}/{breadth['sectorsTotal']} sectors "
+                        f"positive on the day, {breadth['watchlistAbove50dma']}/{breadth['watchlistTotal']} "
+                        f"watchlist names trading above their 50-day average.")
+
+    return {"headline": headline, "bullets": bullets, "breadth": breadth}
 
 # ──────────────────────────────────────────────────────────────────────
 # News headlines — CNBC markets RSS, Yahoo Finance RSS fallback
@@ -670,7 +751,7 @@ def main():
     markets = {"updated": updated, **{g: {} for g in MARKET_GROUPS}}
     for key, (_, _, group, _) in MARKET_SYMBOLS.items():
         markets[group][key] = keep_or(yf.get(key), prev_flat.get(key))
-    markets["pulse"] = build_pulse(markets, rates)
+    markets["pulse"] = build_pulse(markets, rates, credit)
     save("markets.json", markets)
 
     try:

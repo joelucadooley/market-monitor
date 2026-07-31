@@ -74,26 +74,32 @@
   .bar{display:inline-block;height:6px;background:var(--edge);width:100px;vertical-align:middle}
   .bar i{display:block;height:6px;background:var(--amber)}
   .bar i.red{background:var(--down)}
-  .gauge{padding:0;display:grid;gap:1px;background:var(--edge);
-    grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
-  .gcell{background:var(--panel);padding:10px 12px}
-  .gcell .k{font-size:9px;color:var(--mute);letter-spacing:.05em}
-  .gcell .v{font-size:19px;margin:3px 0;font-weight:700;color:var(--text)}
-  .gcell .r{font-size:9px;letter-spacing:.06em;padding:1px 6px;display:inline-block;font-weight:700}
+  .r{font-size:9px;letter-spacing:.06em;padding:1px 6px;display:inline-block;font-weight:700}
   .r-calm,.r-tight,.r-normal-g{background:#0f2a1c;color:var(--up)}
   .r-elevated,.r-mid{background:#332608;color:var(--amber)}
   .r-stressed,.r-wide,.r-inverted{background:#331010;color:var(--down)}
+  .r-hot{background:#332608;color:var(--amber)} .r-cold{background:#0f2733;color:var(--cyan)}
   /* pulse banner */
   .pulse{border-left:3px solid var(--amber);padding:10px 14px;background:#0D0F08}
   .pulse .ph{font-size:13px;color:var(--text);font-weight:700;margin-bottom:6px}
   .pulse ul{list-style:none;display:grid;gap:4px}
   .pulse li{font-size:11px;color:var(--mute);padding-left:14px;position:relative}
   .pulse li::before{content:"›";position:absolute;left:0;color:var(--cyan)}
-  /* heatmap */
-  .heat{display:grid;gap:1px;background:var(--edge);grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
-  .hcell{padding:12px;display:flex;flex-direction:column;gap:4px}
-  .hcell .k{font-size:10px;letter-spacing:.04em;color:rgba(255,255,255,.85)}
-  .hcell .v{font-size:16px;font-weight:700;color:#fff}
+  /* 52w range bar with current-price marker */
+  .rangebar{position:relative;display:inline-block;width:70px;height:4px;background:var(--edge);
+    vertical-align:middle;margin-right:6px}
+  .rangebar i{position:absolute;top:-2px;width:2px;height:8px;background:var(--cyan)}
+  /* diverging sector performance bar */
+  .sbar{display:inline-block;height:11px;background:var(--edge);width:160px;vertical-align:middle;position:relative}
+  .sbar i{position:absolute;top:0;height:11px}
+  .sbar i.up{background:var(--up);left:50%} .sbar i.down{background:var(--down);right:50%}
+  /* two-pane terminal layout */
+  .dash{display:grid;grid-template-columns:1fr;gap:8px}
+  .dash-main,.dash-side{display:grid;gap:8px;align-content:start}
+  @media(min-width:960px){
+    .dash{grid-template-columns:1fr 300px}
+    .dash-side{position:sticky;top:8px}
+  }
   /* news */
   .newsrow{padding:9px 12px;border-top:1px solid var(--edge);display:flex;gap:10px;align-items:baseline}
   .newsrow:first-child{border-top:none}
@@ -204,19 +210,37 @@ const FX_ORDER = ["EURUSD","GBPUSD","USDJPY","DXY"];
 const CMD_ORDER = ["GOLD","SILVER","WTI","BRENT","COPPER"];
 const CRY_ORDER = ["BTC","ETH"];
 
-function marketCell(s){
-  if(!s) return "";
-  return `<div class="cell">
-    <div class="k">${s.label}${staleBadge(s)}</div>
-    <div class="v">${fmtN(s.value, s.decimals)}</div>
-    <div style="display:flex;justify-content:space-between;align-items:center;font-size:11px">
-      ${deltaPct(chgPct(s.history,1))}
-      ${spark(s.history,{w:56,h:20})}
-    </div>
-  </div>`;
+function rangeBar(lo, hi, val){
+  if(lo==null||hi==null||val==null||hi<=lo) return `<span class="mute">—</span>`;
+  const pct = Math.max(0,Math.min(100,(val-lo)/(hi-lo)*100));
+  return `<span class="rangebar"><i style="left:${pct.toFixed(1)}%"></i></span>`;
 }
-function marketGroup(order, grp){
-  return order.map(k=>marketCell(grp?.[k])).filter(Boolean).join("");
+function rsiBadge(r){
+  if(r==null) return `<span class="mute">—</span>`;
+  const cls = r>=70?"r-hot":r<=30?"r-cold":"";
+  const label = r>=70?" OB":r<=30?" OS":"";
+  return cls ? `<span class="r ${cls}">${r.toFixed(0)}${label}</span>` : `<span class="mute">${r.toFixed(0)}</span>`;
+}
+function instrumentRows(order, grp){
+  return order.map(k=>{
+    const s = grp?.[k]; if(!s) return "";
+    const p = chgPct(s.history,1);
+    return `<tr>
+      <td>${s.label}${staleBadge(s)}</td>
+      <td class="big">${fmtN(s.value,s.decimals)}</td>
+      <td>${deltaPct(p)}</td>
+      <td>${rangeBar(s.wk52lo,s.wk52hi,s.value)}<span class="mute" style="font-size:9px">${fmtN(s.wk52lo,s.decimals)}–${fmtN(s.wk52hi,s.decimals)}</span></td>
+      <td>${rsiBadge(s.rsi14)}</td>
+      <td>${spark(s.history,{w:56,h:18})}</td>
+    </tr>`;
+  }).filter(Boolean).join("");
+}
+function instrumentTable(title, sub, order, grp){
+  const rows = instrumentRows(order, grp);
+  if(!rows) return "";
+  return panel(title, sub, `<div class="scroll"><table>
+    <thead><tr><th>NAME</th><th>LAST</th><th>1D</th><th>52W RANGE</th><th>RSI14</th><th>PATH</th></tr></thead>
+    <tbody>${rows}</tbody></table></div>`);
 }
 function riskGauge(){
   const R = DATA.rates, C = DATA.credit, M = DATA.markets;
@@ -224,64 +248,64 @@ function riskGauge(){
   const t2 = R?.us?.t2y, t10 = R?.us?.t10y;
   const hy = C?.spreads?.hy;
   const dxy = M?.fx?.DXY;
-  const cells = [];
+  const rows = [];
   if(vix?.value!=null){
     const v = vix.value;
     const [cls,label] = v<15?["r-calm","CALM"]:v<20?["r-normal-g","NORMAL"]:v<28?["r-elevated","ELEVATED"]:["r-stressed","STRESSED"];
-    cells.push(`<div class="gcell"><div class="k">VOLATILITY — VIX</div>
-      <div class="v">${fmtN(v,2)}</div>
-      <div><span class="r ${cls}">${label}</span> ${deltaPct(chgPct(vix.history,1))}</div></div>`);
+    rows.push(["VOLATILITY — VIX", fmtN(v,2), cls, label, deltaPct(chgPct(vix.history,1))]);
   }
   if(t2?.value!=null && t10?.value!=null){
     const spread = (t10.value - t2.value)*100;
     const inv = spread < 0;
-    cells.push(`<div class="gcell"><div class="k">US 2s10s CURVE</div>
-      <div class="v">${spread>=0?"+":""}${spread.toFixed(0)}bp</div>
-      <div><span class="r ${inv?'r-inverted':'r-calm'}">${inv?"INVERTED":"NORMAL"}</span></div></div>`);
+    rows.push(["US 2s10s CURVE", `${spread>=0?"+":""}${spread.toFixed(0)}bp`, inv?"r-inverted":"r-calm", inv?"INVERTED":"NORMAL", ""]);
   }
   if(hy?.value!=null){
     const v = hy.value;
     const [cls,label] = v<400?["r-tight","TIGHT"]:v<600?["r-mid","NORMAL"]:["r-wide","WIDE"];
-    cells.push(`<div class="gcell"><div class="k">US HIGH YIELD OAS</div>
-      <div class="v">${fmtN(v,0)}bp</div>
-      <div><span class="r ${cls}">${label}</span> ${delta(chg(hy.history,1),{bp:true,flip:true})}</div></div>`);
+    rows.push(["US HIGH YIELD OAS", fmtN(v,0)+"bp", cls, label, delta(chg(hy.history,1),{bp:true,flip:true})]);
   }
   if(dxy?.value!=null){
-    cells.push(`<div class="gcell"><div class="k">US DOLLAR INDEX</div>
-      <div class="v">${fmtN(dxy.value,2)}</div>
-      <div>${deltaPct(chgPct(dxy.history,1))} <span class="mute">1d</span></div></div>`);
+    rows.push(["US DOLLAR INDEX", fmtN(dxy.value,2), "", "", deltaPct(chgPct(dxy.history,1))]);
   }
-  if(!cells.length) return "";
+  const breadth = M?.pulse?.breadth;
+  if(breadth?.sectorsTotal){
+    const pct = Math.round(breadth.sectorsPositive/breadth.sectorsTotal*100);
+    const cls = pct>=60?"r-calm":pct<=40?"r-stressed":"r-mid";
+    rows.push(["SECTOR BREADTH", `${breadth.sectorsPositive}/${breadth.sectorsTotal}`, cls, pct+"% POS", ""]);
+    rows.push(["ABOVE 50DMA", `${breadth.watchlistAbove50dma}/${breadth.watchlistTotal}`, "", "", "watchlist"]);
+  }
+  if(!rows.length) return "";
+  const trs = rows.map(([k,v,cls,label,extra])=>`
+    <tr><td>${k}</td><td class="big">${v}</td>
+      <td>${cls?`<span class="r ${cls}">${label}</span>`:""} ${extra}</td></tr>`).join("");
   return `<section class="panel"><div class="ptitle"><b>MARKET STATE</b><small>at a glance</small></div>
-    <div class="gauge">${cells.join("")}</div></section>`;
+    <table><tbody>${trs}</tbody></table></section>`;
 }
 function pulseBanner(){
   const p = DATA.markets?.pulse;
   if(!p || !p.bullets?.length) return "";
-  return `<section class="panel"><div class="ptitle"><b>PULSE</b><small>auto-generated from live figures below — not a model opinion</small></div>
+  return `<section class="panel"><div class="ptitle"><b>PULSE</b><small>rules over live figures — not a model opinion</small></div>
     <div class="pulse"><div class="ph">${p.headline}</div>
     <ul>${p.bullets.map(b=>`<li>${b}</li>`).join("")}</ul></div></section>`;
 }
-function heatColor(pct){
-  if(pct==null) return "background:var(--edge)";
-  const t = Math.min(1, Math.abs(pct)/3);           // saturate by ±3%
-  const [r,g,b] = pct>=0 ? [30,120,70] : [150,40,38];
-  const [r0,g0,b0] = [16,20,25];                    // panel-ish base
-  const mix = (a,c)=>Math.round(a + (c-a)*t);
-  return `background:rgb(${mix(r0,r)},${mix(g0,g)},${mix(b0,b)})`;
-}
-function sectorHeatmap(){
+function sectorTable(){
   const S = DATA.markets?.sectors;
   if(!S) return "";
   const rows = Object.values(S).filter(Boolean).map(s=>({s, p: chgPct(s.history,1)}))
     .sort((a,b)=>(b.p??-99)-(a.p??-99));
   if(!rows.length) return "";
-  const cells = rows.map(({s,p})=>`<div class="hcell" style="${heatColor(p)}">
-    <div class="k">${s.label}${staleBadge(s)}</div>
-    <div class="v">${p==null?"—":(p>=0?"+":"")+p.toFixed(2)+"%"}</div>
-  </div>`).join("");
-  return `<section class="panel"><div class="ptitle"><b>SECTOR HEATMAP</b><small>S&amp;P sector SPDRs · 1d % chg</small></div>
-    <div class="heat">${cells}</div></section>`;
+  const maxAbs = Math.max(1, ...rows.map(r=>Math.abs(r.p||0)));
+  const trs = rows.map(({s,p})=>{
+    const w = p==null?0:Math.min(50, Math.abs(p)/maxAbs*50);
+    const dir = (p||0)>=0?"up":"down";
+    return `<tr>
+      <td>${s.label}${staleBadge(s)}</td>
+      <td>${deltaPct(p)}</td>
+      <td><span class="sbar"><i class="${dir}" style="width:${w.toFixed(0)}%"></i></span></td>
+    </tr>`;
+  }).join("");
+  return `<section class="panel"><div class="ptitle"><b>SECTOR PERFORMANCE</b><small>S&amp;P sector SPDRs · ranked 1d % chg</small></div>
+    <div class="scroll"><table><tbody>${trs}</tbody></table></div></section>`;
 }
 function watchlistTable(){
   const W = DATA.markets?.watchlist;
@@ -291,29 +315,28 @@ function watchlistTable(){
   if(!rows.length) return "";
   const trs = rows.map(({k,s,p})=>`
     <tr>
-      <td><span class="cy">${k}</span></td>
-      <td>${s.label}${staleBadge(s)}</td>
+      <td><span class="cy">${k}</span> ${s.label}${staleBadge(s)}</td>
       <td class="big">${fmtN(s.value,s.decimals)}</td>
       <td>${deltaPct(p)}</td>
-      <td>${spark(s.history,{w:70,h:20})}</td>
+      <td>${rangeBar(s.wk52lo,s.wk52hi,s.value)}<span class="mute" style="font-size:9px">${fmtN(s.wk52lo,s.decimals)}–${fmtN(s.wk52hi,s.decimals)}</span></td>
+      <td>${rsiBadge(s.rsi14)}</td>
+      <td>${spark(s.history,{w:56,h:18})}</td>
     </tr>`).join("");
   return `<section class="panel"><div class="ptitle"><b>WATCHLIST</b><small>ranked by |1d % chg|</small></div>
     <div class="scroll"><table>
-      <thead><tr><th>TKR</th><th>NAME</th><th>LAST</th><th>1D</th><th>PATH</th></tr></thead>
+      <thead><tr><th>NAME</th><th>LAST</th><th>1D</th><th>52W RANGE</th><th>RSI14</th><th>PATH</th></tr></thead>
       <tbody>${trs}</tbody></table></div></section>`;
 }
 function marketsView(){
   const M = DATA.markets;
   if(!M) return panel("MARKETS","",`<div class="err">markets.json missing — run the workflow once.</div>`);
-  return pulseBanner() + riskGauge() + sectorHeatmap() + watchlistTable()
-    + panel("EQUITY INDICES & VOLATILITY","last close · % chg · path",
-        `<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr))">${marketGroup(IDX_ORDER,M.indices)}</div>`)
-    + panel("CURRENCIES","spot fx",
-        `<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr))">${marketGroup(FX_ORDER,M.fx)}</div>`)
-    + panel("COMMODITIES","front-month futures / spot",
-        `<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr))">${marketGroup(CMD_ORDER,M.commodities)}</div>`)
-    + panel("CRYPTO","spot",
-        `<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr))">${marketGroup(CRY_ORDER,M.crypto)}</div>`);
+  const main = sectorTable() + watchlistTable()
+    + instrumentTable("EQUITY INDICES & VOLATILITY","last close · % chg · 52w range · RSI(14) · path",IDX_ORDER,M.indices)
+    + instrumentTable("CURRENCIES","spot fx",FX_ORDER,M.fx)
+    + instrumentTable("COMMODITIES","front-month futures / spot",CMD_ORDER,M.commodities)
+    + instrumentTable("CRYPTO","spot",CRY_ORDER,M.crypto);
+  const side = pulseBanner() + riskGauge();
+  return `<div class="dash"><div class="dash-main">${main}</div><div class="dash-side">${side}</div></div>`;
 }
 function newsView(){
   const N = DATA.headlines;
