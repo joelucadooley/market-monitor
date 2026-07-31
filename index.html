@@ -33,7 +33,10 @@
   .brand b{color:var(--amber)}
   .live{display:inline-flex;align-items:center;gap:4px;font-size:9px;letter-spacing:.1em;
     color:#08130C;background:var(--up);padding:2px 6px;font-weight:700}
+  .live.warn{background:var(--amber);color:#14100A}
+  .live.bad{background:var(--down);color:#2b0605}
   .sub{font-family:var(--mono);font-size:10px;color:var(--mute);margin-top:4px;letter-spacing:.02em}
+  .sub .ago{color:var(--cyan)}
   .clocks{display:flex;gap:0;flex-wrap:wrap;justify-content:flex-end;border:1px solid var(--edge)}
   .clocks div{text-align:center;padding:3px 10px;border-left:1px solid var(--edge)}
   .clocks div:first-child{border-left:none}
@@ -117,7 +120,7 @@
   <div>
     <div class="brand-row">
       <div class="brand">■<b>MKT</b>/MONITOR</div>
-      <div class="live">LIVE</div>
+      <div class="live" id="liveBadge" title="Green <25min old · Amber <4h (normal on weekends) · Red stalled">LIVE</div>
     </div>
     <div class="sub" id="updated">LOADING…</div>
   </div>
@@ -524,12 +527,20 @@ function updateClocks(){
       {timeZone:tz,hour:"2-digit",minute:"2-digit",second:"2-digit"})}</div></div>`).join("");
 }
 let updatedBase = "", lastUpdated = null;
+function setLiveBadge(secs){
+  const el = $("#liveBadge");
+  if(secs==null){ el.textContent="NO DATA"; el.className="live bad"; return; }
+  if(secs < 25*60){ el.textContent="LIVE"; el.className="live"; }
+  else if(secs < 4*3600){ el.textContent="DELAYED"; el.className="live warn"; }
+  else{ el.textContent="STALE"; el.className="live bad"; }
+}
 function updateFreshness(){
-  if(!lastUpdated){ $("#updated").textContent = updatedBase; return; }
+  if(!lastUpdated){ $("#updated").textContent = updatedBase; setLiveBadge(null); return; }
   const secs = Math.floor((Date.now()-lastUpdated.getTime())/1000);
   const ago = secs<5 ? "just now" : secs<60 ? `${secs}s ago`
     : secs<3600 ? `${Math.floor(secs/60)}m ago` : `${Math.floor(secs/3600)}h ago`;
-  $("#updated").textContent = `${updatedBase} · ${ago}`;
+  $("#updated").innerHTML = `${updatedBase} · <span class="ago">${ago}</span>`;
+  setLiveBadge(secs);
 }
 setInterval(()=>{ updateClocks(); updateFreshness(); }, 1000);
 updateClocks();
