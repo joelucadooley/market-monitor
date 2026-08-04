@@ -1,10 +1,58 @@
 {
- "updated": "2026-08-04T09:12:05Z",
+ "updated": "2026-08-04T11:35:21Z",
  "items": [
+  {
+   "title": "McDonald's earnings beat estimates, chain announces new U.S. head to accelerate growth",
+   "link": "https://www.cnbc.com/2026/08/04/mcdonalds-mcd-q2-2026-earnings.html",
+   "published": "2026-08-04T11:34:49Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Palantir jumps 16% on 'otherworldly' commercial revenue \u2014 here's what's driving the demand",
+   "link": "https://www.cnbc.com/2026/08/04/palantir-2q-earnings-ai-sovereign-tools.html",
+   "published": "2026-08-04T10:27:09Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Pfizer tops quarterly estimates, hikes low end of revenue guidance on strength of non-Covid products",
+   "link": "https://www.cnbc.com/2026/08/04/pfizer-pfe-earnings-q2-2026.html",
+   "published": "2026-08-04T11:13:24Z",
+   "source": "CNBC Markets"
+  },
   {
    "title": "Trump warns Iran talks are \u2018last chance\u2019 to end war \u2014 oil prices rise as Tehran denies negotiations",
    "link": "https://www.cnbc.com/2026/08/04/us-iran-war-trump-hormuz.html",
-   "published": "2026-08-04T09:04:13Z",
+   "published": "2026-08-04T09:55:49Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Trump and Republicans brand Democrats \u2018communists\u2019 amid progressive push",
+   "link": "https://www.cnbc.com/2026/08/04/trump-election-republicans-democrats-communist.html",
+   "published": "2026-08-04T11:00:01Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Merck hikes revenue outlook as new drug sales grow, but cuts profit guidance due to deal charges",
+   "link": "https://www.cnbc.com/2026/08/04/merck-mrk-earnings-q2-2026.html",
+   "published": "2026-08-04T10:34:21Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Wayfair posts strongest U.S. growth since 2020",
+   "link": "https://www.cnbc.com/2026/08/04/wayfair-w-earnings-q2-2026.html",
+   "published": "2026-08-04T11:03:25Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Analysis: Federal Reserve may be pulled into Bessent\u2019s effort to support Japan\u2019s yen",
+   "link": "https://www.cnbc.com/2026/08/03/bessent-fed-japan-yen-fima-repo-facility.html",
+   "published": "2026-08-03T23:20:54Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Trump says Exxon and Chevron made 'too much money' off high oil prices during Iran conflict: 'I don't like it'",
+   "link": "https://www.cnbc.com/2026/08/03/trump-says-exxon-and-chevron-made-too-much-money-off-high-oil-prices-during-iran-conflict-i-dont-like-it.html",
+   "published": "2026-08-03T20:02:34Z",
    "source": "CNBC Markets"
   },
   {
@@ -14,63 +62,15 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Palantir soars 12% on blowout quarter, with U.S. commercial revenue soaring nearly 150%",
-   "link": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html",
-   "published": "2026-08-03T22:47:54Z",
+   "title": "Palantir's Karp renews attacks on frontier AI labs that are 'trying to drug addict us'",
+   "link": "https://www.cnbc.com/2026/08/03/palantir-karp-open-ai-anthropic-open-weight.html",
+   "published": "2026-08-03T22:20:56Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "McDonald's is about to report earnings. Here's what to expect",
-   "link": "https://www.cnbc.com/2026/08/04/mcdonalds-mcd-q2-2026-earnings.html",
-   "published": "2026-08-04T04:01:01Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Takaichi\u2019s fiscal push could lift growth \u2014 and Japan\u2019s already-rising interest bill",
-   "link": "https://www.cnbc.com/2026/08/04/japan-takaichi-food-tax-cut-jgb-boj.html",
-   "published": "2026-08-04T08:36:34Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "HSBC pretax profit beats estimates, boosted by higher net interest income and fees",
-   "link": "https://www.cnbc.com/2026/08/04/hsbc-profit-beats-estimates-higher-net-interest-income-fees.html",
-   "published": "2026-08-04T04:50:05Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "AI is helping Grab ship products more than 30% faster, CFO says, as company raises forecasts",
-   "link": "https://www.cnbc.com/2026/08/04/grab-earnings-ai-forecast-cfo-.html",
-   "published": "2026-08-04T05:47:49Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Snap's stock jumps 8% on earnings beat and strong sales forecast",
-   "link": "https://www.cnbc.com/2026/08/03/snap-q2-earnings-report-2026.html",
-   "published": "2026-08-03T22:03:52Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Twenty five states sue Trump administration over latest global tariffs",
-   "link": "https://www.cnbc.com/2026/08/03/trump-tariffs-25-states-lawsuit-supreme-court.html",
-   "published": "2026-08-03T20:57:02Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "'Spider-Man: Brand New Day' beats out 'Avengers: Endgame' for highest domestic opening ever",
-   "link": "https://www.cnbc.com/2026/08/03/spider-man-brand-new-day-debut-360m-highest-domestic-opening-ever.html",
-   "published": "2026-08-03T15:46:27Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Are Americans ready to embrace tiny 'cars'? These companies think so",
-   "link": "https://www.cnbc.com/2026/08/03/electric-lsv-stellantis-fiat-toppolino.html",
-   "published": "2026-08-03T16:57:42Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "India to raise up to $3.3 billion by selling stake in country\u2019s largest life insurer at 10% discount",
-   "link": "https://www.cnbc.com/2026/08/04/india-lic-stake-sale-discount.html",
-   "published": "2026-08-04T08:45:32Z",
+   "title": "Larry Berg named next Major League Soccer commissioner",
+   "link": "https://www.cnbc.com/2026/08/03/larry-berg-major-league-soccer-commissioner.html",
+   "published": "2026-08-03T22:10:13Z",
    "source": "CNBC Markets"
   }
  ],
