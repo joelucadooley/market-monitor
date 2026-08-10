@@ -1,12 +1,6 @@
 {
- "updated": "2026-08-09T21:32:45Z",
+ "updated": "2026-08-10T02:12:17Z",
  "items": [
-  {
-   "title": "How a small Israeli startup was linked to rogue AI hacks at OpenAI, Anthropic and Meta",
-   "link": "https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html",
-   "published": "2026-08-09T11:31:42Z",
-   "source": "CNBC Markets"
-  },
   {
    "title": "Iran denies any direct talks with U.S. on opening Strait of Hormuz as Houthis claim attack on Saudi refinery",
    "link": "https://www.cnbc.com/2026/08/09/saudi-aramco-extinguishes-refinery-fire-houthis-claim-attack.html",
@@ -14,9 +8,15 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Myspace eyes comeback as an 'antidote' to social media fatigue \u2014 but it may be a long shot",
-   "link": "https://www.cnbc.com/2026/08/09/myspace-comeback-rival-social-media-giants.html",
-   "published": "2026-08-09T12:23:54Z",
+   "title": "How a small Israeli startup was linked to rogue AI hacks at OpenAI, Anthropic and Meta",
+   "link": "https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html",
+   "published": "2026-08-09T11:31:42Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Oil rises amid uncertainty over U.S.-Iran Strait of Hormuz deal",
+   "link": "https://www.cnbc.com/2026/08/10/oil-prices-today-brent-wti-hormuz-trump-iran.html",
+   "published": "2026-08-10T01:23:35Z",
    "source": "CNBC Markets"
   },
   {
@@ -26,9 +26,27 @@
    "source": "CNBC Markets"
   },
   {
+   "title": "Myspace eyes comeback as an 'antidote' to social media fatigue \u2014 but it may be a long shot",
+   "link": "https://www.cnbc.com/2026/08/09/myspace-comeback-rival-social-media-giants.html",
+   "published": "2026-08-09T12:23:54Z",
+   "source": "CNBC Markets"
+  },
+  {
    "title": "Ocasio-Cortez hasn't 'ruled out' running for president or Senate in 2028",
    "link": "https://www.cnbc.com/2026/08/09/ocasio-cortez-hasnt-ruled-out-running-for-president-or-senate-in-2028.html",
    "published": "2026-08-09T14:45:17Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "From birth to brokerage: Why South Korea is seeing a surge in infant investment accounts",
+   "link": "https://www.cnbc.com/2026/08/07/south-korea-investment-stock-baby-accounts.html",
+   "published": "2026-08-06T23:42:20Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "For retirees, staying in the stock market is critical. How much exposure is the make-or-break question",
+   "link": "https://www.cnbc.com/2026/08/08/retirement-investing-equity-income-stocks.html",
+   "published": "2026-08-08T13:00:01Z",
    "source": "CNBC Markets"
   },
   {
@@ -44,33 +62,15 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Top Wall Street analysts like these 3 stocks for their solid growth potential",
-   "link": "https://www.cnbc.com/2026/08/09/top-analysts-like-these-3-stocks-for-their-solid-growth-potential.html",
-   "published": "2026-08-09T12:01:56Z",
-   "source": "CNBC Markets"
-  },
-  {
    "title": "'Moneymaxxing' isn't a trend, it's a 'cultural shift,' financial advisor says \u2014 here's how to get started",
    "link": "https://www.cnbc.com/2026/08/08/moneymaxxing-trend-save-budget-build-wealth.html",
    "published": "2026-08-08T13:30:01Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "For retirees, staying in the stock market is critical. How much exposure is the make-or-break question",
-   "link": "https://www.cnbc.com/2026/08/08/retirement-investing-equity-income-stocks.html",
-   "published": "2026-08-08T13:00:01Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Verizon mobile service restored after outage for thousands of customers in the U.S.",
-   "link": "https://www.cnbc.com/2026/08/08/verizon-mobile-outage-downdetector.html",
-   "published": "2026-08-09T00:36:19Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Hunter Biden says Joe Biden\u2019s cancer has spread further and is \u2018very painful\u2019",
-   "link": "https://www.cnbc.com/2026/08/08/hunter-biden-says-joe-bidens-cancer-has-spread-is-very-debilitating.html",
-   "published": "2026-08-08T17:25:25Z",
+   "title": "Hugging Face hack marks start of dangerous AI cyber era and many firms 'don't even know it'",
+   "link": "https://www.cnbc.com/2026/08/08/hugging-face-ai-hack-cybersecurity-black-hat.html",
+   "published": "2026-08-08T12:00:01Z",
    "source": "CNBC Markets"
   }
  ],
