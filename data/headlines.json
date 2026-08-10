@@ -1,16 +1,22 @@
 {
- "updated": "2026-08-10T15:40:30Z",
+ "updated": "2026-08-10T16:35:04Z",
  "items": [
   {
-   "title": "U.S. oil price hits $80 as doubt grows Washington and Tehran will reach Strait of Hormuz deal",
-   "link": "https://www.cnbc.com/2026/08/10/oil-prices-today-brent-wti-hormuz-trump-iran.html",
-   "published": "2026-08-10T15:28:45Z",
+   "title": "Oil in U.S. Strategic Petroleum Reserve falls below 300 million barrels, lowest since 1983",
+   "link": "https://www.cnbc.com/2026/08/10/oil-in-strategic-petroleum-reserve-falls-below-300-million-barrels-lowest-since-1983.html",
+   "published": "2026-08-10T16:04:30Z",
    "source": "CNBC Markets"
   },
   {
    "title": "Intel plans $15 billion stock offering as AI demand accelerates",
    "link": "https://www.cnbc.com/2026/08/10/intel-intc-stock-offering-ai.html",
    "published": "2026-08-10T14:31:41Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Trump signals shift to economic pressure as Iran hardens stance over Strait of Hormuz",
+   "link": "https://www.cnbc.com/2026/08/10/us-iran-war-trump-hormuz-oman-ships-blockade-shipping.html",
+   "published": "2026-08-10T14:27:15Z",
    "source": "CNBC Markets"
   },
   {
@@ -26,9 +32,9 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Santoli: Stocks return to winning ways. Why the market gods may not be satisfied with July's brief pain",
-   "link": "https://www.cnbc.com/2026/08/10/santoli-stocks-return-to-their-winning-ways-but-was-julys-brief-pain-enough-to-satisfy-the-market-gods.html",
-   "published": "2026-08-10T11:45:50Z",
+   "title": "Gold just had its best week in 7 months. Here\u2019s why Mike Khouw is buying more",
+   "link": "https://www.cnbc.com/2026/08/10/gold-just-had-its-best-week-in-7-months-heres-why-mike-khouw-is-buying-more.html",
+   "published": "2026-08-10T16:09:32Z",
    "source": "CNBC Markets"
   },
   {
@@ -44,9 +50,15 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Meta to open source its most powerful AI model as it takes swipe at OpenAI, Anthropic",
-   "link": "https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html",
-   "published": "2026-08-10T12:40:36Z",
+   "title": "OpenAI tightens controls on its new model over cybersecurity risks, as AI security debate intensifies",
+   "link": "https://www.cnbc.com/2026/08/10/openai-astra-cybersecurity-risks.html",
+   "published": "2026-08-10T11:04:50Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Santoli: Stocks return to winning ways. Why the market gods may not be satisfied with July's brief pain",
+   "link": "https://www.cnbc.com/2026/08/10/santoli-stocks-return-to-their-winning-ways-but-was-julys-brief-pain-enough-to-satisfy-the-market-gods.html",
+   "published": "2026-08-10T11:45:50Z",
    "source": "CNBC Markets"
   },
   {
@@ -56,21 +68,9 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "OpenAI tightens controls on its new model over cybersecurity risks, as AI security debate intensifies",
-   "link": "https://www.cnbc.com/2026/08/10/openai-astra-cybersecurity-risks.html",
-   "published": "2026-08-10T11:04:50Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "World's biggest chipmaker TSMC's sales surge 45% amid buoyant AI demand",
-   "link": "https://www.cnbc.com/2026/08/10/tsmc-revenue-surge-ai-chip-big-tech.html",
-   "published": "2026-08-10T13:39:56Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Student loan borrowers face steeper 'marriage penalty' under new repayment plan",
-   "link": "https://www.cnbc.com/2026/08/10/student-loan-marriage-penalty-rap.html",
-   "published": "2026-08-10T12:15:01Z",
+   "title": "Meta to open source its most powerful AI model as it takes swipe at OpenAI, Anthropic",
+   "link": "https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html",
+   "published": "2026-08-10T12:40:36Z",
    "source": "CNBC Markets"
   }
  ],
