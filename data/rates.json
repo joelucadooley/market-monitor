@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-13T06:00:50Z",
+ "updated": "2026-08-13T07:55:30Z",
  "banks": {
   "US": {
    "label": "Federal Reserve (upper target)",
@@ -1108,7 +1108,7 @@
      2.25
     ]
    ],
-   "status": "stale"
+   "status": "live"
   },
   "JP": {
    "label": "Bank of Japan",
