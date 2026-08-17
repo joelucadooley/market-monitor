@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-17T11:42:43Z",
+ "updated": "2026-08-17T12:02:34Z",
  "spreads": {
   "hy": {
    "label": "US High Yield OAS",
@@ -369,7 +369,7 @@
      271.0
     ]
    ],
-   "status": "live"
+   "status": "stale"
   },
   "ig": {
    "label": "US Investment Grade OAS",
