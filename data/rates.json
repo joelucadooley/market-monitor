@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-17T21:30:13Z",
+ "updated": "2026-08-17T22:01:03Z",
  "banks": {
   "US": {
    "label": "Federal Reserve (upper target)",
@@ -7001,7 +7001,7 @@
      3.62
     ]
    ],
-   "status": "stale"
+   "status": "live"
   },
   "t2y": {
    "label": "US 2Y Treasury",
