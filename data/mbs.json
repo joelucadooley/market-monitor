@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-19T11:42:54Z",
+ "updated": "2026-08-19T12:15:05Z",
  "fund": {
   "fund": "MBB \u2014 iShares MBS ETF",
   "asOf": "seed",
@@ -398,6 +398,6 @@
     6.67
    ]
   ],
-  "status": "live"
+  "status": "stale"
  }
 }
