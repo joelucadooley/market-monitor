@@ -1,10 +1,16 @@
 {
- "updated": "2026-08-19T16:03:37Z",
+ "updated": "2026-08-19T16:48:08Z",
  "items": [
   {
    "title": "Treasury doubles debt buybacks as Bessent moves to steady bond market",
    "link": "https://www.cnbc.com/2026/08/19/treasury-announces-upscaled-buyback-operation-for-longer-term-debt-sending-yields-lower.html",
    "published": "2026-08-19T15:12:28Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Trump touted a deal to avert new tariffs on Canada. Here's what we know so far",
+   "link": "https://www.cnbc.com/2026/08/19/trump-canada-tariffs-deal-carney.html",
+   "published": "2026-08-19T16:40:21Z",
    "source": "CNBC Markets"
   },
   {
@@ -16,13 +22,19 @@
   {
    "title": "Carvana shares are under pressure this week as Mark Walter probe fuels investor jitters",
    "link": "https://www.cnbc.com/2026/08/19/carvana-shares-on-pace-for-10percent-weekly-loss-as-mark-walter-probe-fuels-investor-jitters.html",
-   "published": "2026-08-19T14:33:10Z",
+   "published": "2026-08-19T16:08:58Z",
    "source": "CNBC Markets"
   },
   {
    "title": "Marvell pops 6% on AI chip deal that lets Google buy up to $12.2 billion in shares",
    "link": "https://www.cnbc.com/2026/08/19/marvell-google-ai-chips.html",
    "published": "2026-08-19T15:09:51Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Amazon to expand drone service to nearly 500 cities after targeting 1 million deliveries this year",
+   "link": "https://www.cnbc.com/2026/08/19/amazon-plans-drone-expansion-as-top-exec-projects-1-million-deliveries.html",
+   "published": "2026-08-19T10:00:01Z",
    "source": "CNBC Markets"
   },
   {
@@ -34,7 +46,7 @@
   {
    "title": "Hedge funds are about to jump into prediction markets in a big way",
    "link": "https://www.cnbc.com/2026/08/19/hedge-funds-are-about-to-jump-in-big-to-prediction-markets.html",
-   "published": "2026-08-19T15:55:56Z",
+   "published": "2026-08-19T16:04:12Z",
    "source": "CNBC Markets"
   },
   {
@@ -50,12 +62,6 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Amazon to expand drone service to nearly 500 cities after targeting 1 million deliveries this year",
-   "link": "https://www.cnbc.com/2026/08/19/amazon-plans-drone-expansion-as-top-exec-projects-1-million-deliveries.html",
-   "published": "2026-08-19T10:00:01Z",
-   "source": "CNBC Markets"
-  },
-  {
    "title": "Trump pauses 50% scheduled tariffs on Canada for three days, announces 'deal' with Ottawa",
    "link": "https://www.cnbc.com/2026/08/18/trump-carney-canada-tariffs-dealine-talks.html",
    "published": "2026-08-19T03:18:57Z",
@@ -65,12 +71,6 @@
    "title": "Lowe's gives muted outlook as it sees 'pressure' in home improvement spending",
    "link": "https://www.cnbc.com/2026/08/19/lowes-low-q2-2026-earnings.html",
    "published": "2026-08-19T15:00:48Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "World\u2019s largest olive oil company surges over 20% as rivals circle in takeover battle",
-   "link": "https://www.cnbc.com/2026/08/19/deoleo-takeover-battle-olive-oil-dcoop.html",
-   "published": "2026-08-19T12:23:39Z",
    "source": "CNBC Markets"
   }
  ],
