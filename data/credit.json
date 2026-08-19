@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-19T13:13:36Z",
+ "updated": "2026-08-19T14:00:54Z",
  "spreads": {
   "hy": {
    "label": "US High Yield OAS",
@@ -1109,7 +1109,7 @@
      1018.0
     ]
    ],
-   "status": "stale"
+   "status": "live"
   },
   "eurhy": {
    "label": "Euro High Yield OAS",
