@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-19T23:09:08Z",
+ "updated": "2026-08-19T23:39:10Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -8,6 +8,18 @@
    "value": 7708.0,
    "asOf": "2026-08-19",
    "history": [
+    [
+     "2026-02-09",
+     6965.0
+    ],
+    [
+     "2026-02-10",
+     6942.0
+    ],
+    [
+     "2026-02-11",
+     6941.0
+    ],
     [
      "2026-02-12",
      6833.0
@@ -441,14 +453,6 @@
      7443.0
     ],
     [
-     "2026-07-21",
-     7509.0
-    ],
-    [
-     "2026-07-22",
-     7499.0
-    ],
-    [
      "2026-07-23",
      7408.0
     ],
@@ -471,10 +475,6 @@
     [
      "2026-07-30",
      7438.0
-    ],
-    [
-     "2026-07-31",
-     7490.0
     ],
     [
      "2026-08-03",
@@ -532,9 +532,9 @@
    "status": "live",
    "wk52hi": 7799.0,
    "wk52lo": 6344.0,
-   "ma50": 7528.0,
-   "ma200": 7088.0,
-   "rsi14": 73.0
+   "ma50": 7525.0,
+   "ma200": 7078.0,
+   "rsi14": 77.0
   },
   "DJI": {
    "label": "Dow Jones Ind. Avg.",
@@ -3752,7 +3752,7 @@
    "label": "EUR/USD",
    "group": "fx",
    "decimals": 4,
-   "value": 1.168,
+   "value": 1.1678,
    "asOf": "2026-08-19",
    "history": [
     [
@@ -4273,7 +4273,7 @@
     ],
     [
      "2026-08-19",
-     1.168
+     1.1678
     ]
    ],
    "status": "live",
@@ -4281,15 +4281,19 @@
    "wk52lo": 1.1354,
    "ma50": 1.1472,
    "ma200": 1.1629,
-   "rsi14": 75.9
+   "rsi14": 75.8
   },
   "GBPUSD": {
    "label": "GBP/USD",
    "group": "fx",
    "decimals": 4,
-   "value": 1.3605,
+   "value": 1.3602,
    "asOf": "2026-08-19",
    "history": [
+    [
+     "2026-02-19",
+     1.3496
+    ],
     [
      "2026-02-20",
      1.3461
@@ -4791,10 +4795,6 @@
      1.3498
     ],
     [
-     "2026-08-13",
-     1.3491
-    ],
-    [
      "2026-08-16",
      1.3547
     ],
@@ -4808,21 +4808,21 @@
     ],
     [
      "2026-08-19",
-     1.3605
+     1.3602
     ]
    ],
    "status": "live",
    "wk52hi": 1.3825,
    "wk52lo": 1.3022,
-   "ma50": 1.3387,
-   "ma200": 1.3418,
-   "rsi14": 69.5
+   "ma50": 1.3384,
+   "ma200": 1.3416,
+   "rsi14": 76.3
   },
   "USDJPY": {
    "label": "USD/JPY",
    "group": "fx",
    "decimals": 2,
-   "value": 158.21,
+   "value": 158.26,
    "asOf": "2026-08-19",
    "history": [
     [
@@ -5343,7 +5343,7 @@
     ],
     [
      "2026-08-19",
-     158.21
+     158.26
     ]
    ],
    "status": "live",
@@ -5351,7 +5351,7 @@
    "wk52lo": 146.41,
    "ma50": 161.06,
    "ma200": 158.27,
-   "rsi14": 37.1
+   "rsi14": 37.4
   },
   "DXY": {
    "label": "US Dollar Index",
@@ -5894,7 +5894,7 @@
    "label": "Gold (front-month)",
    "group": "commodities",
    "decimals": 2,
-   "value": 4576.0,
+   "value": 4573.7,
    "asOf": "2026-08-19",
    "history": [
     [
@@ -6415,21 +6415,21 @@
     ],
     [
      "2026-08-19",
-     4576.0
+     4573.7
     ]
    ],
    "status": "live",
    "wk52hi": 5318.4,
    "wk52lo": 3313.4,
-   "ma50": 4162.23,
-   "ma200": 4493.31,
-   "rsi14": 79.4
+   "ma50": 4162.19,
+   "ma200": 4493.3,
+   "rsi14": 79.3
   },
   "SILVER": {
    "label": "Silver (front-month)",
    "group": "commodities",
    "decimals": 3,
-   "value": 67.035,
+   "value": 67.19,
    "asOf": "2026-08-19",
    "history": [
     [
@@ -6950,21 +6950,21 @@
     ],
     [
      "2026-08-19",
-     67.035
+     67.19
     ]
    ],
    "status": "live",
    "wk52hi": 115.08,
    "wk52lo": 37.261,
-   "ma50": 61.514,
-   "ma200": 70.847,
-   "rsi14": 72.4
+   "ma50": 61.517,
+   "ma200": 70.848,
+   "rsi14": 72.6
   },
   "WTI": {
    "label": "WTI Crude",
    "group": "commodities",
    "decimals": 2,
-   "value": 84.38,
+   "value": 84.51,
    "asOf": "2026-08-19",
    "history": [
     [
@@ -7485,7 +7485,7 @@
     ],
     [
      "2026-08-19",
-     84.38
+     84.51
     ]
    ],
    "status": "live",
@@ -7493,13 +7493,13 @@
    "wk52lo": 55.27,
    "ma50": 79.13,
    "ma200": 77.2,
-   "rsi14": 51.6
+   "rsi14": 51.9
   },
   "BRENT": {
    "label": "Brent Crude",
    "group": "commodities",
    "decimals": 2,
-   "value": 91.64,
+   "value": 91.72,
    "asOf": "2026-08-19",
    "history": [
     [
@@ -8020,7 +8020,7 @@
     ],
     [
      "2026-08-19",
-     91.64
+     91.72
     ]
    ],
    "status": "live",
@@ -8028,13 +8028,13 @@
    "wk52lo": 58.92,
    "ma50": 83.77,
    "ma200": 82.15,
-   "rsi14": 54.7
+   "rsi14": 54.8
   },
   "COPPER": {
    "label": "Copper (front-month)",
    "group": "commodities",
    "decimals": 3,
-   "value": 6.503,
+   "value": 6.507,
    "asOf": "2026-08-19",
    "history": [
     [
@@ -8555,7 +8555,7 @@
     ],
     [
      "2026-08-19",
-     6.503
+     6.507
     ]
    ],
    "status": "live",
@@ -8563,7 +8563,7 @@
    "wk52lo": 4.409,
    "ma50": 6.357,
    "ma200": 5.892,
-   "rsi14": 54.8
+   "rsi14": 55.0
   }
  },
  "crypto": {
@@ -8571,7 +8571,7 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 69340.0,
+   "value": 69281.0,
    "asOf": "2026-08-19",
    "history": [
     [
@@ -9092,13 +9092,13 @@
     ],
     [
      "2026-08-19",
-     69340.0
+     69281.0
     ]
    ],
    "status": "live",
    "wk52hi": 124753.0,
    "wk52lo": 58559.0,
-   "ma50": 63974.0,
+   "ma50": 63973.0,
    "ma200": 68995.0,
    "rsi14": 74.0
   },
@@ -9106,7 +9106,7 @@
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 2250.06,
+   "value": 2252.0,
    "asOf": "2026-08-19",
    "history": [
     [
@@ -9627,15 +9627,15 @@
     ],
     [
      "2026-08-19",
-     2250.06
+     2252.0
     ]
    ],
    "status": "live",
    "wk52hi": 4831.35,
    "wk52lo": 1564.82,
-   "ma50": 1862.79,
-   "ma200": 2003.26,
-   "rsi14": 86.7
+   "ma50": 1862.83,
+   "ma200": 2003.27,
+   "rsi14": 86.8
   }
  },
  "watchlist": {
@@ -24092,7 +24092,7 @@
   "bullets": [
    "US equities advancing, S&P 500 +0.21% \u00b7 VIX 14.9 (calm).",
    "Sector leader: Health Care +3.51% \u00b7 Laggard: Technology -1.07%.",
-   "Biggest mover: Ethereum (ETH) +17.41% on the day.",
+   "Biggest mover: Ethereum (ETH) +17.51% on the day.",
    "US 2s10s curve is positively sloped at +52bp.",
    "Cross-asset check: equities and credit/vol disagree \u2014 a divergence worth treating skeptically rather than at face value.",
    "Breadth: 6/11 sectors positive on the day, 11/16 watchlist names trading above their 50-day average."
