@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-21T20:35:22Z",
+ "updated": "2026-08-21T21:02:36Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -4287,7 +4287,7 @@
    "label": "GBP/USD",
    "group": "fx",
    "decimals": 4,
-   "value": 1.3643,
+   "value": 1.3648,
    "asOf": "2026-08-21",
    "history": [
     [
@@ -4808,7 +4808,7 @@
     ],
     [
      "2026-08-21",
-     1.3643
+     1.3648
     ]
    ],
    "status": "live",
@@ -4816,13 +4816,13 @@
    "wk52lo": 1.3022,
    "ma50": 1.3395,
    "ma200": 1.3423,
-   "rsi14": 84.6
+   "rsi14": 84.9
   },
   "USDJPY": {
    "label": "USD/JPY",
    "group": "fx",
    "decimals": 2,
-   "value": 159.0,
+   "value": 158.86,
    "asOf": "2026-08-21",
    "history": [
     [
@@ -5343,7 +5343,7 @@
     ],
     [
      "2026-08-21",
-     159.0
+     158.86
     ]
    ],
    "status": "live",
@@ -5351,13 +5351,13 @@
    "wk52lo": 146.41,
    "ma50": 161.01,
    "ma200": 158.32,
-   "rsi14": 63.0
+   "rsi14": 62.0
   },
   "DXY": {
    "label": "US Dollar Index",
    "group": "fx",
    "decimals": 2,
-   "value": 98.84,
+   "value": 98.85,
    "asOf": "2026-08-21",
    "history": [
     [
@@ -5878,7 +5878,7 @@
     ],
     [
      "2026-08-21",
-     98.84
+     98.85
     ]
    ],
    "status": "live",
@@ -5886,7 +5886,7 @@
    "wk52lo": 96.22,
    "ma50": 100.48,
    "ma200": 99.18,
-   "rsi14": 28.9
+   "rsi14": 29.1
   }
  },
  "commodities": {
@@ -5894,7 +5894,7 @@
    "label": "Gold (front-month)",
    "group": "commodities",
    "decimals": 2,
-   "value": 4668.1,
+   "value": 4662.6,
    "asOf": "2026-08-21",
    "history": [
     [
@@ -6415,21 +6415,21 @@
     ],
     [
      "2026-08-21",
-     4668.1
+     4662.6
     ]
    ],
    "status": "live",
    "wk52hi": 5318.4,
    "wk52lo": 3336.9,
-   "ma50": 4176.82,
-   "ma200": 4498.89,
+   "ma50": 4176.71,
+   "ma200": 4498.86,
    "rsi14": 87.9
   },
   "SILVER": {
    "label": "Silver (front-month)",
    "group": "commodities",
    "decimals": 3,
-   "value": 69.04,
+   "value": 69.0,
    "asOf": "2026-08-21",
    "history": [
     [
@@ -6950,21 +6950,21 @@
     ],
     [
      "2026-08-21",
-     69.04
+     69.0
     ]
    ],
    "status": "live",
    "wk52hi": 115.08,
    "wk52lo": 38.027,
-   "ma50": 61.635,
-   "ma200": 71.047,
-   "rsi14": 79.8
+   "ma50": 61.634,
+   "ma200": 71.046,
+   "rsi14": 79.7
   },
   "WTI": {
    "label": "WTI Crude",
    "group": "commodities",
    "decimals": 2,
-   "value": 86.86,
+   "value": 86.74,
    "asOf": "2026-08-21",
    "history": [
     [
@@ -7485,7 +7485,7 @@
     ],
     [
      "2026-08-21",
-     86.86
+     86.74
     ]
    ],
    "status": "live",
@@ -7493,13 +7493,13 @@
    "wk52lo": 55.27,
    "ma50": 79.09,
    "ma200": 77.47,
-   "rsi14": 64.3
+   "rsi14": 64.0
   },
   "BRENT": {
    "label": "Brent Crude",
    "group": "commodities",
    "decimals": 2,
-   "value": 94.11,
+   "value": 94.01,
    "asOf": "2026-08-21",
    "history": [
     [
@@ -8020,21 +8020,21 @@
     ],
     [
      "2026-08-21",
-     94.11
+     94.01
     ]
    ],
    "status": "live",
    "wk52hi": 118.35,
    "wk52lo": 58.92,
-   "ma50": 83.84,
+   "ma50": 83.83,
    "ma200": 82.44,
-   "rsi14": 72.5
+   "rsi14": 72.4
   },
   "COPPER": {
    "label": "Copper (front-month)",
    "group": "commodities",
    "decimals": 3,
-   "value": 6.581,
+   "value": 6.579,
    "asOf": "2026-08-21",
    "history": [
     [
@@ -8555,7 +8555,7 @@
     ],
     [
      "2026-08-21",
-     6.581
+     6.579
     ]
    ],
    "status": "live",
@@ -8563,7 +8563,7 @@
    "wk52lo": 4.415,
    "ma50": 6.367,
    "ma200": 5.906,
-   "rsi14": 55.0
+   "rsi14": 54.9
   }
  },
  "crypto": {
@@ -8571,7 +8571,7 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 77499.0,
+   "value": 77452.0,
    "asOf": "2026-08-21",
    "history": [
     [
@@ -9092,13 +9092,13 @@
     ],
     [
      "2026-08-21",
-     77499.0
+     77452.0
     ]
    ],
    "status": "live",
    "wk52hi": 124753.0,
    "wk52lo": 58559.0,
-   "ma50": 64554.0,
+   "ma50": 64553.0,
    "ma200": 68969.0,
    "rsi14": 87.0
   },
@@ -9106,7 +9106,7 @@
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 2437.94,
+   "value": 2439.28,
    "asOf": "2026-08-21",
    "history": [
     [
@@ -9627,13 +9627,13 @@
     ],
     [
      "2026-08-21",
-     2437.94
+     2439.28
     ]
    ],
    "status": "live",
    "wk52hi": 4831.35,
    "wk52lo": 1564.82,
-   "ma50": 1891.96,
+   "ma50": 1891.99,
    "ma200": 2004.03,
    "rsi14": 91.0
   }
@@ -24092,7 +24092,7 @@
   "bullets": [
    "US equities advancing, S&P 500 +0.43% \u00b7 VIX 15.1 (normal).",
    "Sector leader: Materials +2.14% \u00b7 Laggard: Utilities -2.28%.",
-   "Biggest mover: Bitcoin (BTC) +6.12% on the day.",
+   "Biggest mover: Bitcoin (BTC) +6.05% on the day.",
    "US 2s10s curve is positively sloped at +50bp.",
    "Cross-asset check: equities and credit/vol disagree \u2014 a divergence worth treating skeptically rather than at face value.",
    "Breadth: 8/11 sectors positive on the day, 8/16 watchlist names trading above their 50-day average."
