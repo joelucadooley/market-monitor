@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-21T21:41:10Z",
+ "updated": "2026-08-21T22:01:41Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -2145,9 +2145,13 @@
    "label": "DAX",
    "group": "indices",
    "decimals": 0,
-   "value": 26137.0,
-   "asOf": "2026-08-21",
+   "value": 25983.0,
+   "asOf": "2026-08-20",
    "history": [
+    [
+     "2026-02-17",
+     24998.0
+    ],
     [
      "2026-02-18",
      25278.0
@@ -2663,18 +2667,14 @@
     [
      "2026-08-20",
      25983.0
-    ],
-    [
-     "2026-08-21",
-     26137.0
     ]
    ],
    "status": "live",
    "wk52hi": 26440.0,
    "wk52lo": 22301.0,
-   "ma50": 25445.0,
-   "ma200": 24550.0,
-   "rsi14": 55.0
+   "ma50": 25415.0,
+   "ma200": 24539.0,
+   "rsi14": 61.0
   },
   "N225": {
    "label": "Nikkei 225",
@@ -8571,7 +8571,7 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 78163.0,
+   "value": 78371.0,
    "asOf": "2026-08-21",
    "history": [
     [
@@ -9092,21 +9092,21 @@
     ],
     [
      "2026-08-21",
-     78163.0
+     78371.0
     ]
    ],
    "status": "live",
    "wk52hi": 124753.0,
    "wk52lo": 58559.0,
-   "ma50": 64567.0,
-   "ma200": 68973.0,
+   "ma50": 64571.0,
+   "ma200": 68974.0,
    "rsi14": 88.0
   },
   "ETH": {
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 2481.25,
+   "value": 2526.46,
    "asOf": "2026-08-21",
    "history": [
     [
@@ -9627,15 +9627,15 @@
     ],
     [
      "2026-08-21",
-     2481.25
+     2526.46
     ]
    ],
    "status": "live",
    "wk52hi": 4831.35,
    "wk52lo": 1564.82,
-   "ma50": 1892.83,
-   "ma200": 2004.24,
-   "rsi14": 91.5
+   "ma50": 1893.73,
+   "ma200": 2004.47,
+   "rsi14": 92.1
   }
  },
  "watchlist": {
@@ -24092,7 +24092,7 @@
   "bullets": [
    "US equities advancing, S&P 500 +0.43% \u00b7 VIX 15.1 (normal).",
    "Sector leader: Materials +2.14% \u00b7 Laggard: Utilities -2.28%.",
-   "Biggest mover: Bitcoin (BTC) +7.02% on the day.",
+   "Biggest mover: Ethereum (ETH) +8.60% on the day.",
    "US 2s10s curve is positively sloped at +50bp.",
    "Cross-asset check: equities and credit/vol disagree \u2014 a divergence worth treating skeptically rather than at face value.",
    "Breadth: 8/11 sectors positive on the day, 8/16 watchlist names trading above their 50-day average."
