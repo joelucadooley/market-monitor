@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-21T23:41:27Z",
+ "updated": "2026-08-22T00:01:13Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -8571,8 +8571,8 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 78191.0,
-   "asOf": "2026-08-21",
+   "value": 78446.0,
+   "asOf": "2026-08-22",
    "history": [
     [
      "2026-04-14",
@@ -9091,23 +9091,23 @@
      73033.0
     ],
     [
-     "2026-08-21",
-     78191.0
+     "2026-08-22",
+     78446.0
     ]
    ],
    "status": "live",
    "wk52hi": 124753.0,
    "wk52lo": 58559.0,
-   "ma50": 64568.0,
-   "ma200": 68973.0,
+   "ma50": 64573.0,
+   "ma200": 68974.0,
    "rsi14": 88.0
   },
   "ETH": {
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 2516.65,
-   "asOf": "2026-08-21",
+   "value": 2520.32,
+   "asOf": "2026-08-22",
    "history": [
     [
      "2026-04-14",
@@ -9626,15 +9626,15 @@
      2326.38
     ],
     [
-     "2026-08-21",
-     2516.65
+     "2026-08-22",
+     2520.32
     ]
    ],
    "status": "live",
    "wk52hi": 4831.35,
    "wk52lo": 1564.82,
-   "ma50": 1893.54,
-   "ma200": 2004.42,
+   "ma50": 1893.61,
+   "ma200": 2004.44,
    "rsi14": 92.0
   }
  },
@@ -24092,7 +24092,7 @@
   "bullets": [
    "US equities advancing, S&P 500 +0.43% \u00b7 VIX 15.1 (normal).",
    "Sector leader: Materials +2.14% \u00b7 Laggard: Utilities -2.28%.",
-   "Biggest mover: Ethereum (ETH) +8.18% on the day.",
+   "Biggest mover: Ethereum (ETH) +8.34% on the day.",
    "US 2s10s curve is positively sloped at +50bp.",
    "Cross-asset check: equities and credit/vol disagree \u2014 a divergence worth treating skeptically rather than at face value.",
    "Breadth: 8/11 sectors positive on the day, 8/16 watchlist names trading above their 50-day average."
