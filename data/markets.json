@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-22T06:40:31Z",
+ "updated": "2026-08-22T09:27:09Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -8571,13 +8571,9 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 77531.0,
+   "value": 77191.0,
    "asOf": "2026-08-22",
    "history": [
-    [
-     "2026-04-14",
-     74182.0
-    ],
     [
      "2026-04-15",
      74805.0
@@ -9091,28 +9087,28 @@
      73033.0
     ],
     [
+     "2026-08-21",
+     78335.0
+    ],
+    [
      "2026-08-22",
-     77531.0
+     77191.0
     ]
    ],
    "status": "live",
    "wk52hi": 124753.0,
    "wk52lo": 58559.0,
-   "ma50": 64554.0,
-   "ma200": 68970.0,
-   "rsi14": 87.0
+   "ma50": 64863.0,
+   "ma200": 68981.0,
+   "rsi14": 83.0
   },
   "ETH": {
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 2438.64,
+   "value": 2423.76,
    "asOf": "2026-08-22",
    "history": [
-    [
-     "2026-04-14",
-     2323.31
-    ],
     [
      "2026-04-15",
      2359.44
@@ -9626,16 +9622,20 @@
      2326.38
     ],
     [
+     "2026-08-21",
+     2515.28
+    ],
+    [
      "2026-08-22",
-     2438.64
+     2423.76
     ]
    ],
    "status": "live",
    "wk52hi": 4831.35,
    "wk52lo": 1564.82,
-   "ma50": 1891.98,
-   "ma200": 2004.03,
-   "rsi14": 91.0
+   "ma50": 1906.85,
+   "ma200": 2005.4,
+   "rsi14": 81.5
   }
  },
  "watchlist": {
@@ -24092,7 +24092,7 @@
   "bullets": [
    "US equities advancing, S&P 500 +0.43% \u00b7 VIX 15.1 (normal).",
    "Sector leader: Materials +2.14% \u00b7 Laggard: Utilities -2.28%.",
-   "Biggest mover: Bitcoin (BTC) +6.16% on the day.",
+   "Biggest mover: Tesla (TSLA) +5.14% on the day.",
    "US 2s10s curve is positively sloped at +50bp.",
    "Cross-asset check: equities and credit/vol disagree \u2014 a divergence worth treating skeptically rather than at face value.",
    "Breadth: 8/11 sectors positive on the day, 8/16 watchlist names trading above their 50-day average."
