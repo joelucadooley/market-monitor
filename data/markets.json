@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-22T00:01:13Z",
+ "updated": "2026-08-22T01:15:55Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -1610,13 +1610,9 @@
    "label": "FTSE 100",
    "group": "indices",
    "decimals": 0,
-   "value": 10748.0,
-   "asOf": "2026-08-20",
+   "value": 10817.0,
+   "asOf": "2026-08-21",
    "history": [
-    [
-     "2026-02-16",
-     10474.0
-    ],
     [
      "2026-02-17",
      10556.0
@@ -2132,26 +2128,26 @@
     [
      "2026-08-20",
      10748.0
+    ],
+    [
+     "2026-08-21",
+     10817.0
     ]
    ],
    "status": "live",
    "wk52hi": 10911.0,
    "wk52lo": 9117.0,
-   "ma50": 10645.0,
-   "ma200": 10300.0,
-   "rsi14": 30.0
+   "ma50": 10652.0,
+   "ma200": 10305.0,
+   "rsi14": 44.0
   },
   "DAX": {
    "label": "DAX",
    "group": "indices",
    "decimals": 0,
-   "value": 25983.0,
-   "asOf": "2026-08-20",
+   "value": 26137.0,
+   "asOf": "2026-08-21",
    "history": [
-    [
-     "2026-02-17",
-     24998.0
-    ],
     [
      "2026-02-18",
      25278.0
@@ -2667,26 +2663,26 @@
     [
      "2026-08-20",
      25983.0
+    ],
+    [
+     "2026-08-21",
+     26137.0
     ]
    ],
    "status": "live",
    "wk52hi": 26440.0,
    "wk52lo": 22301.0,
-   "ma50": 25415.0,
-   "ma200": 24539.0,
-   "rsi14": 61.0
+   "ma50": 25445.0,
+   "ma200": 24550.0,
+   "rsi14": 55.0
   },
   "N225": {
    "label": "Nikkei 225",
    "group": "indices",
    "decimals": 0,
-   "value": 66217.0,
-   "asOf": "2026-08-20",
+   "value": 66016.0,
+   "asOf": "2026-08-21",
    "history": [
-    [
-     "2026-02-09",
-     56364.0
-    ],
     [
      "2026-02-10",
      57651.0
@@ -3202,14 +3198,18 @@
     [
      "2026-08-20",
      66217.0
+    ],
+    [
+     "2026-08-21",
+     66016.0
     ]
    ],
    "status": "live",
    "wk52hi": 72366.0,
    "wk52lo": 41939.0,
-   "ma50": 67322.0,
-   "ma200": 58164.0,
-   "rsi14": 65.0
+   "ma50": 67358.0,
+   "ma200": 58247.0,
+   "rsi14": 57.0
   },
   "VIX": {
    "label": "CBOE Volatility (VIX)",
@@ -8571,7 +8571,7 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 78446.0,
+   "value": 78159.0,
    "asOf": "2026-08-22",
    "history": [
     [
@@ -9092,21 +9092,21 @@
     ],
     [
      "2026-08-22",
-     78446.0
+     78159.0
     ]
    ],
    "status": "live",
    "wk52hi": 124753.0,
    "wk52lo": 58559.0,
-   "ma50": 64573.0,
-   "ma200": 68974.0,
+   "ma50": 64567.0,
+   "ma200": 68973.0,
    "rsi14": 88.0
   },
   "ETH": {
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 2520.32,
+   "value": 2524.82,
    "asOf": "2026-08-22",
    "history": [
     [
@@ -9627,15 +9627,15 @@
     ],
     [
      "2026-08-22",
-     2520.32
+     2524.82
     ]
    ],
    "status": "live",
    "wk52hi": 4831.35,
    "wk52lo": 1564.82,
-   "ma50": 1893.61,
-   "ma200": 2004.44,
-   "rsi14": 92.0
+   "ma50": 1893.7,
+   "ma200": 2004.46,
+   "rsi14": 92.1
   }
  },
  "watchlist": {
@@ -24092,7 +24092,7 @@
   "bullets": [
    "US equities advancing, S&P 500 +0.43% \u00b7 VIX 15.1 (normal).",
    "Sector leader: Materials +2.14% \u00b7 Laggard: Utilities -2.28%.",
-   "Biggest mover: Ethereum (ETH) +8.34% on the day.",
+   "Biggest mover: Ethereum (ETH) +8.53% on the day.",
    "US 2s10s curve is positively sloped at +50bp.",
    "Cross-asset check: equities and credit/vol disagree \u2014 a divergence worth treating skeptically rather than at face value.",
    "Breadth: 8/11 sectors positive on the day, 8/16 watchlist names trading above their 50-day average."
