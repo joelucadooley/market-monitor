@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-23T12:40:46Z",
+ "updated": "2026-08-23T15:22:50Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -6429,7 +6429,7 @@
    "label": "Silver (front-month)",
    "group": "commodities",
    "decimals": 3,
-   "value": 69.466,
+   "value": 69.53,
    "asOf": "2026-08-21",
    "history": [
     [
@@ -6950,15 +6950,15 @@
     ],
     [
      "2026-08-21",
-     69.466
+     69.53
     ]
    ],
    "status": "live",
    "wk52hi": 115.08,
    "wk52lo": 38.582,
-   "ma50": 61.644,
+   "ma50": 61.645,
    "ma200": 71.049,
-   "rsi14": 80.2
+   "rsi14": 80.3
   },
   "WTI": {
    "label": "WTI Crude",
@@ -8571,7 +8571,7 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 77229.0,
+   "value": 77214.0,
    "asOf": "2026-08-23",
    "history": [
     [
@@ -9092,7 +9092,7 @@
     ],
     [
      "2026-08-23",
-     77229.0
+     77214.0
     ]
    ],
    "status": "live",
@@ -9106,7 +9106,7 @@
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 2428.28,
+   "value": 2436.14,
    "asOf": "2026-08-23",
    "history": [
     [
@@ -9627,15 +9627,15 @@
     ],
     [
      "2026-08-23",
-     2428.28
+     2436.14
     ]
    ],
    "status": "live",
    "wk52hi": 4779.65,
    "wk52lo": 1564.82,
-   "ma50": 1919.85,
-   "ma200": 2006.82,
-   "rsi14": 82.3
+   "ma50": 1920.01,
+   "ma200": 2006.86,
+   "rsi14": 82.5
   }
  },
  "watchlist": {
