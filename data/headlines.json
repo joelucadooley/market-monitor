@@ -1,22 +1,40 @@
 {
- "updated": "2026-09-02T04:59:31Z",
+ "updated": "2026-09-02T09:30:11Z",
  "items": [
   {
-   "title": "Trump says U.S. is not forcing Iran to negotiate after fresh round of strikes",
+   "title": "Treasury yields rise as global bond sell-off continues",
+   "link": "https://www.cnbc.com/2026/09/02/bond-yields-treasurys-inflation.html",
+   "published": "2026-09-02T09:14:56Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Iran says two tankers have hit Hormuz naval mines, attacks regional targets in retaliation to U.S. strikes",
    "link": "https://www.cnbc.com/2026/09/02/us-iran-war-trump-hormuz-irgc-jordan-bahrain.html",
-   "published": "2026-09-02T01:34:27Z",
+   "published": "2026-09-02T08:51:33Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "China dissented from G20 statement opposing 'cheap exports' flooding market, Bessent says",
-   "link": "https://www.cnbc.com/2026/09/01/bessent-china-g20-trade-exports-trump-xi.html",
-   "published": "2026-09-01T23:52:21Z",
+   "title": "Meta settlement could clear the way for new AI product launches, Morgan Stanley says",
+   "link": "https://www.cnbc.com/2026/09/02/meta-18-billion-settlement-ai-products.html",
+   "published": "2026-09-02T09:19:25Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Canada's Carney slaps Trump admin for 'doing memes ... throwing shade'",
-   "link": "https://www.cnbc.com/2026/09/01/canada-carney-trump-trade-ontario.html",
-   "published": "2026-09-01T18:52:11Z",
+   "title": "Palantir CEO Alex Karp backs ousted Ukraine defense minister's new defense tech startup",
+   "link": "https://www.cnbc.com/2026/09/02/palantir-alex-karp-ukraine-federov-defense-startup.html",
+   "published": "2026-09-02T09:30:09Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "U.S. crude tops $90 as Iran retaliates with strikes on Kuwait, Jordan and Bahrain",
+   "link": "https://www.cnbc.com/2026/09/02/brent-oil-us-iran-strikes.html",
+   "published": "2026-09-02T08:50:20Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "China's Xi keeps Iranian president at arm's length weeks ahead of Trump summit",
+   "link": "https://www.cnbc.com/2026/09/02/china-trump-iran-summit-nuclear-trade-tariffs-sanctions-.html",
+   "published": "2026-09-02T07:26:51Z",
    "source": "CNBC Markets"
   },
   {
@@ -26,51 +44,33 @@
    "source": "CNBC Markets"
   },
   {
+   "title": "Palo Alto Networks beats quarterly estimates on AI demand, continues acquisition spree",
+   "link": "https://www.cnbc.com/2026/09/01/palo-alto-networks-panw-q4-2026-earnings.html",
+   "published": "2026-09-01T21:41:15Z",
+   "source": "CNBC Markets"
+  },
+  {
    "title": "U.S. House votes to avoid government shutdown amid GOP hard-liner resistance",
    "link": "https://www.cnbc.com/2026/09/01/congress-government-shutdown-vote.html",
    "published": "2026-09-01T20:34:47Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Australia posts second-quarter growth of 2.1%, beating expectations",
-   "link": "https://www.cnbc.com/2026/09/02/australia-gdp-q2-middle-east-rba.html",
-   "published": "2026-09-02T03:05:14Z",
+   "title": "Scaramucci says he had 'Potomac fever' in the White House \u2014 and Bessent and Lutnick have it too",
+   "link": "https://www.cnbc.com/2026/09/02/anthony-scaramucci-potomac-fever-bessent-lutnick.html",
+   "published": "2026-09-02T06:37:08Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Apple enters John Ternus era as AI challenges and memory crunch intensify",
-   "link": "https://www.cnbc.com/2026/09/01/apple-enters-ternus-era-as-ai-challenges-and-memory-crunch-intensify.html",
-   "published": "2026-09-01T16:27:54Z",
+   "title": "Nepal\u2019s mountain tourism industry faces \u2018serious warning\u2019 after Himalayan flood disaster",
+   "link": "https://www.cnbc.com/2026/09/02/nepal-tibet-floods-adventure-tourism-economy.html",
+   "published": "2026-09-02T09:23:18Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Global bond yields soar to multi-decade highs as Middle East turmoil reignites inflation fears",
-   "link": "https://www.cnbc.com/2026/09/01/bond-yields-iran-inflation-treasurys-japan-uk.html",
-   "published": "2026-09-01T12:39:23Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Used cars under $20,000 tend to sell quickly \u2014 but there are trade-offs for buyers",
-   "link": "https://www.cnbc.com/2026/09/01/used-cars-under-20000-sell-quickly-tradeoffs.html",
-   "published": "2026-09-01T15:49:08Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Hugging Face's new duck robot is selling fast. A Chinese chip powers it",
-   "link": "https://www.cnbc.com/2026/09/01/hugging-faces-new-duck-robot-is-selling-fast-a-chinese-chip-powers-it.html",
-   "published": "2026-09-02T00:11:14Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Japanese green tea giant Ito En surges 8%, defying a broad market sell-off",
-   "link": "https://www.cnbc.com/2026/09/02/japan-green-tea-ito-en-surges-earnings.html",
-   "published": "2026-09-02T02:24:30Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Palo Alto Networks beats quarterly estimates on AI demand, continues acquisition spree",
-   "link": "https://www.cnbc.com/2026/09/01/palo-alto-networks-panw-q4-2026-earnings.html",
-   "published": "2026-09-01T21:41:15Z",
+   "title": "China dissented from G20 statement opposing 'cheap exports' flooding market, Bessent says",
+   "link": "https://www.cnbc.com/2026/09/01/bessent-china-g20-trade-exports-trump-xi.html",
+   "published": "2026-09-01T23:52:21Z",
    "source": "CNBC Markets"
   }
  ],
