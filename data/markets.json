@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-07T03:59:43Z",
+ "updated": "2026-09-07T09:15:52Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -1610,13 +1610,9 @@
    "label": "FTSE 100",
    "group": "indices",
    "decimals": 0,
-   "value": 10831.0,
-   "asOf": "2026-09-04",
+   "value": 10822.0,
+   "asOf": "2026-09-07",
    "history": [
-    [
-     "2026-03-02",
-     10780.0
-    ],
     [
      "2026-03-03",
      10484.0
@@ -2132,26 +2128,26 @@
     [
      "2026-09-04",
      10831.0
+    ],
+    [
+     "2026-09-07",
+     10822.0
     ]
    ],
    "status": "live",
    "wk52hi": 10911.0,
    "wk52lo": 9196.0,
-   "ma50": 10719.0,
-   "ma200": 10354.0,
-   "rsi14": 59.0
+   "ma50": 10726.0,
+   "ma200": 10360.0,
+   "rsi14": 61.0
   },
   "DAX": {
    "label": "DAX",
    "group": "indices",
    "decimals": 0,
-   "value": 26046.0,
-   "asOf": "2026-09-04",
+   "value": 25991.0,
+   "asOf": "2026-09-07",
    "history": [
-    [
-     "2026-03-04",
-     24205.0
-    ],
     [
      "2026-03-05",
      23816.0
@@ -2667,20 +2663,24 @@
     [
      "2026-09-04",
      26046.0
+    ],
+    [
+     "2026-09-07",
+     25991.0
     ]
    ],
    "status": "live",
    "wk52hi": 26570.0,
    "wk52lo": 22301.0,
-   "ma50": 25695.0,
-   "ma200": 24666.0,
-   "rsi14": 42.0
+   "ma50": 25722.0,
+   "ma200": 24680.0,
+   "rsi14": 46.0
   },
   "N225": {
    "label": "Nikkei 225",
    "group": "indices",
    "decimals": 0,
-   "value": 66036.0,
+   "value": 66400.0,
    "asOf": "2026-09-07",
    "history": [
     [
@@ -3201,27 +3201,23 @@
     ],
     [
      "2026-09-07",
-     66036.0
+     66400.0
     ]
    ],
    "status": "live",
    "wk52hi": 72366.0,
    "wk52lo": 43459.0,
-   "ma50": 66508.0,
-   "ma200": 59057.0,
-   "rsi14": 42.0
+   "ma50": 66515.0,
+   "ma200": 59059.0,
+   "rsi14": 44.0
   },
   "VIX": {
    "label": "CBOE Volatility (VIX)",
    "group": "indices",
    "decimals": 2,
-   "value": 14.53,
-   "asOf": "2026-09-04",
+   "value": 15.02,
+   "asOf": "2026-09-07",
    "history": [
-    [
-     "2026-03-04",
-     21.15
-    ],
     [
      "2026-03-05",
      23.75
@@ -3737,14 +3733,18 @@
     [
      "2026-09-04",
      14.53
+    ],
+    [
+     "2026-09-07",
+     15.02
     ]
    ],
    "status": "live",
    "wk52hi": 31.05,
    "wk52lo": 13.47,
-   "ma50": 16.2,
-   "ma200": 18.25,
-   "rsi14": 46.7
+   "ma50": 16.13,
+   "ma200": 18.21,
+   "rsi14": 45.8
   }
  },
  "fx": {
@@ -3752,7 +3752,7 @@
    "label": "EUR/USD",
    "group": "fx",
    "decimals": 4,
-   "value": 1.1614,
+   "value": 1.1625,
    "asOf": "2026-09-07",
    "history": [
     [
@@ -4273,21 +4273,21 @@
     ],
     [
      "2026-09-07",
-     1.1614
+     1.1625
     ]
    ],
    "status": "live",
    "wk52hi": 1.2018,
    "wk52lo": 1.1354,
-   "ma50": 1.151,
+   "ma50": 1.1511,
    "ma200": 1.1633,
-   "rsi14": 54.5
+   "rsi14": 56.2
   },
   "GBPUSD": {
    "label": "GBP/USD",
    "group": "fx",
    "decimals": 4,
-   "value": 1.3511,
+   "value": 1.3537,
    "asOf": "2026-09-07",
    "history": [
     [
@@ -4808,7 +4808,7 @@
     ],
     [
      "2026-09-07",
-     1.3511
+     1.3537
     ]
    ],
    "status": "live",
@@ -4816,13 +4816,13 @@
    "wk52lo": 1.3022,
    "ma50": 1.3457,
    "ma200": 1.3444,
-   "rsi14": 45.2
+   "rsi14": 48.3
   },
   "USDJPY": {
    "label": "USD/JPY",
    "group": "fx",
    "decimals": 2,
-   "value": 156.04,
+   "value": 154.39,
    "asOf": "2026-09-07",
    "history": [
     [
@@ -5343,21 +5343,21 @@
     ],
     [
      "2026-09-07",
-     156.04
+     154.39
     ]
    ],
    "status": "live",
    "wk52hi": 163.86,
    "wk52lo": 146.41,
-   "ma50": 160.52,
+   "ma50": 160.48,
    "ma200": 158.45,
-   "rsi14": 31.8
+   "rsi14": 25.1
   },
   "DXY": {
    "label": "US Dollar Index",
    "group": "fx",
    "decimals": 2,
-   "value": 99.18,
+   "value": 98.95,
    "asOf": "2026-09-07",
    "history": [
     [
@@ -5878,7 +5878,7 @@
     ],
     [
      "2026-09-07",
-     99.18
+     98.95
     ]
    ],
    "status": "live",
@@ -5886,7 +5886,7 @@
    "wk52lo": 96.22,
    "ma50": 100.19,
    "ma200": 99.16,
-   "rsi14": 43.1
+   "rsi14": 40.3
   }
  },
  "commodities": {
@@ -8571,13 +8571,9 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 79587.0,
+   "value": 79527.0,
    "asOf": "2026-09-07",
    "history": [
-    [
-     "2026-04-30",
-     76304.0
-    ],
     [
      "2026-05-01",
      78179.0
@@ -9091,28 +9087,28 @@
      79824.0
     ],
     [
+     "2026-09-06",
+     80350.0
+    ],
+    [
      "2026-09-07",
-     79587.0
+     79527.0
     ]
    ],
    "status": "live",
    "wk52hi": 124753.0,
    "wk52lo": 58559.0,
-   "ma50": 69391.0,
-   "ma200": 69750.0,
-   "rsi14": 56.0
+   "ma50": 69703.0,
+   "ma200": 69816.0,
+   "rsi14": 52.0
   },
   "ETH": {
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 2497.4,
+   "value": 2496.96,
    "asOf": "2026-09-07",
    "history": [
-    [
-     "2026-04-30",
-     2256.25
-    ],
     [
      "2026-05-01",
      2295.09
@@ -9626,16 +9622,20 @@
      2480.74
     ],
     [
+     "2026-09-06",
+     2514.55
+    ],
+    [
      "2026-09-07",
-     2497.4
+     2496.96
     ]
    ],
    "status": "live",
    "wk52hi": 4715.25,
    "wk52lo": 1564.82,
-   "ma50": 2102.7,
-   "ma200": 2038.79,
-   "rsi14": 52.9
+   "ma50": 2115.55,
+   "ma200": 2041.62,
+   "rsi14": 51.3
   }
  },
  "watchlist": {
@@ -24088,12 +24088,13 @@
   }
  },
  "pulse": {
-  "headline": "US equities retreating, S&P 500 -0.37% \u00b7 VIX 14.5 (calm)",
+  "headline": "US equities retreating, S&P 500 -0.37% \u00b7 VIX 15.0 (normal)",
   "bullets": [
-   "US equities retreating, S&P 500 -0.37% \u00b7 VIX 14.5 (calm).",
+   "US equities retreating, S&P 500 -0.37% \u00b7 VIX 15.0 (normal).",
    "Sector leader: Technology +0.70% \u00b7 Laggard: Consumer Discretionary -1.33%.",
    "Biggest mover: Tesla (TSLA) -5.92% on the day.",
    "US 2s10s curve is positively sloped at +43bp.",
+   "Cross-asset check: equities, credit, and volatility are aligned risk-off.",
    "Breadth: 3/11 sectors positive on the day, 10/16 watchlist names trading above their 50-day average."
   ],
   "breadth": {
