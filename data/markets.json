@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-07T15:09:57Z",
+ "updated": "2026-09-07T19:11:21Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -1610,7 +1610,7 @@
    "label": "FTSE 100",
    "group": "indices",
    "decimals": 0,
-   "value": 10828.0,
+   "value": 10822.0,
    "asOf": "2026-09-07",
    "history": [
     [
@@ -2131,7 +2131,7 @@
     ],
     [
      "2026-09-07",
-     10828.0
+     10822.0
     ]
    ],
    "status": "live",
@@ -2139,13 +2139,13 @@
    "wk52lo": 9196.0,
    "ma50": 10726.0,
    "ma200": 10360.0,
-   "rsi14": 62.0
+   "rsi14": 61.0
   },
   "DAX": {
    "label": "DAX",
    "group": "indices",
    "decimals": 0,
-   "value": 26001.0,
+   "value": 26007.0,
    "asOf": "2026-09-07",
    "history": [
     [
@@ -2666,7 +2666,7 @@
     ],
     [
      "2026-09-07",
-     26001.0
+     26007.0
     ]
    ],
    "status": "live",
@@ -2674,7 +2674,7 @@
    "wk52lo": 22301.0,
    "ma50": 25723.0,
    "ma200": 24680.0,
-   "rsi14": 46.0
+   "rsi14": 47.0
   },
   "N225": {
    "label": "Nikkei 225",
@@ -3215,7 +3215,7 @@
    "label": "CBOE Volatility (VIX)",
    "group": "indices",
    "decimals": 2,
-   "value": 15.22,
+   "value": 15.3,
    "asOf": "2026-09-07",
    "history": [
     [
@@ -3736,7 +3736,7 @@
     ],
     [
      "2026-09-07",
-     15.22
+     15.3
     ]
    ],
    "status": "live",
@@ -3744,7 +3744,7 @@
    "wk52lo": 13.47,
    "ma50": 16.14,
    "ma200": 18.21,
-   "rsi14": 46.9
+   "rsi14": 47.3
   }
  },
  "fx": {
@@ -3752,7 +3752,7 @@
    "label": "EUR/USD",
    "group": "fx",
    "decimals": 4,
-   "value": 1.1632,
+   "value": 1.1627,
    "asOf": "2026-09-07",
    "history": [
     [
@@ -4273,7 +4273,7 @@
     ],
     [
      "2026-09-07",
-     1.1632
+     1.1627
     ]
    ],
    "status": "live",
@@ -4281,13 +4281,13 @@
    "wk52lo": 1.1354,
    "ma50": 1.1511,
    "ma200": 1.1633,
-   "rsi14": 57.3
+   "rsi14": 56.6
   },
   "GBPUSD": {
    "label": "GBP/USD",
    "group": "fx",
    "decimals": 4,
-   "value": 1.3544,
+   "value": 1.3542,
    "asOf": "2026-09-07",
    "history": [
     [
@@ -4808,7 +4808,7 @@
     ],
     [
      "2026-09-07",
-     1.3544
+     1.3542
     ]
    ],
    "status": "live",
@@ -4816,7 +4816,7 @@
    "wk52lo": 1.3022,
    "ma50": 1.3457,
    "ma200": 1.3444,
-   "rsi14": 49.2
+   "rsi14": 49.0
   },
   "USDJPY": {
    "label": "USD/JPY",
@@ -5357,7 +5357,7 @@
    "label": "US Dollar Index",
    "group": "fx",
    "decimals": 2,
-   "value": 98.86,
+   "value": 98.92,
    "asOf": "2026-09-07",
    "history": [
     [
@@ -5878,15 +5878,15 @@
     ],
     [
      "2026-09-07",
-     98.86
+     98.92
     ]
    ],
    "status": "live",
    "wk52hi": 101.61,
    "wk52lo": 96.22,
-   "ma50": 100.18,
+   "ma50": 100.19,
    "ma200": 99.16,
-   "rsi14": 39.4
+   "rsi14": 40.0
   }
  },
  "commodities": {
@@ -8571,7 +8571,7 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 79085.0,
+   "value": 79147.0,
    "asOf": "2026-09-07",
    "history": [
     [
@@ -9092,21 +9092,21 @@
     ],
     [
      "2026-09-07",
-     79085.0
+     79147.0
     ]
    ],
    "status": "live",
    "wk52hi": 124753.0,
    "wk52lo": 58559.0,
-   "ma50": 69694.0,
-   "ma200": 69814.0,
-   "rsi14": 50.0
+   "ma50": 69695.0,
+   "ma200": 69815.0,
+   "rsi14": 51.0
   },
   "ETH": {
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 2485.84,
+   "value": 2489.02,
    "asOf": "2026-09-07",
    "history": [
     [
@@ -9627,15 +9627,15 @@
     ],
     [
      "2026-09-07",
-     2485.84
+     2489.02
     ]
    ],
    "status": "live",
    "wk52hi": 4715.25,
    "wk52lo": 1564.82,
-   "ma50": 2115.33,
-   "ma200": 2041.57,
-   "rsi14": 50.3
+   "ma50": 2115.39,
+   "ma200": 2041.58,
+   "rsi14": 50.6
   }
  },
  "watchlist": {
@@ -24088,9 +24088,9 @@
   }
  },
  "pulse": {
-  "headline": "US equities retreating, S&P 500 -0.37% \u00b7 VIX 15.2 (normal)",
+  "headline": "US equities retreating, S&P 500 -0.37% \u00b7 VIX 15.3 (normal)",
   "bullets": [
-   "US equities retreating, S&P 500 -0.37% \u00b7 VIX 15.2 (normal).",
+   "US equities retreating, S&P 500 -0.37% \u00b7 VIX 15.3 (normal).",
    "Sector leader: Technology +0.70% \u00b7 Laggard: Consumer Discretionary -1.33%.",
    "Biggest mover: Tesla (TSLA) -5.92% on the day.",
    "US 2s10s curve is positively sloped at +43bp.",
