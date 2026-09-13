@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T03:39:10Z",
+ "updated": "2026-09-13T11:14:28Z",
  "banks": {
   "US": {
    "label": "Federal Reserve (upper target)",
@@ -738,7 +738,7 @@
      3.75
     ]
    ],
-   "status": "stale"
+   "status": "live"
   },
   "EU": {
    "label": "ECB (deposit facility)",
@@ -6255,7 +6255,7 @@
      3.7296
     ]
    ],
-   "status": "stale"
+   "status": "live"
   },
   "gilt10y": {
    "label": "UK 10Y Gilt (monthly)",
