@@ -1,76 +1,76 @@
 {
- "updated": "2026-09-14T10:04:19Z",
+ "updated": "2026-09-14T16:22:50Z",
  "items": [
+  {
+   "title": "Trump says no need for more AI regulation, slams Anthropic CEO Dario Amodei",
+   "link": "https://www.cnbc.com/2026/09/14/trump-ai-data-centers-anthropic-dario-amodei.html",
+   "published": "2026-09-14T16:08:15Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "10-year Treasury yield hits 5% for first time since 2023 as traders brace for Fed decision this week",
+   "link": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
+   "published": "2026-09-14T15:59:35Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Microsoft sets limits for future AI models as industry throttles frontier development",
+   "link": "https://www.cnbc.com/2026/09/14/microsoft-ai-model-limits-anthropic-openai.html",
+   "published": "2026-09-14T13:38:03Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Trump says Ukraine and Russia agreed not to hit energy targets",
+   "link": "https://www.cnbc.com/2026/09/14/trump-ukraine-russia-energy-oil-iran.html",
+   "published": "2026-09-14T16:03:50Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "What Amodei's AI slowdown could mean for Anthropic's imminent IPO",
+   "link": "https://www.cnbc.com/2026/09/14/anthropic-walks-tightrope-to-nasdaq-pushing-slowdown-and-pursuing-ipo.html",
+   "published": "2026-09-14T14:52:38Z",
+   "source": "CNBC Markets"
+  },
   {
    "title": "OpenAI boss Sam Altman spells out how and why the AI industry wants to slow down: 'We could lose control'",
    "link": "https://www.cnbc.com/2026/09/14/sam-altman-ai-slowdown-anthropic-amodei-musk.html",
-   "published": "2026-09-14T08:59:18Z",
+   "published": "2026-09-14T13:38:48Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Brent crude jumps above $108 after Saudi Arabia shuts down critical pipeline that bypasses Strait of Hormuz",
-   "link": "https://www.cnbc.com/2026/09/13/oil-price-iran-war-strait-hormuz-saudi-pipeline.html",
-   "published": "2026-09-14T09:23:19Z",
+   "title": "Novo Nordisk rebrands to 'Novo,' CEO tells CNBC drugmaker needs to 'rethink' strategy amid obesity race",
+   "link": "https://www.cnbc.com/2026/09/14/novo-nordisk-rebrands-to-novo-ceo-mike-doustdar.html",
+   "published": "2026-09-14T15:21:47Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Iran says it destroys U.S. advanced drone over Hormuz as Middle East conflict intensifies",
+   "title": "Iran says it destroyed U.S. advanced drone over Hormuz as Middle East conflict intensifies",
    "link": "https://www.cnbc.com/2026/09/14/us-iran-trump-hormuz-gulf-oil-crude-talks-.html",
-   "published": "2026-09-14T07:24:21Z",
+   "published": "2026-09-14T12:02:21Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Car ownership costs an average of $5,851 a year on top of auto loan payments, analysis finds",
+   "link": "https://www.cnbc.com/2026/09/14/car-ownership-costs-insurance-gas-maintenance-auto-loan-payments.html",
+   "published": "2026-09-14T12:15:01Z",
    "source": "CNBC Markets"
   },
   {
    "title": "Satellite images show extent of damage to Saudi Arabia\u2019s oil pipeline that bypasses Strait of Hormuz",
    "link": "https://www.cnbc.com/2026/09/14/iran-war-saudi-arabia-east-west-pipeline-oil.html",
-   "published": "2026-09-14T08:51:57Z",
+   "published": "2026-09-14T13:08:13Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Trump urges Ukraine to stop \u2018knocking out\u2019 Russian oil refineries as U.S. diesel hits record",
-   "link": "https://www.cnbc.com/2026/09/14/trump-ukraine-russia-diesel-prices-oil.html",
-   "published": "2026-09-14T09:11:59Z",
+   "title": "AI stocks slide after major CEOs unite to urge slowdown",
+   "link": "https://www.cnbc.com/2026/09/14/ai-stocks-slowdown-amodei-altman.html",
+   "published": "2026-09-14T15:20:20Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "LA Clippers owner Steve Ballmer apologizes over team sanctions",
-   "link": "https://www.cnbc.com/2026/09/14/la-clippers-steve-ballmer-apologizes-kawhi-leonard.html",
-   "published": "2026-09-14T04:58:46Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Novo Nordisk rebrands to 'Novo,' unveils corporate changes as it fights for obesity market share",
-   "link": "https://www.cnbc.com/2026/09/14/novo-nordisk-rebrands-to-novo-ceo-mike-doustdar.html",
-   "published": "2026-09-14T07:00:01Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "U.S. Treasury yields are steady as 10-year closes in on 5% ahead of Fed rates decision",
-   "link": "https://www.cnbc.com/2026/09/14/10-year-us-treasury-is-closing-in-on-5percent.html",
-   "published": "2026-09-14T08:02:13Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Washington scrambles to meet calls for AI guardrails while the window to act closes",
-   "link": "https://www.cnbc.com/2026/09/13/ai-congress-anthropic-openai-crisis.html",
-   "published": "2026-09-13T17:48:53Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Taxing high earners to help fund Social Security gains bipartisan attention \u2014 what it could mean for benefits",
-   "link": "https://www.cnbc.com/2026/09/13/social-security-payroll-tax-cap.html",
-   "published": "2026-09-13T13:30:01Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Cadbury cut two months off its supply chain lead time for a key chocolate-bar ingredient in one move",
-   "link": "https://www.cnbc.com/2026/09/14/cadbury-supply-chain-lead-time-key-ingredient-chocolate-crumble-malaysia.html",
-   "published": "2026-09-14T09:02:13Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Anthropic walks tightrope to Nasdaq, pushing for a slowdown while pursuing $2 trillion valuation",
-   "link": "https://www.cnbc.com/2026/09/14/anthropic-walks-tightrope-to-nasdaq-pushing-slowdown-and-pursuing-ipo.html",
-   "published": "2026-09-14T04:01:01Z",
+   "title": "Prediction market traders think gas prices will hit new highs for the year",
+   "link": "https://www.cnbc.com/2026/09/14/prediction-markets-traders-think-gas-prices-will-hit-new-highs-in-2026.html",
+   "published": "2026-09-14T15:49:39Z",
    "source": "CNBC Markets"
   }
  ],
