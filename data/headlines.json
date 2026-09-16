@@ -1,46 +1,58 @@
 {
- "updated": "2026-09-16T01:27:27Z",
+ "updated": "2026-09-16T06:38:06Z",
  "items": [
   {
    "title": "Nvidia's Huang diverges with CEOs of Anthropic, OpenAI on AI safety at Dreamforce",
    "link": "https://www.cnbc.com/2026/09/15/nvidia-and-anthropic-ceos-diverge-on-ai-safety-at-dreamforce.html",
-   "published": "2026-09-15T22:17:47Z",
+   "published": "2026-09-16T04:21:39Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Saudi says Houthis targeted Mecca with a drone, Iran-backed group rejects claim",
+   "link": "https://www.cnbc.com/2026/09/16/us-iran-war-trump-hormuz.html",
+   "published": "2026-09-16T06:31:54Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Oil falls as U.S. crude inventories reportedly rise, traders weigh Saudi pipeline closure",
+   "link": "https://www.cnbc.com/2026/09/16/oil-prices-today-brent-wti-hormuz-iran-war.html",
+   "published": "2026-09-16T05:39:38Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Bond yields are spiking, oil is up \u2014 but investors aren\u2019t giving up on stocks",
+   "link": "https://www.cnbc.com/2026/09/16/investors-bullish-stocks-oil-yields-ai.html",
+   "published": "2026-09-16T05:51:13Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Treasury yields hitting 5% may not break markets now \u2014 but the clock is ticking",
+   "link": "https://www.cnbc.com/2026/09/16/10-year-treasury-yeilds-rise-impact-markets.html",
+   "published": "2026-09-16T05:28:01Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "UK inflation jumps to 3.1% as energy costs soar",
+   "link": "https://www.cnbc.com/2026/09/16/uk-august-inflation-energy-gasoline.html",
+   "published": "2026-09-16T06:18:30Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "China's AI leaders keep quiet despite U.S. 'publicity' on tech risks",
+   "link": "https://www.cnbc.com/2026/09/16/chinas-ai-leaders-keep-quiet-despite-us-publicity-on-tech-risks.html",
+   "published": "2026-09-16T04:01:59Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "BOJ expected to hike rates by 25 basis points to fresh three-decade high: CNBC survey",
+   "link": "https://www.cnbc.com/2026/09/16/boj-hike-rates-cnbc-survey.html",
+   "published": "2026-09-16T01:56:24Z",
    "source": "CNBC Markets"
   },
   {
    "title": "Iran war has cost on average $246 million per day in its first five months, CBO finds",
    "link": "https://www.cnbc.com/2026/09/15/cbo-iran-war-cost-pentagon-weapons.html",
    "published": "2026-09-15T22:33:45Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Nvidia CEO Huang attending Trump's state dinner for China's Xi: Source",
-   "link": "https://www.cnbc.com/2026/09/15/nvidia-jensen-huang-trump-xi.html",
-   "published": "2026-09-15T22:06:16Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "BOJ expected to hike rates by 25 basis points to fresh three-decade high: CNBC survey",
-   "link": "https://www.cnbc.com/2026/09/16/boj-hike-rates-cnbc-survey.html",
-   "published": "2026-09-16T00:22:11Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Trump says Kennedy Center will stay closed without renovation unless his name is added back",
-   "link": "https://www.cnbc.com/2026/09/15/trump-kennedy-center-name-ruling.html",
-   "published": "2026-09-15T21:46:22Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "U.S. oil tops $105 as Saudi Arabia reportedly cancels some crude cargoes after pipeline closure",
-   "link": "https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html",
-   "published": "2026-09-15T18:58:36Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Inside South Korea\u2019s university programs offering a direct route to Samsung and SK Hynix",
-   "link": "https://www.cnbc.com/2026/09/16/samsung-sk-hynix-ai-boom-students-university-programs.html",
-   "published": "2026-09-15T23:52:04Z",
    "source": "CNBC Markets"
   },
   {
@@ -56,21 +68,9 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "House to vote on bill to rein in AI data center utility costs",
-   "link": "https://www.cnbc.com/2026/09/15/congress-ai-data-center-utility-costs.html",
-   "published": "2026-09-16T00:14:21Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Why de-dollarization discussions are more talk, less action",
-   "link": "https://www.cnbc.com/2026/09/16/de-dollarization-brics-china-russia-trump.html",
-   "published": "2026-09-15T23:28:01Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Senate cloture vote on Clarity Act fails, dealing regulatory blow to crypto industry",
-   "link": "https://www.cnbc.com/2026/09/15/senate-cloture-vote-on-clarity-act-fails-dealing-regulatory-setback-to-crypto-industry.html",
-   "published": "2026-09-15T20:16:31Z",
+   "title": "Nvidia CEO Huang attending Trump's state dinner for China's Xi: Source",
+   "link": "https://www.cnbc.com/2026/09/15/nvidia-jensen-huang-trump-xi.html",
+   "published": "2026-09-15T22:06:16Z",
    "source": "CNBC Markets"
   }
  ],
