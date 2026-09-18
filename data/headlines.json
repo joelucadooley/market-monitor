@@ -1,6 +1,48 @@
 {
- "updated": "2026-09-18T06:00:39Z",
+ "updated": "2026-09-18T11:19:28Z",
  "items": [
+  {
+   "title": "Warren Buffett stepping down as chairman of Berkshire Hathaway: 'Father Time always wins'",
+   "link": "https://www.cnbc.com/2026/09/18/buffett-stepping-down-as-berkshire-chairman.html",
+   "published": "2026-09-18T11:11:26Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "AI safety debate meets reality at Dreamforce as business leaders say last year's models are enough",
+   "link": "https://www.cnbc.com/2026/09/18/at-dreamforce-business-leaders-say-older-ai-models-are-enough.html",
+   "published": "2026-09-18T11:00:01Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Trump administration advances $24.3 billion fighter jet deal to Saudi Arabia as Houthis escalate attacks",
+   "link": "https://www.cnbc.com/2026/09/18/trump-saudi-arabia-f-35-houthis-iran-war.html",
+   "published": "2026-09-18T08:02:20Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Beauty, health and wellness are converging into one retail category",
+   "link": "https://www.cnbc.com/2026/09/18/beauty-health-wellness-consumer-spending.html",
+   "published": "2026-09-18T11:00:01Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Oil prices fall for third day on Saudi Arabia supply hopes; U.S. crude briefly dips below $100",
+   "link": "https://www.cnbc.com/2026/09/18/oil-prices-today-brent-wti-saudi-arabia-houthi.html",
+   "published": "2026-09-18T08:29:35Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Anthropic and OpenAI hunt for smaller data center deals, sources tell CNBC, in race to deploy AI capacity",
+   "link": "https://www.cnbc.com/2026/09/18/anthropic-openai-small-ai-data-center-deals.html",
+   "published": "2026-09-18T09:38:17Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "An intense boardroom battle is brewing at India's giant Tata Group",
+   "link": "https://www.cnbc.com/2026/09/18/jlr-air-india-tata-iphone.html",
+   "published": "2026-09-18T09:29:41Z",
+   "source": "CNBC Markets"
+  },
   {
    "title": "UN mission finds evidence signaling U.S. war crimes in Iran; Washington rejects report",
    "link": "https://www.cnbc.com/2026/09/18/us-iran-war-trump-hormuz.html",
@@ -8,15 +50,9 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Oil prices fall as Saudi supply hopes outweigh fresh Houthi strikes",
-   "link": "https://www.cnbc.com/2026/09/18/oil-prices-today-brent-wti-saudi-arabia-houthi.html",
-   "published": "2026-09-18T01:35:38Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Bank of Japan raises interest rates to 31-year high, flags concerns over inflation",
-   "link": "https://www.cnbc.com/2026/09/18/japan-raises-rates-30-year-high-yen-jgb.html",
-   "published": "2026-09-18T03:31:45Z",
+   "title": "How record diesel prices will rip through the U.S. economy. Trucks, rails are only the start",
+   "link": "https://www.cnbc.com/2026/09/17/diesel-gas-prices-oil-us-economy.html",
+   "published": "2026-09-18T01:04:06Z",
    "source": "CNBC Markets"
   },
   {
@@ -26,51 +62,15 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Anthropic shares 3 metrics to help AI companies monitor pace of development",
-   "link": "https://www.cnbc.com/2026/09/17/anthropic-shares-3-metrics-to-help-ai-companies-monitor-development.html",
-   "published": "2026-09-17T22:22:53Z",
+   "title": "Bank of Japan raises interest rates to 31-year high, flags concerns over inflation",
+   "link": "https://www.cnbc.com/2026/09/18/japan-raises-rates-30-year-high-yen-jgb.html",
+   "published": "2026-09-18T03:31:45Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Trump photo appears to reference Kennedy Center demolition, judge orders advance notice of any move to knock it down",
-   "link": "https://www.cnbc.com/2026/09/17/trump-kennedy-center-demolish-beatty.html",
-   "published": "2026-09-17T20:22:20Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Lawmakers must 'keep their options open' on Social Security reform, former Treasury Secretary Jack Lew says",
-   "link": "https://www.cnbc.com/2026/09/17/social-security-reform-cant-wait-former-treasury-secretary-jack-lew.html",
-   "published": "2026-09-17T19:57:41Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Pok\u00e9mon card curbs send shares of Japanese online marketplace Mercari on a bumpy ride",
-   "link": "https://www.cnbc.com/2026/09/18/pokmon-cards-mercari-stock.html",
-   "published": "2026-09-18T04:09:56Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Putin braces for election stress test as Russians \u2018feel the pain\u2019 of struggling economy",
-   "link": "https://www.cnbc.com/2026/09/17/russia-putin-state-duma-election-ukraine-war.html",
-   "published": "2026-09-17T05:00:01Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "OpenAI reports 6 new instances of 'concerning model behavior' since March",
-   "link": "https://www.cnbc.com/2026/09/16/openai-6-new-instances-of-concerning-model-behavior-since-march.html",
-   "published": "2026-09-16T23:05:48Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "A Chinese AI company just connected its model to Wall Street's leading data providers",
-   "link": "https://www.cnbc.com/2026/09/17/china-moonshot-kimi-financial-services.html",
-   "published": "2026-09-17T14:30:25Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "OpenAI and Anthropic are making 10 times more revenue than all Chinese AI models combined, research group Rhodium says",
-   "link": "https://www.cnbc.com/2026/09/17/chinas-ai-models-make-only-10percent-of-us-leaders-revenue-rhodium.html",
-   "published": "2026-09-17T09:00:01Z",
+   "title": "Bill to curb AI data center utility costs hits snag in Senate",
+   "link": "https://www.cnbc.com/2026/09/17/ai-data-center-utility-cost-senate.html",
+   "published": "2026-09-17T20:56:41Z",
    "source": "CNBC Markets"
   }
  ],
