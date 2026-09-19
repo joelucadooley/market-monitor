@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-19T01:38:25Z",
+ "updated": "2026-09-19T03:35:34Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -8571,7 +8571,7 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 81080.0,
+   "value": 81104.0,
    "asOf": "2026-09-19",
    "history": [
     [
@@ -9092,13 +9092,13 @@
     ],
     [
      "2026-09-19",
-     81080.0
+     81104.0
     ]
    ],
    "status": "live",
    "wk52hi": 124753.0,
    "wk52lo": 58559.0,
-   "ma50": 72476.0,
+   "ma50": 72477.0,
    "ma200": 70398.0,
    "rsi14": 55.0
   },
@@ -9106,7 +9106,7 @@
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 2607.12,
+   "value": 2620.14,
    "asOf": "2026-09-19",
    "history": [
     [
@@ -9627,15 +9627,15 @@
     ],
     [
      "2026-09-19",
-     2607.12
+     2620.14
     ]
    ],
    "status": "live",
    "wk52hi": 4687.77,
    "wk52lo": 1564.82,
-   "ma50": 2241.92,
-   "ma200": 2070.28,
-   "rsi14": 61.9
+   "ma50": 2242.18,
+   "ma200": 2070.35,
+   "rsi14": 62.7
   }
  },
  "watchlist": {
@@ -12318,13 +12318,9 @@
    "label": "Meta Platforms",
    "group": "watchlist",
    "decimals": 2,
-   "value": 682.31,
-   "asOf": "2026-09-17",
+   "value": 665.75,
+   "asOf": "2026-09-18",
    "history": [
-    [
-     "2026-03-13",
-     613.71
-    ],
     [
      "2026-03-16",
      627.45
@@ -12840,14 +12836,18 @@
     [
      "2026-09-17",
      682.31
+    ],
+    [
+     "2026-09-18",
+     665.75
     ]
    ],
    "status": "live",
    "wk52hi": 778.38,
    "wk52lo": 525.72,
-   "ma50": 606.69,
-   "ma200": 624.03,
-   "rsi14": 87.6
+   "ma50": 607.38,
+   "ma200": 624.16,
+   "rsi14": 77.9
   },
   "TSLA": {
    "label": "Tesla",
@@ -23020,13 +23020,9 @@
    "label": "Real Estate",
    "group": "sectors",
    "decimals": 2,
-   "value": 42.94,
-   "asOf": "2026-09-17",
+   "value": 42.53,
+   "asOf": "2026-09-18",
    "history": [
-    [
-     "2026-03-13",
-     42.25
-    ],
     [
      "2026-03-16",
      42.58
@@ -23542,26 +23538,26 @@
     [
      "2026-09-17",
      42.94
+    ],
+    [
+     "2026-09-18",
+     42.53
     ]
    ],
    "status": "live",
    "wk52hi": 46.01,
    "wk52lo": 40.01,
-   "ma50": 44.63,
+   "ma50": 44.6,
    "ma200": 43.16,
-   "rsi14": 27.1
+   "rsi14": 25.6
   },
   "XLC": {
    "label": "Communication Services",
    "group": "sectors",
    "decimals": 2,
-   "value": 112.35,
-   "asOf": "2026-09-17",
+   "value": 110.81,
+   "asOf": "2026-09-18",
    "history": [
-    [
-     "2026-03-13",
-     114.45
-    ],
     [
      "2026-03-16",
      115.33
@@ -24077,14 +24073,18 @@
     [
      "2026-09-17",
      112.35
+    ],
+    [
+     "2026-09-18",
+     110.81
     ]
    ],
    "status": "live",
    "wk52hi": 120.08,
    "wk52lo": 105.38,
-   "ma50": 111.18,
-   "ma200": 114.02,
-   "rsi14": 53.0
+   "ma50": 111.19,
+   "ma200": 114.0,
+   "rsi14": 43.0
   }
  },
  "pulse": {
@@ -24092,15 +24092,15 @@
   "bullets": [
    "US equities advancing, S&P 500 +0.16% \u00b7 VIX 14.8 (calm).",
    "Sector leader: Technology +0.82% \u00b7 Laggard: Materials -1.42%.",
-   "Biggest mover: Ethereum (ETH) +6.54% on the day.",
+   "Biggest mover: Ethereum (ETH) +7.07% on the day.",
    "US 2s10s curve is positively sloped at +27bp.",
    "Cross-asset check: equities, credit, and volatility are aligned risk-on.",
-   "Breadth: 3/11 sectors positive on the day, 10/16 watchlist names trading above their 50-day average."
+   "Breadth: 2/11 sectors positive on the day, 10/16 watchlist names trading above their 50-day average."
   ],
   "breadth": {
    "watchlistAbove50dma": 10,
    "watchlistTotal": 16,
-   "sectorsPositive": 3,
+   "sectorsPositive": 2,
    "sectorsTotal": 11
   }
  }
