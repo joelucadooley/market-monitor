@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-20T03:50:10Z",
+ "updated": "2026-09-20T10:48:10Z",
  "items": [
   {
    "title": "Consumer sentiment is in the dumps despite a solid economy. Goldman Sachs blames 'lower happiness'",
@@ -14,6 +14,12 @@
    "source": "CNBC Markets"
   },
   {
+   "title": "France\u2019s wine production nears a 70-year low, leaving winemakers with tough choices",
+   "link": "https://www.cnbc.com/2026/09/20/france-wine-production-70-year-low-heatwaves-drought.html",
+   "published": "2026-09-20T05:00:01Z",
+   "source": "CNBC Markets"
+  },
+  {
    "title": "The AI kill switch, explained: 'It's not too little, but it's probably too late'",
    "link": "https://www.cnbc.com/2026/09/19/ai-kill-switch-explained.html",
    "published": "2026-09-19T12:00:01Z",
@@ -23,18 +29,6 @@
    "title": "Google's Gemini becomes latest AI model to break out and hack computer systems",
    "link": "https://www.cnbc.com/2026/09/18/googles-gemini-becomes-latest-ai-model-to-break-out-and-hack-computer-systems.html",
    "published": "2026-09-19T01:41:49Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Buffett takes next step in plan to keep Berkshire from straying",
-   "link": "https://www.cnbc.com/2026/09/19/warren-buffett-takes-next-step-in-plan-to-keep-berkshire-from-straying.html",
-   "published": "2026-09-19T12:43:56Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Student loan borrowers exiting SAVE may face sharply higher payments if they don't take action soon",
-   "link": "https://www.cnbc.com/2026/09/19/save-student-loan-deadline-avoid-higher-payments.html",
-   "published": "2026-09-19T13:30:01Z",
    "source": "CNBC Markets"
   },
   {
@@ -56,21 +50,27 @@
    "source": "CNBC Markets"
   },
   {
+   "title": "Buffett takes next step in plan to keep Berkshire from straying",
+   "link": "https://www.cnbc.com/2026/09/19/warren-buffett-takes-next-step-in-plan-to-keep-berkshire-from-straying.html",
+   "published": "2026-09-19T12:43:56Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Student loan borrowers exiting SAVE may face sharply higher payments if they don't take action soon",
+   "link": "https://www.cnbc.com/2026/09/19/save-student-loan-deadline-avoid-higher-payments.html",
+   "published": "2026-09-19T13:30:01Z",
+   "source": "CNBC Markets"
+  },
+  {
    "title": "A new arms race is unfolding on the ocean floor",
    "link": "https://www.cnbc.com/2026/09/19/underwater-war-sea-drones-defense-tech.html",
    "published": "2026-09-19T05:00:01Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "OpenAI's latest AI revelation is a 'serious situation,' Microsoft's Suleyman tells CNBC",
-   "link": "https://www.cnbc.com/2026/09/18/microsoft-ai-ceo-openais-latest-ai-revelation-a-serious-situation.html",
-   "published": "2026-09-18T21:35:55Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Three words from Kevin Warsh have Wall Street wondering how far the Fed will go with rate hikes",
-   "link": "https://www.cnbc.com/2026/09/18/three-words-from-kevin-warsh-have-wall-street-wondering-how-far-the-fed-will-go-with-rate-hikes.html",
-   "published": "2026-09-18T18:28:31Z",
+   "title": "Higher interest rates and AI safety fears put the stock market to the test last week",
+   "link": "https://www.cnbc.com/2026/09/19/higher-interest-rates-and-ai-safety-fears-put-the-stock-market-to-the-test-last-week.html",
+   "published": "2026-09-19T16:03:09Z",
    "source": "CNBC Markets"
   }
  ],
