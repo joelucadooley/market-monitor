@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-25T13:00:04Z",
+ "updated": "2026-09-25T17:55:01Z",
  "banks": {
   "US": {
    "label": "Federal Reserve (upper target)",
@@ -6617,7 +6617,7 @@
      4.99
     ]
    ],
-   "status": "stale"
+   "status": "live"
   }
  },
  "us": {
@@ -8099,7 +8099,7 @@
      5.4
     ]
    ],
-   "status": "stale"
+   "status": "live"
   }
  }
 }
