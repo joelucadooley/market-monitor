@@ -1,12 +1,6 @@
 {
- "updated": "2026-10-03T11:14:11Z",
+ "updated": "2026-10-03T15:51:02Z",
  "items": [
-  {
-   "title": "America\u2019s data center fight is a preview of what's to come for the rest of the world",
-   "link": "https://www.cnbc.com/2026/10/03/data-center-backlash-europe-asia-africa.html",
-   "published": "2026-10-03T05:00:01Z",
-   "source": "CNBC Markets"
-  },
   {
    "title": "David Ellison just brought in a co-CEO to run his new empire: Meet Ynon Kreiz",
    "link": "https://www.cnbc.com/2026/10/03/david-ellison-ynon-kreiz-skydance.html",
@@ -20,57 +14,63 @@
    "source": "CNBC Markets"
   },
   {
+   "title": "FlyDubai plane attack by co-pilot was an attempted 'terrorist' act, UAE says",
+   "link": "https://www.cnbc.com/2026/10/03/flydubai-co-pilot-attacked-pilot-with-axe-uae-says.html",
+   "published": "2026-10-03T12:34:59Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Berkshire buys more Lennar shares, but pace of purchases slows",
+   "link": "https://www.cnbc.com/2026/10/03/berkshire-buys-more-lennar-shares-but-pace-of-purchases-slows.html",
+   "published": "2026-10-03T12:55:31Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Novig credits Sydney Sweeney-backed campaign for platform\u2019s surge in growth",
+   "link": "https://www.cnbc.com/2026/10/03/novig-credits-sydney-sweeney-backed-campaign-for-platforms-surge-in-growth.html",
+   "published": "2026-10-03T13:30:48Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "America\u2019s data center fight is a preview of what's to come for the rest of the world",
+   "link": "https://www.cnbc.com/2026/10/03/data-center-backlash-europe-asia-africa.html",
+   "published": "2026-10-03T12:39:29Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Private capital is reshaping Hollywood moviemaking",
+   "link": "https://www.cnbc.com/2026/10/03/private-capital-hollywood-film-financing.html",
+   "published": "2026-10-03T12:00:01Z",
+   "source": "CNBC Markets"
+  },
+  {
    "title": "Ford fends off Hyundai to retain No. 3 U.S. sales position in third quarter",
    "link": "https://www.cnbc.com/2026/10/02/ford-q3-sales.html",
    "published": "2026-10-02T17:20:33Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "G7 nations to release diesel stocks as wars in Europe and Middle East constrain fuel supplies",
-   "link": "https://www.cnbc.com/2026/10/02/diesel-oil-trump-europe-export-ban.html",
-   "published": "2026-10-02T19:25:36Z",
+   "title": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",
+   "link": "https://www.cnbc.com/2026/10/03/lula-or-bolsonaro-wall-street-braces-for-two-wildly-different-results-in-brazil-election.html",
+   "published": "2026-10-03T13:12:27Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "High-tech vehicles are driving up auto repair costs for shops and consumers",
+   "link": "https://www.cnbc.com/2026/10/03/vehicle-repair-costs.html",
+   "published": "2026-10-03T12:00:01Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "High interest rates are foreclosing on the American home remodeling dream",
+   "link": "https://www.cnbc.com/2026/10/03/mortgage-rates-home-equity-heloc-remodeling.html",
+   "published": "2026-10-03T13:11:37Z",
    "source": "CNBC Markets"
   },
   {
    "title": "Top McKinsey executive reveals Asian owner-CEOs' secrets to success",
    "link": "https://www.cnbc.com/2026/10/03/mckinsey-asian-leaders-success-ambani-mahindra.html",
    "published": "2026-10-03T06:00:01Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Oil prices lower as G7 nations to release diesel stocks, Saudis reportedly plan attack on Houthis",
-   "link": "https://www.cnbc.com/2026/10/02/oil-wti-brent-diesel-stock-release-europe.html",
-   "published": "2026-10-02T20:04:42Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Treasury Sec. Bessent, IRS crack down on ETF strategy the wealthy are using to avoid capital gains taxes",
-   "link": "https://www.cnbc.com/2026/10/02/treasury-irs-capital-gains-income-tax-section-351-warning.html",
-   "published": "2026-10-02T13:48:40Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Your health insurance premiums may take a big jump in 2027 \u2014 here's why",
-   "link": "https://www.cnbc.com/2026/10/02/health-insurance-premiums-2027-inflation-aca-obamacare.html",
-   "published": "2026-10-02T16:26:57Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "FAA says Boeing 737 Max software glitch not a flight-safety issue",
-   "link": "https://www.cnbc.com/2026/10/02/faa-says-boeing-737-max-10-software-glitch-not-a-flight-safety-issue.html",
-   "published": "2026-10-02T19:19:15Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Cerebras stock hits post-IPO low, tumbling 20% for the week on Nvidia pressure and lockup expiration",
-   "link": "https://www.cnbc.com/2026/10/02/cerebras-stock-hits-post-ipo-low-on-nvidia-pressure-lockup-expiration.html",
-   "published": "2026-10-02T22:38:49Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Men are losing ground in the labor market. Here's why",
-   "link": "https://www.cnbc.com/2026/10/02/men-labor-market-jobs-report.html",
-   "published": "2026-10-02T17:38:59Z",
    "source": "CNBC Markets"
   }
  ],
