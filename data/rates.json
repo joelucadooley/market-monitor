@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T00:00:21Z",
+ "updated": "2026-10-07T06:04:07Z",
  "banks": {
   "US": {
    "label": "Federal Reserve (upper target)",
@@ -369,7 +369,7 @@
      4.0
     ]
    ],
-   "status": "stale"
+   "status": "live"
   },
   "GB": {
    "label": "Bank of England",
