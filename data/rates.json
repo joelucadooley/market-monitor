@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T20:29:05Z",
+ "updated": "2026-10-15T23:14:30Z",
  "banks": {
   "US": {
    "label": "Federal Reserve (upper target)",
@@ -6265,13 +6265,9 @@
    "label": "UK 10Y Gilt (monthly)",
    "group": "curve",
    "units": "%",
-   "value": 4.99,
-   "asOf": "2026-08-01",
+   "value": 5.24,
+   "asOf": "2026-09-01",
    "history": [
-    [
-     "2019-03-01",
-     1.19
-    ],
     [
      "2019-04-01",
      1.19
@@ -6627,6 +6623,10 @@
     [
      "2026-08-01",
      4.99
+    ],
+    [
+     "2026-09-01",
+     5.24
     ]
    ],
    "status": "live"
