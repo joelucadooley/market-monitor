@@ -1,16 +1,40 @@
 {
- "updated": "2026-10-21T20:32:00Z",
+ "updated": "2026-10-21T23:41:07Z",
  "items": [
   {
    "title": "Tesla beats on earnings and sales even as auto revenue declines",
    "link": "https://www.cnbc.com/2026/10/21/tesla-tsla-q3-2026-earnings-report.html",
-   "published": "2026-10-21T20:31:00Z",
+   "published": "2026-10-21T23:32:04Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "CoreWeave\u2019s market confidence erodes as bond yields spike and stock sinks",
+   "link": "https://www.cnbc.com/2026/10/21/coreweaves-market-confidence-erodes-as-bond-yields-spike-stock-sinks.html",
+   "published": "2026-10-21T22:50:35Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "IBM beats on top and bottom lines as CEO Krishna touts 'Super Intelligence' traction",
+   "link": "https://www.cnbc.com/2026/10/21/ibm-q3-earnings-report-2026.html",
+   "published": "2026-10-21T22:03:37Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Trump denies ordering Starlink slowdown in Ukraine, says he doesn't know who did",
+   "link": "https://www.cnbc.com/2026/10/21/trump-starlink-ukraine-elon-musk.html",
+   "published": "2026-10-21T21:48:02Z",
    "source": "CNBC Markets"
   },
   {
    "title": "BlackRock's Rick Rieder sees 'historic' opportunity in high-quality bonds",
    "link": "https://www.cnbc.com/2026/10/21/rick-rieder-investment-grade-bonds.html",
    "published": "2026-10-21T19:54:16Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Southwest Airlines cuts 2026 profit forecast on higher fuel",
+   "link": "https://www.cnbc.com/2026/10/21/southwest-airlines-luv-3q-2026-earnings.html",
+   "published": "2026-10-21T21:07:11Z",
    "source": "CNBC Markets"
   },
   {
@@ -26,30 +50,6 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "SpaceX stock jumps 10% after earnings beat and Musk hints at Tesla tie-up",
-   "link": "https://www.cnbc.com/2026/10/21/spacex-spcx-stock-musk-merger-tesla.html",
-   "published": "2026-10-21T16:08:50Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "GM aims to develop vehicles in as little as two years with AI, software push",
-   "link": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html",
-   "published": "2026-10-21T20:14:36Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Trump-aligned super PACs pour millions into once-safe GOP House seats",
-   "link": "https://www.cnbc.com/2026/10/21/trump-pac-spending-midterm-election-house-republicans.html",
-   "published": "2026-10-21T17:51:21Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Netflix has dipped its toe into theatrical. Is it ready to jump in?",
-   "link": "https://www.cnbc.com/2026/10/21/netflix-theatrical-strategy.html",
-   "published": "2026-10-21T18:32:12Z",
-   "source": "CNBC Markets"
-  },
-  {
    "title": "Mortgage rates drop for the first time in 2 months, but demand still falls further",
    "link": "https://www.cnbc.com/2026/10/21/mortgage-rates-drop-for-the-first-time-in-2-months-but-demand-falls.html",
    "published": "2026-10-21T13:13:48Z",
@@ -62,15 +62,15 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "New Mexico AG lawsuit accuses Epstein's attorney and accountant of facilitating sex trafficking",
-   "link": "https://www.cnbc.com/2026/10/21/epstein-new-mexico-lawsuit-sex-trafficking.html",
-   "published": "2026-10-21T18:43:56Z",
+   "title": "SpaceX stock jumps 10% after earnings beat and Musk hints at Tesla tie-up",
+   "link": "https://www.cnbc.com/2026/10/21/spacex-spcx-stock-musk-merger-tesla.html",
+   "published": "2026-10-21T16:08:50Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Meta and Tesla bulls get confidence boost after SpaceX earnings",
-   "link": "https://www.cnbc.com/2026/10/21/meta-tesla-options-earnings.html",
-   "published": "2026-10-21T16:35:48Z",
+   "title": "GM aims to develop vehicles in as little as two years with AI, software push",
+   "link": "https://www.cnbc.com/2026/10/21/gm-vehicle-development-ai-software.html",
+   "published": "2026-10-21T20:14:36Z",
    "source": "CNBC Markets"
   }
  ],
