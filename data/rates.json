@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T11:54:16Z",
+ "updated": "2026-10-21T16:58:07Z",
  "banks": {
   "US": {
    "label": "Federal Reserve (upper target)",
@@ -369,7 +369,7 @@
      4.0
     ]
    ],
-   "status": "live"
+   "status": "stale"
   },
   "GB": {
    "label": "Bank of England",
@@ -1108,7 +1108,7 @@
      2.5
     ]
    ],
-   "status": "live"
+   "status": "stale"
   },
   "JP": {
    "label": "Bank of Japan",
@@ -6601,7 +6601,7 @@
      5.24
     ]
    ],
-   "status": "live"
+   "status": "stale"
   }
  },
  "us": {
@@ -6973,7 +6973,7 @@
      3.87
     ]
    ],
-   "status": "live"
+   "status": "stale"
   },
   "t2y": {
    "label": "US 2Y Treasury",
@@ -7343,7 +7343,7 @@
      4.77
     ]
    ],
-   "status": "live"
+   "status": "stale"
   },
   "t10y": {
    "label": "US 10Y Treasury",
@@ -7713,7 +7713,7 @@
      5.15
     ]
    ],
-   "status": "live"
+   "status": "stale"
   },
   "t30y": {
    "label": "US 30Y Treasury",
@@ -8083,7 +8083,7 @@
      5.48
     ]
    ],
-   "status": "live"
+   "status": "stale"
   }
  }
 }

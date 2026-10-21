@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T11:54:16Z",
+ "updated": "2026-10-21T16:58:07Z",
  "spreads": {
   "hy": {
    "label": "US High Yield OAS",
@@ -369,7 +369,7 @@
      329.0
     ]
    ],
-   "status": "live"
+   "status": "stale"
   },
   "ig": {
    "label": "US Investment Grade OAS",
@@ -739,7 +739,7 @@
      87.0
     ]
    ],
-   "status": "live"
+   "status": "stale"
   },
   "ccc": {
    "label": "US CCC & Lower OAS",
@@ -1109,7 +1109,7 @@
      1310.0
     ]
    ],
-   "status": "live"
+   "status": "stale"
   },
   "eurhy": {
    "label": "Euro High Yield OAS",
@@ -1479,7 +1479,7 @@
      331.0
     ]
    ],
-   "status": "live"
+   "status": "stale"
   }
  }
 }
