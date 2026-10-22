@@ -1,6 +1,54 @@
 {
- "updated": "2026-10-22T07:26:32Z",
+ "updated": "2026-10-22T13:08:29Z",
  "items": [
+  {
+   "title": "Nvidia CEO Jensen Huang says neocloud demand is 'off the charts' but capital is scarce",
+   "link": "https://www.cnbc.com/2026/10/22/nvidia-jensen-huang-neocloud-demand-capital.html",
+   "published": "2026-10-22T10:49:16Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
+   "link": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html",
+   "published": "2026-10-22T12:44:34Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "American Airlines forecasts bigger loss in 2026 on fuel spike, plans to slow growth next year",
+   "link": "https://www.cnbc.com/2026/10/22/american-airlines-aal-q3-2026-earnings.html",
+   "published": "2026-10-22T11:56:43Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Why governments pulled websites offline over the decades-old PHP programming language",
+   "link": "https://www.cnbc.com/2026/10/22/php2shell-vulnerability-what-is-it-and-is-your-data-at-risk.html",
+   "published": "2026-10-22T12:35:08Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Southwest Airlines cuts 2026 profit forecast on higher fuel",
+   "link": "https://www.cnbc.com/2026/10/21/southwest-airlines-luv-3q-2026-earnings.html",
+   "published": "2026-10-22T12:42:01Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "France protests: Macron condemns 'stupid' comments from Trump, others as bond market pressure builds",
+   "link": "https://www.cnbc.com/2026/10/22/macron-trump-france-protests.html",
+   "published": "2026-10-22T12:52:48Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "World's largest wealth fund posts $30 billion loss after bond market turbulence",
+   "link": "https://www.cnbc.com/2026/10/22/norges-bank-nbim-wealth-fund-q3-results.html",
+   "published": "2026-10-22T09:25:09Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "American Express brings Airbnb bookings and rewards to Amex Travel platform",
+   "link": "https://www.cnbc.com/2026/10/22/american-express-airbnb-travel-platform.html",
+   "published": "2026-10-22T12:00:02Z",
+   "source": "CNBC Markets"
+  },
   {
    "title": "U.S. pulls diplomats from Saudi Arabia as it reportedly readies Iran strikes after midterms",
    "link": "https://www.cnbc.com/2026/10/22/us-iran-trump-hormuz-.html",
@@ -8,69 +56,21 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Critical web security flaws spark global alarm as Google, OpenAI and Amazon respond",
-   "link": "https://www.cnbc.com/2026/10/22/php-google-openai-and-amazon-cyber.html",
-   "published": "2026-10-22T01:05:15Z",
+   "title": "California's Proposition 40: What voters need to know about the billionaire wealth tax",
+   "link": "https://www.cnbc.com/2026/10/22/california-proposition-40-billionaire-tax-wealth.html",
+   "published": "2026-10-22T12:26:20Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "James Talarico fires back at Elon Musk in Texas Senate race feud",
-   "link": "https://www.cnbc.com/2026/10/22/james-talarico-elon-musk-ken-paxton-texas-senate-race.html",
-   "published": "2026-10-22T01:21:10Z",
+   "title": "Trump\u2019s tariffs loom over Maine Senate race between Collins and Jackson",
+   "link": "https://www.cnbc.com/2026/10/22/maine-senate-election-trump-tariffs.html",
+   "published": "2026-10-22T10:00:01Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "China's stock market sinks into bear territory as CSI 300 extends 10-week rout",
-   "link": "https://www.cnbc.com/2026/10/22/chinas-stock-market-csi-300-bear-market.html",
-   "published": "2026-10-22T04:02:18Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Sovereign wealth funds' China and Hong Kong investments surge 190% after a bruising slump",
-   "link": "https://www.cnbc.com/2026/10/22/sovereign-wealth-funds-china-hong-kong.html",
-   "published": "2026-10-22T02:20:50Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Southeast Asia is hungry for AI \u2014 and the money isn't just in subscriptions",
-   "link": "https://www.cnbc.com/2026/10/22/southeasaisa-singapore-bain-temasek-google-.html",
-   "published": "2026-10-22T02:01:48Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Housing is flashing warning signs just as the Fed weighs more interest rate hikes",
-   "link": "https://www.cnbc.com/2026/10/20/housing-mortgage-rates-real-estate-federal-reserve.html",
-   "published": "2026-10-21T11:20:58Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Mortgage rates drop for the first time in 2 months, but demand still falls further",
-   "link": "https://www.cnbc.com/2026/10/21/mortgage-rates-drop-for-the-first-time-in-2-months-but-demand-falls.html",
-   "published": "2026-10-21T13:13:48Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Bank of Korea holds rates after President Lee calls for boosting housing supply",
-   "link": "https://www.cnbc.com/2026/10/22/bok-rate-decision-seoul-property.html",
-   "published": "2026-10-22T02:18:29Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "IBM beats on top and bottom lines as CEO Krishna touts 'Super Intelligence' traction",
-   "link": "https://www.cnbc.com/2026/10/21/ibm-q3-earnings-report-2026.html",
-   "published": "2026-10-21T22:03:37Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Meta put out an ambitious roadmap to Muse monetization after strong quarter and guide",
-   "link": "https://www.cnbc.com/investingclub/2026/10/21/meta-put-out-an-ambitious-roadmap-to-muse-monetization-after-strong-quarter-and-guide.html",
-   "published": "2026-10-22T00:53:01Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Inside India newsletter: Asia\u2019s hottest data center market aims to quell concerns over water and power use",
-   "link": "https://www.cnbc.com/2026/10/22/india-data-center-google-amazon.html",
-   "published": "2026-10-22T00:07:48Z",
+   "title": "Comcast beats earnings expectations as media revenue offsets weakness in connectivity",
+   "link": "https://www.cnbc.com/2026/10/22/comcast-cmcsa-earnings-q3-2026.html",
+   "published": "2026-10-22T12:17:59Z",
    "source": "CNBC Markets"
   }
  ],
