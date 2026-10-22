@@ -1,46 +1,58 @@
 {
- "updated": "2026-10-22T13:08:29Z",
+ "updated": "2026-10-22T18:00:25Z",
  "items": [
   {
-   "title": "Nvidia CEO Jensen Huang says neocloud demand is 'off the charts' but capital is scarce",
-   "link": "https://www.cnbc.com/2026/10/22/nvidia-jensen-huang-neocloud-demand-capital.html",
-   "published": "2026-10-22T10:49:16Z",
+   "title": "Meta stock sinks 6% as AI spend pushes free cash flow negative",
+   "link": "https://www.cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html",
+   "published": "2026-10-22T17:48:43Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Elon Musk invests about $1 billion in Skydance",
+   "link": "https://www.cnbc.com/2026/10/22/elon-musk-skydance-investment.html",
+   "published": "2026-10-22T17:42:58Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Bill Ackman says 2027 will be an amazing year for stocks as wars, inflation ease",
+   "link": "https://www.cnbc.com/2026/10/22/bill-ackman-talks-meta-and-markets-with-cnbc.html",
+   "published": "2026-10-22T17:53:08Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Musk's clash with Ukraine accelerates demand for Starlink alternatives. Few exist",
+   "link": "https://www.cnbc.com/2026/10/22/elon-musk-ukraine-starlink-alternatives.html",
+   "published": "2026-10-22T16:54:26Z",
    "source": "CNBC Markets"
   },
   {
    "title": "Trump's approval rating on economy hits all-time low as midterm looms: CNBC survey",
    "link": "https://www.cnbc.com/2026/10/22/trump-economic-approval-rating-midterms-poll.html",
-   "published": "2026-10-22T12:44:34Z",
+   "published": "2026-10-22T13:18:36Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "American Airlines forecasts bigger loss in 2026 on fuel spike, plans to slow growth next year",
-   "link": "https://www.cnbc.com/2026/10/22/american-airlines-aal-q3-2026-earnings.html",
-   "published": "2026-10-22T11:56:43Z",
+   "title": "Lawsuit accuses Trump of illegally profiting off foreign crypto deals",
+   "link": "https://www.cnbc.com/2026/10/22/trump-world-liberty-crypto-lawsuit-uae.html",
+   "published": "2026-10-22T17:49:53Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Why governments pulled websites offline over the decades-old PHP programming language",
-   "link": "https://www.cnbc.com/2026/10/22/php2shell-vulnerability-what-is-it-and-is-your-data-at-risk.html",
-   "published": "2026-10-22T12:35:08Z",
+   "title": "Jobless claims near the lowest since the 1960s as low-fire trend continues",
+   "link": "https://www.cnbc.com/2026/10/22/jobless-claims-record-low-weekly.html",
+   "published": "2026-10-22T16:40:09Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Southwest Airlines cuts 2026 profit forecast on higher fuel",
-   "link": "https://www.cnbc.com/2026/10/21/southwest-airlines-luv-3q-2026-earnings.html",
-   "published": "2026-10-22T12:42:01Z",
+   "title": "Under-the-radar stocks to play the next leg of the energy trade with oil prices jumping again",
+   "link": "https://www.cnbc.com/2026/10/22/under-the-radar-stocks-to-play-the-next-leg-of-the-energy-trade-with-oil-prices-jumping-again.html",
+   "published": "2026-10-22T15:16:05Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "France protests: Macron condemns 'stupid' comments from Trump, others as bond market pressure builds",
-   "link": "https://www.cnbc.com/2026/10/22/macron-trump-france-protests.html",
-   "published": "2026-10-22T12:52:48Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "World's largest wealth fund posts $30 billion loss after bond market turbulence",
-   "link": "https://www.cnbc.com/2026/10/22/norges-bank-nbim-wealth-fund-q3-results.html",
-   "published": "2026-10-22T09:25:09Z",
+   "title": "Cruise lines chase luxury travelers with suites for up to $25,000 a night",
+   "link": "https://www.cnbc.com/2026/10/22/luxury-cruise-suites-regent-seven-seas.html",
+   "published": "2026-10-22T16:46:29Z",
    "source": "CNBC Markets"
   },
   {
@@ -50,27 +62,15 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "U.S. pulls diplomats from Saudi Arabia as it reportedly readies Iran strikes after midterms",
-   "link": "https://www.cnbc.com/2026/10/22/us-iran-trump-hormuz-.html",
-   "published": "2026-10-22T04:35:54Z",
+   "title": "Judge orders Trump to sit for deposition in BBC defamation lawsuit by Dec. 11: Reports",
+   "link": "https://www.cnbc.com/2026/10/22/trump-deposition-bbc-defamation-lawsuit.html",
+   "published": "2026-10-22T16:59:00Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "California's Proposition 40: What voters need to know about the billionaire wealth tax",
-   "link": "https://www.cnbc.com/2026/10/22/california-proposition-40-billionaire-tax-wealth.html",
-   "published": "2026-10-22T12:26:20Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Trump\u2019s tariffs loom over Maine Senate race between Collins and Jackson",
-   "link": "https://www.cnbc.com/2026/10/22/maine-senate-election-trump-tariffs.html",
-   "published": "2026-10-22T10:00:01Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Comcast beats earnings expectations as media revenue offsets weakness in connectivity",
-   "link": "https://www.cnbc.com/2026/10/22/comcast-cmcsa-earnings-q3-2026.html",
-   "published": "2026-10-22T12:17:59Z",
+   "title": "CoreWeave\u2019s market confidence erodes as bond yields spike and stock sinks",
+   "link": "https://www.cnbc.com/2026/10/21/coreweaves-market-confidence-erodes-as-bond-yields-spike-stock-sinks.html",
+   "published": "2026-10-22T15:35:55Z",
    "source": "CNBC Markets"
   }
  ],
