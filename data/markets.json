@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T15:31:00Z",
+ "updated": "2026-10-24T20:22:15Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -8571,7 +8571,7 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 79303.0,
+   "value": 80443.0,
    "asOf": "2026-10-24",
    "history": [
     [
@@ -9092,21 +9092,21 @@
     ],
     [
      "2026-10-24",
-     79303.0
+     80443.0
     ]
    ],
    "status": "live",
    "wk52hi": 114472.0,
    "wk52lo": 58559.0,
-   "ma50": 81771.0,
-   "ma200": 72893.0,
-   "rsi14": 38.0
+   "ma50": 81794.0,
+   "ma200": 72899.0,
+   "rsi14": 41.0
   },
   "ETH": {
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 2290.78,
+   "value": 2341.93,
    "asOf": "2026-10-24",
    "history": [
     [
@@ -9627,15 +9627,15 @@
     ],
     [
      "2026-10-24",
-     2290.78
+     2341.93
     ]
    ],
    "status": "live",
    "wk52hi": 4157.99,
    "wk52lo": 1564.82,
-   "ma50": 2545.12,
-   "ma200": 2156.29,
-   "rsi14": 31.4
+   "ma50": 2546.14,
+   "ma200": 2156.55,
+   "rsi14": 34.5
   }
  },
  "watchlist": {
@@ -24092,7 +24092,7 @@
   "bullets": [
    "US equities retreating, S&P 500 -0.51% \u00b7 VIX 19.4 (normal).",
    "Sector leader: Energy +2.60% \u00b7 Laggard: Consumer Staples -1.92%.",
-   "Biggest mover: Ethereum (ETH) -3.91% on the day.",
+   "Biggest mover: WTI Crude (WTI) +3.82% on the day.",
    "US 2s10s curve is positively sloped at +31bp.",
    "Cross-asset check: equities, credit, and volatility are aligned risk-off.",
    "Breadth: 3/11 sectors positive on the day, 10/16 watchlist names trading above their 50-day average."
