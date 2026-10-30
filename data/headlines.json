@@ -1,6 +1,12 @@
 {
- "updated": "2026-10-29T22:55:02Z",
+ "updated": "2026-10-30T02:28:42Z",
  "items": [
+  {
+   "title": "Binance 'potential security issue' sees $2.54 billion frozen by the likes of Circle, Tether",
+   "link": "https://www.cnbc.com/2026/10/29/circle-tether-freeze-funds-impacted-by-potential-binance-security-issue.html",
+   "published": "2026-10-29T23:56:02Z",
+   "source": "CNBC Markets"
+  },
   {
    "title": "Amazon posts negative free cash flow of $42.4 billion, holds 2026 capex unchanged",
    "link": "https://www.cnbc.com/2026/10/29/amazon-amzn-q3-earnings-report-2026.html",
@@ -8,9 +14,21 @@
    "source": "CNBC Markets"
   },
   {
+   "title": "How elections worldwide are testing Trump\u2019s influence abroad",
+   "link": "https://www.cnbc.com/2026/10/30/election-trump-brazil-serbia-hungary.html",
+   "published": "2026-10-30T00:13:22Z",
+   "source": "CNBC Markets"
+  },
+  {
    "title": "Intel stock plunges 21% as chipmaker blames PC slowdown for weak guidance",
    "link": "https://www.cnbc.com/2026/10/29/intel-intc-q3-earnings-report-2026-.html",
-   "published": "2026-10-29T22:37:54Z",
+   "published": "2026-10-30T00:39:52Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Microsoft plans to raise $25 billion in debt as it pursues AI buildout",
+   "link": "https://www.cnbc.com/2026/10/29/microsoft-25-billion-debt-offering.html",
+   "published": "2026-10-30T00:38:13Z",
    "source": "CNBC Markets"
   },
   {
@@ -20,27 +38,15 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Circle, Tether freeze funds impacted by potential Binance 'security issue'",
-   "link": "https://www.cnbc.com/2026/10/29/circle-tether-freeze-funds-impacted-by-potential-binance-security-issue.html",
-   "published": "2026-10-29T22:47:32Z",
+   "title": "DOJ escalates Alaska Senate lawsuit over dueling Sullivan candidacies",
+   "link": "https://www.cnbc.com/2026/10/29/alaska-senate-governor-investigation-sullivan-peltola-doj.html",
+   "published": "2026-10-30T01:34:32Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Alphabet tanks nearly 13% for worst day ever, losing $500 billion in value",
-   "link": "https://www.cnbc.com/2026/10/29/alphabet-google-microsoft-msft-shares-today-earnings.html",
-   "published": "2026-10-29T20:15:19Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Reddit shares sink on weak sales guidance and plans login requirement test as Google search traffic shrinks",
-   "link": "https://www.cnbc.com/2026/10/29/reddit-rddt-q3-2026.html",
-   "published": "2026-10-29T22:00:20Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Rivian third-quarter earnings beat estimates as software revenue, R2 deliveries rise",
-   "link": "https://www.cnbc.com/2026/10/29/rivian-rivn-earnings-q3-2026.html",
-   "published": "2026-10-29T21:52:27Z",
+   "title": "Intel plunges on a major guidance miss. What went wrong \u2014 and how to proceed",
+   "link": "https://www.cnbc.com/investingclub/2026/10/29/intel-plunges-on-a-major-guidance-miss-what-went-wrong-how-to-proceed.html",
+   "published": "2026-10-30T01:06:07Z",
    "source": "CNBC Markets"
   },
   {
@@ -56,21 +62,15 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Nvidia responds to report Jensen Huang was target of Chinese asset, says diversion allegations were 'investigated and debunked'",
-   "link": "https://www.cnbc.com/2026/10/29/nvidia-jensen-huang-chinese-intelligence-asset.html",
-   "published": "2026-10-29T19:16:32Z",
+   "title": "Amazon AWS posts 39% revenue growth as cloud rivals also accelerate",
+   "link": "https://www.cnbc.com/2026/10/29/aws-q3-earnings-report-2026.html",
+   "published": "2026-10-29T21:59:31Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Starbucks sales miss expectations, but its U.S. turnaround is gaining steam",
-   "link": "https://www.cnbc.com/2026/10/29/starbucks-sbux-q4-2026-earnings.html",
-   "published": "2026-10-29T21:29:59Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Some Polymarket user funds stolen by hackers; exchange referring matter to U.K. authorities",
-   "link": "https://www.cnbc.com/2026/10/29/polymarket-reports-outage-on-international-exchange-halts-trading.html",
-   "published": "2026-10-29T22:28:13Z",
+   "title": "Alphabet tanks nearly 13% for worst day ever, losing $500 billion in value",
+   "link": "https://www.cnbc.com/2026/10/29/alphabet-google-microsoft-msft-shares-today-earnings.html",
+   "published": "2026-10-29T20:15:19Z",
    "source": "CNBC Markets"
   }
  ],
