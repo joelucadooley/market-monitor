@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T23:51:20Z",
+ "updated": "2026-10-31T04:29:18Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -2145,13 +2145,9 @@
    "label": "DAX",
    "group": "indices",
    "decimals": 0,
-   "value": 26040.0,
-   "asOf": "2026-10-29",
+   "value": 25818.0,
+   "asOf": "2026-10-30",
    "history": [
-    [
-     "2026-04-30",
-     24292.0
-    ],
     [
      "2026-05-04",
      23991.0
@@ -2667,26 +2663,26 @@
     [
      "2026-10-29",
      26040.0
+    ],
+    [
+     "2026-10-30",
+     25818.0
     ]
    ],
    "status": "live",
    "wk52hi": 26570.0,
    "wk52lo": 22301.0,
-   "ma50": 25585.0,
-   "ma200": 24888.0,
-   "rsi14": 69.0
+   "ma50": 25579.0,
+   "ma200": 24894.0,
+   "rsi14": 60.0
   },
   "N225": {
    "label": "Nikkei 225",
    "group": "indices",
    "decimals": 0,
-   "value": 64659.0,
-   "asOf": "2026-10-29",
+   "value": 63290.0,
+   "asOf": "2026-10-30",
    "history": [
-    [
-     "2026-04-17",
-     58476.0
-    ],
     [
      "2026-04-20",
      58825.0
@@ -3202,14 +3198,18 @@
     [
      "2026-10-29",
      64659.0
+    ],
+    [
+     "2026-10-30",
+     63290.0
     ]
    ],
    "status": "live",
    "wk52hi": 72366.0,
    "wk52lo": 48538.0,
-   "ma50": 65824.0,
-   "ma200": 61726.0,
-   "rsi14": 32.0
+   "ma50": 65706.0,
+   "ma200": 61783.0,
+   "rsi14": 29.0
   },
   "VIX": {
    "label": "CBOE Volatility (VIX)",
@@ -3752,7 +3752,7 @@
    "label": "EUR/USD",
    "group": "fx",
    "decimals": 4,
-   "value": 1.1166,
+   "value": 1.1183,
    "asOf": "2026-10-30",
    "history": [
     [
@@ -4273,21 +4273,21 @@
     ],
     [
      "2026-10-30",
-     1.1166
+     1.1183
     ]
    ],
    "status": "live",
    "wk52hi": 1.2018,
    "wk52lo": 1.113,
    "ma50": 1.14,
-   "ma200": 1.1563,
-   "rsi14": 43.4
+   "ma200": 1.1564,
+   "rsi14": 46.5
   },
   "GBPUSD": {
    "label": "GBP/USD",
    "group": "fx",
    "decimals": 4,
-   "value": 1.3389,
+   "value": 1.3379,
    "asOf": "2026-10-30",
    "history": [
     [
@@ -4808,7 +4808,7 @@
     ],
     [
      "2026-10-30",
-     1.3389
+     1.3379
     ]
    ],
    "status": "live",
@@ -4816,13 +4816,13 @@
    "wk52lo": 1.3022,
    "ma50": 1.3387,
    "ma200": 1.3431,
-   "rsi14": 64.2
+   "rsi14": 63.5
   },
   "USDJPY": {
    "label": "USD/JPY",
    "group": "fx",
    "decimals": 2,
-   "value": 157.52,
+   "value": 157.8,
    "asOf": "2026-10-30",
    "history": [
     [
@@ -5343,21 +5343,21 @@
     ],
     [
      "2026-10-30",
-     157.52
+     157.8
     ]
    ],
    "status": "live",
    "wk52hi": 163.86,
    "wk52lo": 152.45,
-   "ma50": 157.44,
-   "ma200": 158.53,
-   "rsi14": 44.4
+   "ma50": 157.45,
+   "ma200": 158.54,
+   "rsi14": 46.6
   },
   "DXY": {
    "label": "US Dollar Index",
    "group": "fx",
    "decimals": 2,
-   "value": 101.96,
+   "value": 101.88,
    "asOf": "2026-10-30",
    "history": [
     [
@@ -5878,15 +5878,15 @@
     ],
     [
      "2026-10-30",
-     101.96
+     101.88
     ]
    ],
    "status": "live",
    "wk52hi": 102.58,
    "wk52lo": 96.22,
-   "ma50": 100.82,
+   "ma50": 100.81,
    "ma200": 99.63,
-   "rsi14": 40.2
+   "rsi14": 39.2
   }
  },
  "commodities": {
@@ -5894,7 +5894,7 @@
    "label": "Gold (front-month)",
    "group": "commodities",
    "decimals": 2,
-   "value": 3884.9,
+   "value": 3898.9,
    "asOf": "2026-10-30",
    "history": [
     [
@@ -6415,21 +6415,21 @@
     ],
     [
      "2026-10-30",
-     3884.9
+     3898.9
     ]
    ],
    "status": "live",
    "wk52hi": 5318.4,
-   "wk52lo": 3884.9,
-   "ma50": 4294.52,
-   "ma200": 4519.25,
-   "rsi14": 24.5
+   "wk52lo": 3898.9,
+   "ma50": 4294.8,
+   "ma200": 4519.32,
+   "rsi14": 25.1
   },
   "SILVER": {
    "label": "Silver (front-month)",
    "group": "commodities",
    "decimals": 3,
-   "value": 49.135,
+   "value": 49.097,
    "asOf": "2026-10-30",
    "history": [
     [
@@ -6950,7 +6950,7 @@
     ],
     [
      "2026-10-30",
-     49.135
+     49.097
     ]
    ],
    "status": "live",
@@ -6964,7 +6964,7 @@
    "label": "WTI Crude",
    "group": "commodities",
    "decimals": 2,
-   "value": 102.95,
+   "value": 104.12,
    "asOf": "2026-10-30",
    "history": [
     [
@@ -7485,21 +7485,21 @@
     ],
     [
      "2026-10-30",
-     102.95
+     104.12
     ]
    ],
    "status": "live",
    "wk52hi": 112.95,
    "wk52lo": 55.27,
-   "ma50": 94.61,
+   "ma50": 94.63,
    "ma200": 86.34,
-   "rsi14": 65.1
+   "rsi14": 66.4
   },
   "BRENT": {
    "label": "Brent Crude",
    "group": "commodities",
    "decimals": 2,
-   "value": 112.33,
+   "value": 117.64,
    "asOf": "2026-10-30",
    "history": [
     [
@@ -8020,21 +8020,21 @@
     ],
     [
      "2026-10-30",
-     112.33
+     117.64
     ]
    ],
    "status": "live",
    "wk52hi": 118.35,
    "wk52lo": 58.92,
-   "ma50": 103.16,
-   "ma200": 92.43,
-   "rsi14": 63.1
+   "ma50": 103.27,
+   "ma200": 92.46,
+   "rsi14": 75.1
   },
   "COPPER": {
    "label": "Copper (front-month)",
    "group": "commodities",
    "decimals": 3,
-   "value": 6.51,
+   "value": 6.458,
    "asOf": "2026-10-30",
    "history": [
     [
@@ -8555,15 +8555,15 @@
     ],
     [
      "2026-10-30",
-     6.51
+     6.458
     ]
    ],
    "status": "live",
    "wk52hi": 6.804,
    "wk52lo": 4.926,
-   "ma50": 6.574,
+   "ma50": 6.573,
    "ma200": 6.207,
-   "rsi14": 39.0
+   "rsi14": 36.7
   }
  },
  "crypto": {
@@ -8571,8 +8571,8 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 77137.0,
-   "asOf": "2026-10-30",
+   "value": 77139.0,
+   "asOf": "2026-10-31",
    "history": [
     [
      "2026-06-23",
@@ -9091,8 +9091,8 @@
      77775.0
     ],
     [
-     "2026-10-30",
-     77137.0
+     "2026-10-31",
+     77139.0
     ]
    ],
    "status": "live",
@@ -9106,8 +9106,8 @@
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 2240.59,
-   "asOf": "2026-10-30",
+   "value": 2237.77,
+   "asOf": "2026-10-31",
    "history": [
     [
      "2026-06-23",
@@ -9626,16 +9626,16 @@
      2249.5
     ],
     [
-     "2026-10-30",
-     2240.59
+     "2026-10-31",
+     2237.77
     ]
    ],
    "status": "live",
    "wk52hi": 3911.06,
    "wk52lo": 1564.82,
-   "ma50": 2525.77,
-   "ma200": 2158.46,
-   "rsi14": 27.8
+   "ma50": 2525.71,
+   "ma200": 2158.45,
+   "rsi14": 27.6
   }
  },
  "watchlist": {
@@ -24092,7 +24092,7 @@
   "bullets": [
    "US equities retreating, S&P 500 -1.81% \u00b7 VIX 19.4 (normal).",
    "Sector leader: Energy +1.91% \u00b7 Laggard: Technology -4.89%.",
-   "Biggest mover: Silver (front-month) (SILVER) -5.86% on the day.",
+   "Biggest mover: Silver (front-month) (SILVER) -5.93% on the day.",
    "US 2s10s curve is positively sloped at +37bp.",
    "Cross-asset check: equities, credit, and volatility are aligned risk-off.",
    "Breadth: 6/11 sectors positive on the day, 11/16 watchlist names trading above their 50-day average."
