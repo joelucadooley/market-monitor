@@ -1,10 +1,28 @@
 {
- "updated": "2026-11-02T22:40:04Z",
+ "updated": "2026-11-03T03:43:33Z",
  "items": [
+  {
+   "title": "U.S. reportedly strikes Iran's Qeshm Island as Vance hopes for \u2018negotiated settlement\u2019 with Tehran",
+   "link": "https://www.cnbc.com/2026/11/03/iran-us-vance-trump-strikes.html",
+   "published": "2026-11-03T02:51:33Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Australia hikes rates to 18-year high to fight inflation",
+   "link": "https://www.cnbc.com/2026/11/03/australia-hikes-rates-18-year-high-finflation.html",
+   "published": "2026-11-03T03:32:56Z",
+   "source": "CNBC Markets"
+  },
   {
    "title": "Palantir reports booming U.S. commercial revenue growth, topping government for first time",
    "link": "https://www.cnbc.com/2026/11/02/palantir-pltr-earnings-q3-2026.html",
-   "published": "2026-11-02T22:38:15Z",
+   "published": "2026-11-02T22:53:20Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "North Korea denies links to Binance hack as researchers trace stolen billions",
+   "link": "https://www.cnbc.com/2026/11/03/north-korea-binance-elliptic-chainalysis.html",
+   "published": "2026-11-03T03:27:18Z",
    "source": "CNBC Markets"
   },
   {
@@ -14,21 +32,9 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Stock market after midterm elections: What S&P 500 history shows",
-   "link": "https://www.cnbc.com/2026/11/02/stock-market-after-midterm-elections-sp-500-history.html",
-   "published": "2026-11-02T17:57:35Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "DOJ asks Supreme Court to block California counting disputed mail-in ballots",
-   "link": "https://www.cnbc.com/2026/11/02/supreme-court-california-mail-ballots-election.html",
-   "published": "2026-11-02T19:38:58Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Anthropic reports $17 billion in Q3 revenue, purchase commitments of $895.4 billion in revised S-1",
-   "link": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
-   "published": "2026-11-02T17:52:01Z",
+   "title": "OpenAI hires former U.S. Army Secretary Dan Driscoll for national security role",
+   "link": "https://www.cnbc.com/2026/11/03/openai-hires-dan-driscoll-national-security.html",
+   "published": "2026-11-03T02:47:57Z",
    "source": "CNBC Markets"
   },
   {
@@ -44,33 +50,27 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "I bonds now pay 5.51% \u2014 but there are trade-offs. What to know before buying",
-   "link": "https://www.cnbc.com/2026/11/02/i-bonds-rate.html",
-   "published": "2026-11-02T20:57:50Z",
+   "title": "Stock market after midterm elections: What S&P 500 history shows",
+   "link": "https://www.cnbc.com/2026/11/02/stock-market-after-midterm-elections-sp-500-history.html",
+   "published": "2026-11-02T23:13:34Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Prediction market traders now see nearly 75% chance of Democrats winning the Senate",
-   "link": "https://www.cnbc.com/2026/11/02/prediction-market-traders-now-see-nearly-75percent-chance-of-democrats-winning-the-senate.html",
-   "published": "2026-11-02T20:48:21Z",
+   "title": "Supreme Court rejects DOJ's bid to block California from counting disputed ballots",
+   "link": "https://www.cnbc.com/2026/11/02/supreme-court-california-mail-ballots-election.html",
+   "published": "2026-11-03T01:32:13Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Texas governor race tightens in prediction markets, but Abbott remains favored",
-   "link": "https://www.cnbc.com/2026/11/02/texas-governor-prediction-markets-abbott-hinojosa.html",
-   "published": "2026-11-02T21:13:43Z",
+   "title": "Intel foundry push faces critical test after stock's 45% plunge in October",
+   "link": "https://www.cnbc.com/2026/11/02/intel-foundry-faces-critical-test-after-stocks-45percent-plunge-in-october.html",
+   "published": "2026-11-02T21:59:48Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Social Security may have to cut retirement benefits in six years. Here's how much money is at stake for beneficiaries",
-   "link": "https://www.cnbc.com/2026/11/01/social-security-benefit-cuts-2032.html",
-   "published": "2026-11-02T18:46:31Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Wall Street's Fear Index is doing something strange. Here's what it means for stocks",
-   "link": "https://www.cnbc.com/2026/11/02/wall-streets-fear-index-is-doing-something-strange-heres-what-it-means-for-stocks.html",
-   "published": "2026-11-02T15:30:41Z",
+   "title": "CNBC's The China Connection newsletter: Nvidia's humanoid push relies on China-made robot hands",
+   "link": "https://www.cnbc.com/2026/11/02/cnbcs-the-china-connection-newsletter-nvidias-humanoid-push-relies-on-china-made-robot-hands.html",
+   "published": "2026-11-02T23:00:01Z",
    "source": "CNBC Markets"
   }
  ],
