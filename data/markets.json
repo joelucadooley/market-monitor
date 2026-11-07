@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T01:48:25Z",
+ "updated": "2026-11-07T04:58:52Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -6955,7 +6955,7 @@
    ],
    "status": "live",
    "wk52hi": 115.08,
-   "wk52lo": 47.794,
+   "wk52lo": 48.017,
    "ma50": 59.979,
    "ma200": 69.853,
    "rsi14": 34.5
@@ -8571,7 +8571,7 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 75901.0,
+   "value": 75804.0,
    "asOf": "2026-11-07",
    "history": [
     [
@@ -9092,21 +9092,21 @@
     ],
     [
      "2026-11-07",
-     75901.0
+     75804.0
     ]
    ],
    "status": "live",
    "wk52hi": 105997.0,
    "wk52lo": 58559.0,
-   "ma50": 81978.0,
-   "ma200": 73192.0,
+   "ma50": 81976.0,
+   "ma200": 73191.0,
    "rsi14": 35.0
   },
   "ETH": {
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 2242.22,
+   "value": 2240.63,
    "asOf": "2026-11-07",
    "history": [
     [
@@ -9627,15 +9627,15 @@
     ],
     [
      "2026-11-07",
-     2242.22
+     2240.63
     ]
    ],
    "status": "live",
    "wk52hi": 3582.62,
    "wk52lo": 1564.82,
-   "ma50": 2498.82,
-   "ma200": 2156.28,
-   "rsi14": 39.0
+   "ma50": 2498.79,
+   "ma200": 2156.27,
+   "rsi14": 38.8
   }
  },
  "watchlist": {
@@ -12318,13 +12318,9 @@
    "label": "Meta Platforms",
    "group": "watchlist",
    "decimals": 2,
-   "value": 605.08,
-   "asOf": "2026-11-05",
+   "value": 610.15,
+   "asOf": "2026-11-06",
    "history": [
-    [
-     "2026-05-04",
-     610.41
-    ],
     [
      "2026-05-05",
      604.96
@@ -12840,14 +12836,18 @@
     [
      "2026-11-05",
      605.08
+    ],
+    [
+     "2026-11-06",
+     610.15
     ]
    ],
    "status": "live",
    "wk52hi": 777.59,
    "wk52lo": 525.72,
-   "ma50": 674.14,
-   "ma200": 632.13,
-   "rsi14": 21.3
+   "ma50": 674.92,
+   "ma200": 631.94,
+   "rsi14": 23.9
   },
   "TSLA": {
    "label": "Tesla",
@@ -23020,13 +23020,9 @@
    "label": "Real Estate",
    "group": "sectors",
    "decimals": 2,
-   "value": 44.3,
-   "asOf": "2026-11-05",
+   "value": 44.0,
+   "asOf": "2026-11-06",
    "history": [
-    [
-     "2026-05-04",
-     44.08
-    ],
     [
      "2026-05-05",
      44.17
@@ -23542,26 +23538,26 @@
     [
      "2026-11-05",
      44.3
+    ],
+    [
+     "2026-11-06",
+     44.0
     ]
    ],
    "status": "live",
    "wk52hi": 46.01,
    "wk52lo": 40.01,
-   "ma50": 42.57,
-   "ma200": 43.39,
-   "rsi14": 65.9
+   "ma50": 42.55,
+   "ma200": 43.4,
+   "rsi14": 67.8
   },
   "XLC": {
    "label": "Communication Services",
    "group": "sectors",
    "decimals": 2,
-   "value": 104.34,
-   "asOf": "2026-11-05",
+   "value": 104.79,
+   "asOf": "2026-11-06",
    "history": [
-    [
-     "2026-05-04",
-     116.1
-    ],
     [
      "2026-05-05",
      115.63
@@ -24077,30 +24073,34 @@
     [
      "2026-11-05",
      104.34
+    ],
+    [
+     "2026-11-06",
+     104.79
     ]
    ],
    "status": "live",
    "wk52hi": 120.08,
    "wk52lo": 99.9,
-   "ma50": 109.94,
-   "ma200": 112.66,
-   "rsi14": 31.7
+   "ma50": 109.81,
+   "ma200": 112.61,
+   "rsi14": 34.0
   }
  },
  "pulse": {
   "headline": "US equities advancing, S&P 500 +0.31% \u00b7 VIX 25.6 (elevated)",
   "bullets": [
    "US equities advancing, S&P 500 +0.31% \u00b7 VIX 25.6 (elevated).",
-   "Sector leader: Technology +1.45% \u00b7 Laggard: Real Estate -1.82%.",
+   "Sector leader: Technology +1.45% \u00b7 Laggard: Consumer Staples -1.28%.",
    "Biggest mover: Nikkei 225 (N225) -5.96% on the day.",
    "US 2s10s curve is positively sloped at +38bp.",
    "Cross-asset check: equities and credit/vol disagree \u2014 a divergence worth treating skeptically rather than at face value.",
-   "Breadth: 2/11 sectors positive on the day, 10/16 watchlist names trading above their 50-day average."
+   "Breadth: 3/11 sectors positive on the day, 10/16 watchlist names trading above their 50-day average."
   ],
   "breadth": {
    "watchlistAbove50dma": 10,
    "watchlistTotal": 16,
-   "sectorsPositive": 2,
+   "sectorsPositive": 3,
    "sectorsTotal": 11
   }
  }
