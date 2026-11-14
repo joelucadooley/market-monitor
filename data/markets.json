@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T01:50:16Z",
+ "updated": "2026-11-14T05:19:50Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -5894,7 +5894,7 @@
    "label": "Gold (front-month)",
    "group": "commodities",
    "decimals": 2,
-   "value": 3887.6,
+   "value": 3886.3,
    "asOf": "2026-11-13",
    "history": [
     [
@@ -6415,21 +6415,21 @@
     ],
     [
      "2026-11-13",
-     3887.6
+     3886.3
     ]
    ],
    "status": "live",
    "wk52hi": 5318.4,
    "wk52lo": 3885.3,
-   "ma50": 4181.54,
+   "ma50": 4181.51,
    "ma200": 4472.25,
-   "rsi14": 40.5
+   "rsi14": 40.4
   },
   "SILVER": {
    "label": "Silver (front-month)",
    "group": "commodities",
    "decimals": 3,
-   "value": 48.65,
+   "value": 49.031,
    "asOf": "2026-11-13",
    "history": [
     [
@@ -6950,21 +6950,21 @@
     ],
     [
      "2026-11-13",
-     48.65
+     49.031
     ]
    ],
    "status": "live",
    "wk52hi": 115.08,
-   "wk52lo": 48.65,
-   "ma50": 58.468,
-   "ma200": 68.38,
-   "rsi14": 34.4
+   "wk52lo": 49.031,
+   "ma50": 58.476,
+   "ma200": 68.382,
+   "rsi14": 35.1
   },
   "WTI": {
    "label": "WTI Crude",
    "group": "commodities",
    "decimals": 2,
-   "value": 88.92,
+   "value": 88.56,
    "asOf": "2026-11-13",
    "history": [
     [
@@ -7485,7 +7485,7 @@
     ],
     [
      "2026-11-13",
-     88.92
+     88.56
     ]
    ],
    "status": "live",
@@ -7493,13 +7493,13 @@
    "wk52lo": 55.27,
    "ma50": 95.37,
    "ma200": 87.78,
-   "rsi14": 31.1
+   "rsi14": 30.6
   },
   "BRENT": {
    "label": "Brent Crude",
    "group": "commodities",
    "decimals": 2,
-   "value": 96.08,
+   "value": 95.84,
    "asOf": "2026-11-13",
    "history": [
     [
@@ -8020,21 +8020,21 @@
     ],
     [
      "2026-11-13",
-     96.08
+     95.84
     ]
    ],
    "status": "live",
    "wk52hi": 118.35,
    "wk52lo": 58.92,
-   "ma50": 104.27,
-   "ma200": 94.0,
-   "rsi14": 27.9
+   "ma50": 104.26,
+   "ma200": 93.99,
+   "rsi14": 27.5
   },
   "COPPER": {
    "label": "Copper (front-month)",
    "group": "commodities",
    "decimals": 3,
-   "value": 6.063,
+   "value": 6.08,
    "asOf": "2026-11-13",
    "history": [
     [
@@ -8555,15 +8555,15 @@
     ],
     [
      "2026-11-13",
-     6.063
+     6.08
     ]
    ],
    "status": "live",
    "wk52hi": 6.804,
    "wk52lo": 4.959,
-   "ma50": 6.514,
+   "ma50": 6.515,
    "ma200": 6.227,
-   "rsi14": 32.3
+   "rsi14": 32.8
   }
  },
  "crypto": {
@@ -8571,7 +8571,7 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 68268.0,
+   "value": 67137.0,
    "asOf": "2026-11-14",
    "history": [
     [
@@ -9092,21 +9092,21 @@
     ],
     [
      "2026-11-14",
-     68268.0
+     67137.0
     ]
    ],
    "status": "live",
    "wk52hi": 96929.0,
    "wk52lo": 58559.0,
-   "ma50": 80536.0,
-   "ma200": 73035.0,
-   "rsi14": 28.0
+   "ma50": 80513.0,
+   "ma200": 73030.0,
+   "rsi14": 26.0
   },
   "ETH": {
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 1927.61,
+   "value": 1901.94,
    "asOf": "2026-11-14",
    "history": [
     [
@@ -9627,15 +9627,15 @@
     ],
     [
      "2026-11-14",
-     1927.61
+     1901.94
     ]
    ],
    "status": "live",
    "wk52hi": 3354.72,
    "wk52lo": 1564.82,
-   "ma50": 2413.71,
-   "ma200": 2147.23,
-   "rsi14": 29.4
+   "ma50": 2413.2,
+   "ma200": 2147.1,
+   "rsi14": 28.4
   }
  },
  "watchlist": {
@@ -12318,13 +12318,9 @@
    "label": "Meta Platforms",
    "group": "watchlist",
    "decimals": 2,
-   "value": 623.61,
-   "asOf": "2026-11-12",
+   "value": 641.69,
+   "asOf": "2026-11-13",
    "history": [
-    [
-     "2026-05-11",
-     598.86
-    ],
     [
      "2026-05-12",
      603.0
@@ -12840,14 +12836,18 @@
     [
      "2026-11-12",
      623.61
+    ],
+    [
+     "2026-11-13",
+     641.69
     ]
    ],
    "status": "live",
    "wk52hi": 777.59,
    "wk52lo": 525.72,
-   "ma50": 679.19,
-   "ma200": 631.25,
-   "rsi14": 44.1
+   "ma50": 679.81,
+   "ma200": 630.77,
+   "rsi14": 53.3
   },
   "TSLA": {
    "label": "Tesla",
@@ -23020,13 +23020,9 @@
    "label": "Real Estate",
    "group": "sectors",
    "decimals": 2,
-   "value": 44.36,
-   "asOf": "2026-11-12",
+   "value": 44.37,
+   "asOf": "2026-11-13",
    "history": [
-    [
-     "2026-05-11",
-     44.57
-    ],
     [
      "2026-05-12",
      44.58
@@ -23542,26 +23538,26 @@
     [
      "2026-11-12",
      44.36
+    ],
+    [
+     "2026-11-13",
+     44.37
     ]
    ],
    "status": "live",
    "wk52hi": 46.01,
    "wk52lo": 40.01,
    "ma50": 42.59,
-   "ma200": 43.47,
-   "rsi14": 65.0
+   "ma200": 43.49,
+   "rsi14": 63.7
   },
   "XLC": {
    "label": "Communication Services",
    "group": "sectors",
    "decimals": 2,
-   "value": 107.56,
-   "asOf": "2026-11-12",
+   "value": 108.69,
+   "asOf": "2026-11-13",
    "history": [
-    [
-     "2026-05-11",
-     115.58
-    ],
     [
      "2026-05-12",
      115.86
@@ -24077,14 +24073,18 @@
     [
      "2026-11-12",
      107.56
+    ],
+    [
+     "2026-11-13",
+     108.69
     ]
    ],
    "status": "live",
    "wk52hi": 120.08,
    "wk52lo": 99.9,
-   "ma50": 109.48,
-   "ma200": 112.42,
-   "rsi14": 56.2
+   "ma50": 109.39,
+   "ma200": 112.37,
+   "rsi14": 65.1
   }
  },
  "pulse": {
@@ -24092,15 +24092,15 @@
   "bullets": [
    "US equities retreating, S&P 500 -0.40% \u00b7 VIX 19.3 (normal).",
    "Sector leader: Consumer Staples +1.42% \u00b7 Laggard: Technology -2.01%.",
-   "Biggest mover: Ethereum (ETH) -4.42% on the day.",
+   "Biggest mover: Bitcoin (BTC) -5.90% on the day.",
    "US 2s10s curve is positively sloped at +24bp.",
    "Cross-asset check: equities and credit/vol disagree \u2014 a divergence worth treating skeptically rather than at face value.",
-   "Breadth: 5/11 sectors positive on the day, 13/16 watchlist names trading above their 50-day average."
+   "Breadth: 7/11 sectors positive on the day, 13/16 watchlist names trading above their 50-day average."
   ],
   "breadth": {
    "watchlistAbove50dma": 13,
    "watchlistTotal": 16,
-   "sectorsPositive": 5,
+   "sectorsPositive": 7,
    "sectorsTotal": 11
   }
  }
