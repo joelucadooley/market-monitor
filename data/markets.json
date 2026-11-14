@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T13:05:25Z",
+ "updated": "2026-11-14T19:46:06Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -8571,7 +8571,7 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 66732.0,
+   "value": 65668.0,
    "asOf": "2026-11-14",
    "history": [
     [
@@ -9092,21 +9092,21 @@
     ],
     [
      "2026-11-14",
-     66732.0
+     65668.0
     ]
    ],
    "status": "live",
    "wk52hi": 96929.0,
    "wk52lo": 58559.0,
-   "ma50": 80189.0,
-   "ma200": 72987.0,
-   "rsi14": 25.0
+   "ma50": 80168.0,
+   "ma200": 72982.0,
+   "rsi14": 24.0
   },
   "ETH": {
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 1889.27,
+   "value": 1833.75,
    "asOf": "2026-11-14",
    "history": [
     [
@@ -9627,15 +9627,15 @@
     ],
     [
      "2026-11-14",
-     1889.27
+     1833.75
     ]
    ],
    "status": "live",
    "wk52hi": 3354.72,
    "wk52lo": 1564.82,
-   "ma50": 2397.69,
-   "ma200": 2145.23,
-   "rsi14": 26.9
+   "ma50": 2396.58,
+   "ma200": 2144.95,
+   "rsi14": 25.1
   }
  },
  "watchlist": {
@@ -24092,7 +24092,7 @@
   "bullets": [
    "US equities retreating, S&P 500 -0.40% \u00b7 VIX 19.3 (normal).",
    "Sector leader: Consumer Staples +1.42% \u00b7 Laggard: Technology -2.01%.",
-   "Biggest mover: Meta Platforms (META) +2.90% on the day.",
+   "Biggest mover: Ethereum (ETH) -4.87% on the day.",
    "US 2s10s curve is positively sloped at +24bp.",
    "Cross-asset check: equities and credit/vol disagree \u2014 a divergence worth treating skeptically rather than at face value.",
    "Breadth: 7/11 sectors positive on the day, 13/16 watchlist names trading above their 50-day average."
