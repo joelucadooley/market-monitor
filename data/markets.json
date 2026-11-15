@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T10:28:11Z",
+ "updated": "2026-11-15T18:33:35Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -4822,13 +4822,9 @@
    "label": "USD/JPY",
    "group": "fx",
    "decimals": 2,
-   "value": 159.88,
-   "asOf": "2026-11-13",
+   "value": 159.6,
+   "asOf": "2026-11-15",
    "history": [
-    [
-     "2026-05-17",
-     158.84
-    ],
     [
      "2026-05-18",
      158.86
@@ -5344,14 +5340,18 @@
     [
      "2026-11-13",
      159.88
+    ],
+    [
+     "2026-11-15",
+     159.6
     ]
    ],
    "status": "live",
    "wk52hi": 163.86,
    "wk52lo": 152.45,
-   "ma50": 157.33,
-   "ma200": 158.72,
-   "rsi14": 74.5
+   "ma50": 157.4,
+   "ma200": 158.73,
+   "rsi14": 67.8
   },
   "DXY": {
    "label": "US Dollar Index",
@@ -8571,7 +8571,7 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 65414.0,
+   "value": 64564.0,
    "asOf": "2026-11-15",
    "history": [
     [
@@ -9092,21 +9092,21 @@
     ],
     [
      "2026-11-15",
-     65414.0
+     64564.0
     ]
    ],
    "status": "live",
    "wk52hi": 96929.0,
    "wk52lo": 58559.0,
-   "ma50": 79757.0,
-   "ma200": 72922.0,
-   "rsi14": 24.0
+   "ma50": 79740.0,
+   "ma200": 72918.0,
+   "rsi14": 21.0
   },
   "ETH": {
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 1827.36,
+   "value": 1813.81,
    "asOf": "2026-11-15",
    "history": [
     [
@@ -9627,15 +9627,15 @@
     ],
     [
      "2026-11-15",
-     1827.36
+     1813.81
     ]
    ],
    "status": "live",
    "wk52hi": 3354.72,
    "wk52lo": 1564.82,
-   "ma50": 2377.93,
-   "ma200": 2142.49,
-   "rsi14": 26.4
+   "ma50": 2377.66,
+   "ma200": 2142.43,
+   "rsi14": 25.4
   }
  },
  "watchlist": {
@@ -24092,7 +24092,7 @@
   "bullets": [
    "US equities retreating, S&P 500 -0.40% \u00b7 VIX 19.3 (normal).",
    "Sector leader: Consumer Staples +1.42% \u00b7 Laggard: Technology -2.01%.",
-   "Biggest mover: Ethereum (ETH) +3.29% on the day.",
+   "Biggest mover: Meta Platforms (META) +2.90% on the day.",
    "US 2s10s curve is positively sloped at +24bp.",
    "Cross-asset check: equities and credit/vol disagree \u2014 a divergence worth treating skeptically rather than at face value.",
    "Breadth: 7/11 sectors positive on the day, 13/16 watchlist names trading above their 50-day average."
