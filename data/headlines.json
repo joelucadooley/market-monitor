@@ -1,10 +1,16 @@
 {
- "updated": "2026-11-15T18:33:35Z",
+ "updated": "2026-11-16T00:47:34Z",
  "items": [
   {
    "title": "Bessent calls for \u2018dramatic shakeup\u2019 at Nvidia, urges outside CEO",
    "link": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
    "published": "2026-11-15T18:10:18Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
+   "link": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
+   "published": "2026-11-16T00:11:25Z",
    "source": "CNBC Markets"
   },
   {
@@ -16,25 +22,19 @@
   {
    "title": "'We slept here': Flight delays linger but schedule is back on track for Monday",
    "link": "https://www.cnbc.com/2026/11/15/flight-delays-ground-faa-stop.html",
-   "published": "2026-11-15T18:22:23Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Trump breaks silence about FAA nationwide ground stop, blames Biden administration",
-   "link": "https://www.cnbc.com/2026/11/15/trump-breaks-silence-on-faa-nationwide-ground-stop-blames-biden-.html",
-   "published": "2026-11-15T16:56:40Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Rivian, Lucid, Scout CEOs aren\u2019t counting on Democrats to restore EV federal support after midterm wins",
-   "link": "https://www.cnbc.com/2026/11/15/rivian-lucid-scout-arent-counting-on-dems-to-restore-ev-incentives.html",
-   "published": "2026-11-15T13:00:02Z",
+   "published": "2026-11-15T22:33:26Z",
    "source": "CNBC Markets"
   },
   {
    "title": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
    "link": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
    "published": "2026-11-14T12:00:01Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Trump breaks silence about FAA nationwide ground stop, blames Biden administration",
+   "link": "https://www.cnbc.com/2026/11/15/trump-breaks-silence-on-faa-nationwide-ground-stop-blames-biden-.html",
+   "published": "2026-11-15T16:56:40Z",
    "source": "CNBC Markets"
   },
   {
@@ -50,12 +50,6 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
-   "link": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
-   "published": "2026-11-14T17:46:06Z",
-   "source": "CNBC Markets"
-  },
-  {
    "title": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
    "link": "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
    "published": "2026-11-14T14:54:22Z",
@@ -68,9 +62,15 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Top Wall Street analysts are bullish on these 3 stocks for the long term",
-   "link": "https://www.cnbc.com/2026/11/15/top-wall-street-analysts-are-bullish-on-these-3-stocks-for-the-long-term.html",
-   "published": "2026-11-15T12:49:07Z",
+   "title": "Rivian, Lucid, Scout CEOs aren\u2019t counting on Democrats to restore EV federal support after midterm wins",
+   "link": "https://www.cnbc.com/2026/11/15/rivian-lucid-scout-arent-counting-on-dems-to-restore-ev-incentives.html",
+   "published": "2026-11-15T13:00:02Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
+   "link": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
+   "published": "2026-11-14T17:46:06Z",
    "source": "CNBC Markets"
   }
  ],
