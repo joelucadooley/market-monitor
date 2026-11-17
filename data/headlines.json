@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T23:48:06Z",
+ "updated": "2026-11-17T07:28:13Z",
  "items": [
   {
    "title": "Trump\u2019s accounts traded up to $97.5 million in Nvidia as Huang gained White House access",
@@ -8,9 +8,27 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "JPMorgan Chase says temporary software bug is affecting consumer banking",
-   "link": "https://www.cnbc.com/2026/11/16/jpmorgan-chase-technical-issue.html",
-   "published": "2026-11-16T22:14:47Z",
+   "title": "Iran escalates threats as third U.S. carrier arrives in Middle East, tanker struck in Hormuz",
+   "link": "https://www.cnbc.com/2026/11/17/iran-war-trump-hormuz-oil-.html",
+   "published": "2026-11-17T05:51:13Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
+   "link": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+   "published": "2026-11-17T07:07:35Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Analysis: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
+   "link": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
+   "published": "2026-11-17T00:42:33Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "U.S. agencies say they initiated investigation into Nvidia partner Megaspeed in 2024",
+   "link": "https://www.cnbc.com/2026/11/17/megaspeed-investigation-nvidia-jensen-huang.html",
+   "published": "2026-11-17T06:59:42Z",
    "source": "CNBC Markets"
   },
   {
@@ -20,9 +38,27 @@
    "source": "CNBC Markets"
   },
   {
+   "title": "JPMorgan Chase says temporary software bug is affecting consumer banking",
+   "link": "https://www.cnbc.com/2026/11/16/jpmorgan-chase-technical-issue.html",
+   "published": "2026-11-16T22:14:47Z",
+   "source": "CNBC Markets"
+  },
+  {
    "title": "CNBC's The China Connection newsletter: As Nike and Lululemon struggle in China, Xiaohongshu is helping local brands take off",
    "link": "https://www.cnbc.com/2026/11/16/as-nike-lululemon-struggle-in-china-xiaohongshu-helps-local-brands.html",
    "published": "2026-11-16T23:00:01Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
+   "link": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
+   "published": "2026-11-16T17:14:13Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Jim Cramer says Nvidia\u2019s leadership shake-up won\u2019t derail the AI trade",
+   "link": "https://www.cnbc.com/2026/11/16/nvidia-cramer-ai-trade-leadership-change.html",
+   "published": "2026-11-16T23:23:47Z",
    "source": "CNBC Markets"
   },
   {
@@ -34,43 +70,7 @@
   {
    "title": "United Airlines resolves system outage that affected departing flights",
    "link": "https://www.cnbc.com/2026/11/16/united-airlines-outage-faa.html",
-   "published": "2026-11-16T23:08:01Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Kalshi plans to launch stock trading soon",
-   "link": "https://www.cnbc.com/2026/11/16/kalshi-plans-to-launch-stock-trading-soon.html",
-   "published": "2026-11-16T21:23:34Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
-   "link": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
-   "published": "2026-11-16T22:19:02Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
-   "link": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
-   "published": "2026-11-16T17:39:32Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
-   "link": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
-   "published": "2026-11-16T17:14:13Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "California sues OpenAI over Hugging Face, other AI model loss of control",
-   "link": "https://www.cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html",
-   "published": "2026-11-16T22:11:09Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could \u2018disappoint\u2019",
-   "link": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html",
-   "published": "2026-11-16T18:46:07Z",
+   "published": "2026-11-17T00:00:49Z",
    "source": "CNBC Markets"
   }
  ],
