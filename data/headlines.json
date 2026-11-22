@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T00:59:14Z",
+ "updated": "2026-11-22T10:48:27Z",
  "items": [
   {
    "title": "Anthropic\u2019s record IPO collides with tech\u2019s worst week on Wall Street since 2020",
@@ -11,6 +11,12 @@
    "title": "Trump says there could be a 'positive spin' from the latest FBI database hack",
    "link": "https://www.cnbc.com/2026/11/21/trump-fbi-database-hack.html",
    "published": "2026-11-21T16:57:34Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Quantum computing\u2019s first real-world payoff may come in energy, not drug discovery",
+   "link": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
+   "published": "2026-11-22T06:00:01Z",
    "source": "CNBC Markets"
   },
   {
@@ -50,27 +56,21 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Nvidia stock plunges 14%, wraps up longest weekly losing streak since 2008 financial crisis",
-   "link": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html",
-   "published": "2026-11-20T22:59:33Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Trump says he still has confidence in Lutnick",
-   "link": "https://www.cnbc.com/2026/11/20/trump-lutnick-commerce-china-ai.html",
-   "published": "2026-11-20T20:52:08Z",
-   "source": "CNBC Markets"
-  },
-  {
    "title": "Jensen Huang to testify publicly before Senate banking panel, Chairman Scott says",
    "link": "https://www.cnbc.com/2026/11/20/jensen-huang-nvidia-senate-testimony.html",
    "published": "2026-11-20T19:42:53Z",
    "source": "CNBC Markets"
   },
   {
-   "title": "Retirees face a looming deadline for required withdrawals \u2014 missing it could trigger a tax penalty",
-   "link": "https://www.cnbc.com/2026/11/21/rmd-deadline-penalty-2026.html",
-   "published": "2026-11-21T14:30:02Z",
+   "title": "I never wanted the American Dream and I felt like something was wrong with me\u2014until I moved abroad",
+   "link": "https://www.cnbc.com/make-it/2026/11/21/never-wanted-american-dream-moving-abroad-redefine-success.html",
+   "published": "2026-11-21T15:00:02Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Trump says he still has confidence in Lutnick",
+   "link": "https://www.cnbc.com/2026/11/20/trump-lutnick-commerce-china-ai.html",
+   "published": "2026-11-20T20:52:08Z",
    "source": "CNBC Markets"
   }
  ],
