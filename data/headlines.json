@@ -1,64 +1,58 @@
 {
- "updated": "2026-11-26T01:56:59Z",
+ "updated": "2026-11-26T10:43:19Z",
  "items": [
+  {
+   "title": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
+   "link": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
+   "published": "2026-11-26T06:39:34Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+   "link": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html",
+   "published": "2026-11-26T10:02:44Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Global stocks rally as investors shrug off U.S. tariffs and AI jitters to 'fish for bargains'",
+   "link": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html",
+   "published": "2026-11-26T09:51:40Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Norse Atlantic suspends all flights, warns it may file for bankruptcy after share price collapse",
+   "link": "https://www.cnbc.com/2026/11/26/norse-airline-finance-business.html",
+   "published": "2026-11-26T09:02:30Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Wealthy Europeans look beyond stocks amid AI selloff. Here\u2019s where they\u2019re investing",
+   "link": "https://www.cnbc.com/2026/11/26/wealthy-europeans-alternative-investments-ai.html",
+   "published": "2026-11-26T07:23:42Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "S&P warns Nvidia credit rating could be cut over 'rising' management and governance risk",
+   "link": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html",
+   "published": "2026-11-26T03:19:44Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Latin America has the copper and energy the AI build-out needs. Infrastructure is the test",
+   "link": "https://www.cnbc.com/2026/11/26/latin-america-copper-energy-ai-investment.html",
+   "published": "2026-11-26T08:59:11Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Taking on Starlink: Europe\u2019s largest satellite factory opens in push to rival Musk",
+   "link": "https://www.cnbc.com/2026/11/26/starlink-satellites-aerospacelab-factory-belgium.html",
+   "published": "2026-11-26T07:45:05Z",
+   "source": "CNBC Markets"
+  },
   {
    "title": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
    "link": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html",
    "published": "2026-11-25T16:02:52Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Vance says he was assured Jensen Huang was not under DOJ investigation",
-   "link": "https://www.cnbc.com/2026/11/25/vance-jensen-huang-nvidia-doj-investigation.html",
-   "published": "2026-11-25T21:00:08Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Norse Atlantic flights suspended after warning finances 'critical'",
-   "link": "https://www.cnbc.com/2026/11/26/norse-airline-finance-business.html",
-   "published": "2026-11-26T01:52:20Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Hedge funds are no longer just for the rich. They\u2019re coming for everyday investors",
-   "link": "https://www.cnbc.com/2026/11/26/hedge-funds-retail-investors.html",
-   "published": "2026-11-26T01:10:58Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "South Korea upgrades growth forecast, raises benchmark rates to highest in two years",
-   "link": "https://www.cnbc.com/2026/11/26/bok-rate-decision-korea-gdp-inflation.html",
-   "published": "2026-11-26T01:50:21Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites",
-   "link": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
-   "published": "2026-11-25T19:52:47Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Liesman: Why Greenspan could bet on productivity \u2014 and Warsh needs to hike",
-   "link": "https://www.cnbc.com/2026/11/25/kevin-warsh-greenspan-fed-rates-ai-inflation.html",
-   "published": "2026-11-25T21:56:43Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Macy's postpones Thanksgiving Day Parade due to severe weather",
-   "link": "https://www.cnbc.com/2026/11/25/macys-thanksgiving-day-parade-postponed.html",
-   "published": "2026-11-25T22:26:56Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Where the market may be mispricing risk most: AI boom, volatility, high-yield bonds",
-   "link": "https://www.cnbc.com/2026/11/26/mispricing-risk-fund-managers-ai-volatility.html",
-   "published": "2026-11-26T01:34:58Z",
-   "source": "CNBC Markets"
-  },
-  {
-   "title": "Inside India newsletter: Roaring economy, foreign investors\u2019 return and now record auto sales",
-   "link": "https://www.cnbc.com/2026/11/26/india-auto-slaes-economy-suzuki-hyundai-toyota.html",
-   "published": "2026-11-26T00:12:16Z",
    "source": "CNBC Markets"
   },
   {
@@ -68,9 +62,15 @@
    "source": "CNBC Markets"
   },
   {
-   "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
-   "link": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
-   "published": "2026-11-25T16:17:13Z",
+   "title": "\u2018Your booth is waiting\u2019: Denny\u2019s welcomes Jensen Huang back as Nvidia CEO",
+   "link": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
+   "published": "2026-11-26T03:13:43Z",
+   "source": "CNBC Markets"
+  },
+  {
+   "title": "Nvidia sellers seek new buyers as U.S. curbs China AI chip access, sources tell CNBC",
+   "link": "https://www.cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html",
+   "published": "2026-11-25T17:28:24Z",
    "source": "CNBC Markets"
   }
  ],
