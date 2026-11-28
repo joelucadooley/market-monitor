@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28T02:47:28Z",
+ "updated": "2026-11-28T06:41:50Z",
  "indices": {
   "SPX": {
    "label": "S&P 500",
@@ -4822,13 +4822,9 @@
    "label": "USD/JPY",
    "group": "fx",
    "decimals": 2,
-   "value": 159.28,
-   "asOf": "2026-11-27",
+   "value": 159.51,
+   "asOf": "2026-11-28",
    "history": [
-    [
-     "2026-05-31",
-     159.35
-    ],
     [
      "2026-06-01",
      159.64
@@ -5344,14 +5340,18 @@
     [
      "2026-11-27",
      159.28
+    ],
+    [
+     "2026-11-28",
+     159.51
     ]
    ],
    "status": "live",
    "wk52hi": 163.86,
    "wk52lo": 152.45,
-   "ma50": 158.26,
-   "ma200": 158.97,
-   "rsi14": 61.6
+   "ma50": 158.31,
+   "ma200": 158.99,
+   "rsi14": 68.3
   },
   "DXY": {
    "label": "US Dollar Index",
@@ -5894,7 +5894,7 @@
    "label": "Gold (front-month)",
    "group": "commodities",
    "decimals": 2,
-   "value": 3668.5,
+   "value": 3639.6,
    "asOf": "2026-11-27",
    "history": [
     [
@@ -6415,21 +6415,21 @@
     ],
     [
      "2026-11-27",
-     3668.5
+     3639.6
     ]
    ],
    "status": "live",
    "wk52hi": 5318.4,
    "wk52lo": 3515.4,
-   "ma50": 4049.78,
-   "ma200": 4415.82,
-   "rsi14": 30.6
+   "ma50": 4049.2,
+   "ma200": 4415.68,
+   "rsi14": 28.6
   },
   "SILVER": {
    "label": "Silver (front-month)",
    "group": "commodities",
    "decimals": 3,
-   "value": 43.702,
+   "value": 43.167,
    "asOf": "2026-11-27",
    "history": [
     [
@@ -6950,15 +6950,15 @@
     ],
     [
      "2026-11-27",
-     43.702
+     43.167
     ]
    ],
    "status": "live",
    "wk52hi": 115.08,
    "wk52lo": 40.052,
-   "ma50": 54.605,
-   "ma200": 66.734,
-   "rsi14": 32.9
+   "ma50": 54.594,
+   "ma200": 66.732,
+   "rsi14": 31.4
   },
   "WTI": {
    "label": "WTI Crude",
@@ -7499,7 +7499,7 @@
    "label": "Brent Crude",
    "group": "commodities",
    "decimals": 2,
-   "value": 90.84,
+   "value": 95.44,
    "asOf": "2026-11-27",
    "history": [
     [
@@ -8020,21 +8020,21 @@
     ],
     [
      "2026-11-27",
-     90.84
+     95.44
     ]
    ],
    "status": "live",
    "wk52hi": 118.35,
    "wk52lo": 58.92,
-   "ma50": 102.17,
-   "ma200": 95.05,
-   "rsi14": 37.2
+   "ma50": 102.27,
+   "ma200": 95.08,
+   "rsi14": 44.5
   },
   "COPPER": {
    "label": "Copper (front-month)",
    "group": "commodities",
    "decimals": 3,
-   "value": 5.601,
+   "value": 5.517,
    "asOf": "2026-11-27",
    "history": [
     [
@@ -8555,15 +8555,15 @@
     ],
     [
      "2026-11-27",
-     5.601
+     5.517
     ]
    ],
    "status": "live",
    "wk52hi": 6.804,
    "wk52lo": 5.161,
-   "ma50": 6.352,
+   "ma50": 6.35,
    "ma200": 6.215,
-   "rsi14": 32.7
+   "rsi14": 29.4
   }
  },
  "crypto": {
@@ -8571,7 +8571,7 @@
    "label": "Bitcoin",
    "group": "crypto",
    "decimals": 0,
-   "value": 59866.0,
+   "value": 59808.0,
    "asOf": "2026-11-28",
    "history": [
     [
@@ -9092,21 +9092,21 @@
     ],
     [
      "2026-11-28",
-     59866.0
+     59808.0
     ]
    ],
    "status": "live",
    "wk52hi": 96929.0,
    "wk52lo": 58559.0,
-   "ma50": 74242.0,
+   "ma50": 74241.0,
    "ma200": 71811.0,
-   "rsi14": 26.0
+   "rsi14": 25.0
   },
   "ETH": {
    "label": "Ethereum",
    "group": "crypto",
    "decimals": 2,
-   "value": 1661.16,
+   "value": 1659.09,
    "asOf": "2026-11-28",
    "history": [
     [
@@ -9627,15 +9627,15 @@
     ],
     [
      "2026-11-28",
-     1661.16
+     1659.09
     ]
    ],
    "status": "live",
    "wk52hi": 3354.72,
    "wk52lo": 1564.82,
-   "ma50": 2150.96,
-   "ma200": 2106.24,
-   "rsi14": 29.1
+   "ma50": 2150.92,
+   "ma200": 2106.23,
+   "rsi14": 29.0
   }
  },
  "watchlist": {
@@ -24092,7 +24092,7 @@
   "bullets": [
    "US equities advancing, S&P 500 +1.59% \u00b7 VIX 23.8 (elevated).",
    "Sector leader: Technology +2.80% \u00b7 Laggard: Utilities +0.28%.",
-   "Biggest mover: Silver (front-month) (SILVER) +9.11% on the day.",
+   "Biggest mover: Silver (front-month) (SILVER) +7.78% on the day.",
    "US 2s10s curve is positively sloped at +24bp.",
    "Cross-asset check: equities, credit, and volatility are aligned risk-on.",
    "Breadth: 11/11 sectors positive on the day, 8/16 watchlist names trading above their 50-day average."
